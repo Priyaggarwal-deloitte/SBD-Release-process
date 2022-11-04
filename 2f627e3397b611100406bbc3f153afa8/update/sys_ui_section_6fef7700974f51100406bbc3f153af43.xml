@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Questions" section_id="6fef7700974f51100406bbc3f153af43" sys_domain="global" table="rm_release_phase" version="3" view="sbd_release_view">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_1</element>
+            <position>0</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>75208010974f51100406bbc3f153af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_10</element>
+            <position>1</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>f9208010974f51100406bbc3f153af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_2</element>
+            <position>2</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>7d208010974f51100406bbc3f153af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_3</element>
+            <position>3</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>fd208010974f51100406bbc3f153af48</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_4</element>
+            <position>4</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>71208010974f51100406bbc3f153af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_5</element>
+            <position>5</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>f1208010974f51100406bbc3f153af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_6</element>
+            <position>6</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>75208010974f51100406bbc3f153af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_7</element>
+            <position>7</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>f5208010974f51100406bbc3f153af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_8</element>
+            <position>8</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>79208010974f51100406bbc3f153af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_question_9</element>
+            <position>9</position>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:41:44</sys_created_on>
+            <sys_id>f9208010974f51100406bbc3f153af49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Questions" display_value="Questions" name="rm_release_phase" sys_domain="global" view="b04eb148978351100406bbc3f153af40">6fef7700974f51100406bbc3f153af43</sys_ui_section>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:41:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Questions</caption>
+            <header>false</header>
+            <name>rm_release_phase</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>bishnu</sys_created_by>
+            <sys_created_on>2022-11-04 13:40:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6fef7700974f51100406bbc3f153af43</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rm_release_phase</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_ui_section_6fef7700974f51100406bbc3f153af43</sys_update_name>
+            <sys_updated_by>bishnu</sys_updated_by>
+            <sys_updated_on>2022-11-04 13:40:46</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="SBD Release view" name="sbd_release_view">b04eb148978351100406bbc3f153af40</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
