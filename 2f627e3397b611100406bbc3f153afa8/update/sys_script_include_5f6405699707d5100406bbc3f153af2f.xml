@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_675641_sbd_relea.Controlobjective_mapping</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Controlobjective_mapping</name>
+        <script><![CDATA[var Controlobjective_mapping = Class.create();
+Controlobjective_mapping.prototype = {
+    initialize: function() {
+    },
+	
+	findAssessment : function(trigger)
+	{
+		var arrayUtil = new global.ArrayUtil();
+
+        var ccfIdArrayIA = [];
+		
+		var instance = new GlideRecord('asmt_assessment_instance');
+        instance.addQuery('task_id', trigger);
+        instance.addQuery('metric_type.sys_idSTARTSWITH9a96fd81974755100406bbc3f153af73'); //find security assessment 
+        instance.query();
+        while (instance.next()) { // if the assessment is asssigned to the release, get all the questions
+			
+			//gs.info("ssssssssStep1");
+			
+			var release11 = instance.task_id.getDisplayValue();
+			
+            var questions = new GlideRecord('asmt_metric_result');
+            questions.addQuery('instance', instance.sys_id);
+            questions.query();
+            while (questions.next()) { //engagement questions
+				//gs.info("ssssssssStep2"+instance.sys_id);
+				var releasephase = questions.instance.task_id.getDisplayValue();
+                var value = questions.actual_value;
+                var stringValue = questions.string_value;
+                var questionMetricSysId = questions.instance_question.getDisplayValue();
+                
+
+                var questionMapping = new GlideRecord('x_675641_sbd_relea_assessment_to_ccf_mapping');
+                questionMapping.addQuery('question_number', questionMetricSysId);
+                questionMapping.addQuery('wheightage_assigned', stringValue);
+                questionMapping.query();
+                if (questionMapping.next()) { //Questions mapping table for these specific questions
+                    var reqListArray1 = questionMapping.mapped_ccf_ids.toString().split(','); // comma separated splitting
+                    for (var i = 0; i < reqListArray1.length; i++) {
+                        if (!arrayUtil.contains(ccfIdArrayIA, reqListArray1[i].toString()) && reqListArray1[i].toString() != "") 
+								{ // exclude adding CCFs already in the return
+								ccfIdArrayIA.push(reqListArray1[i].toString()); // add to list of unique CCF IDs
+									
+								}
+						
+                    }gs.info('Final array2 '+ccfIdArrayIA);
+				
+            }
+        }
+		}
+					var findRelease = new GlideRecord('rm_release_phase');//find release number
+					findRelease.addQuery('number',release11);
+					findRelease.query();
+					gs.info('Stepppppp1111'+release11);
+						if(findRelease.next())
+							{
+								gs.info('Stepppppp'+release11);
+								var release = findRelease.x_675641_sbd_relea_release.sys_id;
+							}
+					
+		
+		
+					var findConObj = new GlideRecord('sn_compliance_policy_statement');//find control objectives
+					findConObj.query();
+					while(findConObj.next())
+						{
+								var referenceValue = findConObj.reference;
+								var ccfvalue = ccfIdArrayIA.toString().split(',');
+								
+								for (var j = 0; j < ccfvalue.length; j++) 
+								{
+								gs.info('ccfIdArrayIA' + ccfvalue[j]);
+									if (referenceValue == ccfvalue[j])
+										{
+											var controlObjective = findConObj.sys_id;
+											this.createControl(controlObjective,release);
+										}
+							
+								}
+								
+						
+					}
+	},
+	
+	createControl : function (controlObjective,releasephase)
+	{
+		var createControls = new GlideRecord('sn_compliance_control');//starting control creation
+		createControls.initialize();
+		createControls.content = controlObjective;
+		createControls.x_675641_sbd_relea_release = releasephase;
+		createControls.insert();
+		
+	},
+	
+
+    type: 'Controlobjective_mapping'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-08 15:54:28</sys_created_on>
+        <sys_id>5f6405699707d5100406bbc3f153af2f</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Controlobjective_mapping</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_include_5f6405699707d5100406bbc3f153af2f</sys_update_name>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:43:14</sys_updated_on>
+    </sys_script_include>
+</record_update>
