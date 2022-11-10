@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>x_675641_sbd_relea_cloud_service_provider</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-09 12:30:35</sys_created_on>
+        <sys_id>3bbf9539974b19100406bbc3f153af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_675641_sbd_relea_cloud_service_provider</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_ui_policy_action_3bbf9539974b19100406bbc3f153af9d</sys_update_name>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-09 12:30:35</sys_updated_on>
+        <table>rm_task</table>
+        <ui_policy display_value="Hide cloud components">b0be51f5974b19100406bbc3f153af9b</ui_policy>
+        <visible>false</visible>
+    </sys_ui_policy_action>
+</record_update>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Release Management" source="com.snc.release_management_v2">3eea1577973211100406bbc3f153af7c</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-03 13:46:23</sys_created_on>
+        <sys_id>c4a7baf797b611100406bbc3f153affe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-03 13:46:23</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_675641_sbd_relea_intake_ques5" table="rm_release" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_intake_ques5</element>
+            <name>rm_release</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-08 10:51:31</sys_created_on>
+            <sys_id>5b8ffb9d97cf95100406bbc3f153af2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_675641_sbd_relea_intake_ques5</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_choice_rm_release_x_675641_sbd_relea_intake_ques5</sys_update_name>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-08 10:51:31</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_intake_ques5</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Customers/Public</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-08 10:51:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>167fbb9d97cf95100406bbc3f153af2f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-08 10:51:31</sys_updated_on>
+            <value>customer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_intake_ques5</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Partners</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-08 10:51:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac9fb79d97cf95100406bbc3f153afa1</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-08 10:52:36</sys_updated_on>
+            <value>bp</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_intake_ques5</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Internal Restricted Users</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-08 10:52:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bf9f7b9d97cf95100406bbc3f153af39</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-08 10:52:38</sys_updated_on>
+            <value>iru</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_intake_ques5</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Employees/ Contractors/ Service-Providers</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-08 10:52:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9bf3f5d97cf95100406bbc3f153afe4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-08 10:52:44</sys_updated_on>
+            <value>ecsp</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

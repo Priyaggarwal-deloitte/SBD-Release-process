@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_675641_sbd_relea_api" label="API" language="en" table="rm_release">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_api</element>
+            <help/>
+            <hint>Does this system expose/consume any APIs?</hint>
+            <label>API</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <plural>APIs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-08 08:50:53</sys_created_on>
+            <sys_id>8cf3e3dd974f95100406bbc3f153af25</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>API</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_documentation_rm_release_x_675641_sbd_relea_api_en</sys_update_name>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:26:12</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

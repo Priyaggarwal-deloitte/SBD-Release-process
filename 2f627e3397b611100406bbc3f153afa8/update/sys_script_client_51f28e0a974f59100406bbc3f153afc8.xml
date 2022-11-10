@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>x_675641_sbd_relea_if_they_want_to_import_csp_environment</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Displaying AWS or Azure Field</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	//g_form.addInfoMessage(newValue);
+   if((newValue=='true') && (g_form.getValue('x_675641_sbd_relea_sub_type')=='create_threat_model') && (newValue!=''))
+	   {
+		   g_form.setDisplay('x_675641_sbd_relea_aws_or_azure',true);
+		   g_form.setMandatory('x_675641_sbd_relea_aws_or_azure',true);
+	   }
+	else
+		{
+			g_form.setMandatory('x_675641_sbd_relea_aws_or_azure',false);
+			g_form.setDisplay('x_675641_sbd_relea_aws_or_azure',false);
+		}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-10 09:46:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>51f28e0a974f59100406bbc3f153afc8</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Displaying AWS or Azure Field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_client_51f28e0a974f59100406bbc3f153afc8</sys_update_name>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-10 13:30:13</sys_updated_on>
+        <table>rm_task</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

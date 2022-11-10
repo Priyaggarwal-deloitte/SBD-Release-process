@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Project Build Scope" section_id="b7f41475978319100406bbc3f153afbd" sys_domain="global" table="rm_release" version="3" view="sbd_release_view">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>c63914f9978319100406bbc3f153af83</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <text>Overview of various types of systems being developed as part of project build.</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>c63914f9978319100406bbc3f153af83</element>
+            <position>0</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>823914f9978319100406bbc3f153af89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>063914f9978319100406bbc3f153af89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_hosting_location</element>
+            <position>2</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>863914f9978319100406bbc3f153af89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_system_type</element>
+            <position>3</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>0a3914f9978319100406bbc3f153af89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_api</element>
+            <position>4</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>8a3914f9978319100406bbc3f153af89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_cloud_service_provider</element>
+            <position>5</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>0e3914f9978319100406bbc3f153af89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>8e3914f9978319100406bbc3f153af89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_build_scope</element>
+            <position>7</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>023914f9978319100406bbc3f153af8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_public_cloud</element>
+            <position>8</position>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:22:08</sys_created_on>
+            <sys_id>823914f9978319100406bbc3f153af8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:08</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Project Build Scope</caption>
+            <header>false</header>
+            <name>rm_release</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-09 07:03:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7f41475978319100406bbc3f153afbd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rm_release</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_ui_section_b7f41475978319100406bbc3f153afbd</sys_update_name>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:03:41</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="SBD Release view" name="sbd_release_view">b04eb148978351100406bbc3f153af40</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

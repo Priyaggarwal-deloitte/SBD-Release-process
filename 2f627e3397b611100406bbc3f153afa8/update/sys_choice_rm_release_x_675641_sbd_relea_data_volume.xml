@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_675641_sbd_relea_data_volume" table="rm_release" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_data_volume</element>
+            <name>rm_release</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 08:23:17</sys_created_on>
+            <sys_id>0d473e4497c751100406bbc3f153af81</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_675641_sbd_relea_data_volume</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_choice_rm_release_x_675641_sbd_relea_data_volume</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:23:17</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_data_volume</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Above 5 million</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-08 07:48:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a65575d970f95100406bbc3f153afb6</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-10 13:04:24</sys_updated_on>
+            <value>above1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_data_volume</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 to 5 Million</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>15</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-10 13:04:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e7a07a02974399100406bbc3f153aff3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-10 13:05:15</sys_updated_on>
+            <value>1to5M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_data_volume</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 to 0.5 million</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 08:23:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e4373e4497c751100406bbc3f153af80</sys_id>
+            <sys_mod_count>15</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-08 07:50:20</sys_updated_on>
+            <value>1t0.5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_data_volume</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Below 0.5 million</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 11:02:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c5bbd700978b51100406bbc3f153af16</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-10 13:03:31</sys_updated_on>
+            <value>below0_5</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

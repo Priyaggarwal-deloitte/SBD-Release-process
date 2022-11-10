@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_675641_sbd_relea_live_security_posture" table="rm_release" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_live_security_posture</element>
+            <name>rm_release</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 03:39:14</sys_created_on>
+            <sys_id>c846bd04978351100406bbc3f153af4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_675641_sbd_relea_live_security_posture</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_choice_rm_release_x_675641_sbd_relea_live_security_posture</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 03:39:14</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_live_security_posture</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Applicable</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 03:39:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a367584978351100406bbc3f153af9e</sys_id>
+            <sys_mod_count>22</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 15:24:32</sys_updated_on>
+            <value>not_applicable</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_live_security_posture</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Low Risk</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 03:39:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8446f984978351100406bbc3f153af8d</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 15:24:41</sys_updated_on>
+            <value>low_risk</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_live_security_posture</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Medium Risk</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 03:39:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a2467dc4978351100406bbc3f153af8a</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 15:25:53</sys_updated_on>
+            <value>medium_risk</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_live_security_posture</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>High Risk</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 03:39:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7463dc4978351100406bbc3f153af0d</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 15:26:01</sys_updated_on>
+            <value>High_risk</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

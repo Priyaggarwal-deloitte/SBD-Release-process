@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_675641_sbd_relea_product_type" label="Process" language="en" table="rm_product">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_product_type</element>
+            <help/>
+            <hint/>
+            <label>Process</label>
+            <language>en</language>
+            <name>rm_product</name>
+            <plural>Process</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-03 13:46:22</sys_created_on>
+            <sys_id>00a7baf797b611100406bbc3f153aff8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Process</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_documentation_rm_product_x_675641_sbd_relea_product_type_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-03 13:49:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

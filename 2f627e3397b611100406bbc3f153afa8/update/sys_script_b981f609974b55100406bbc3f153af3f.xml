@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>rm_release</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>SbD Populate Business Criticality &amp; RR</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+//
+    var pci = 'false';
+    var pii = 'false';
+    var confi = 'false';
+    var b_impact = 0;
+    var bi_val = '';
+
+    /*The variables 'pci', 'pii' and 'confi' are set to true based on variables on the PII, PCI nad COnfidentiality values selected on release form.
+    These variables are used further in the script to set condition for 'Criticality' calculation.*/
+
+    if (current.x_675641_sbd_relea_pci == 'yes') {
+        pci = 'true';
+    }
+    if (current.x_675641_sbd_relea_pii == 'yes') {
+        pii = 'true';
+    }
+    if (current.x_675641_sbd_relea_confidential == 'yes') {
+        confi = 'true';
+    }
+
+
+    /*BUSINESS IMPACT CALCULATION:
+    For Auto-population of Business Impact, values selected in the three variables are as follows:
+
+    bi_val_ques1: Stores answer selcted for 'What is the importance of maintaining accuracy and access control for this data?'
+    bi_val_ques2: Stoess answer selected for 'What is the importance of the availability of this system to the business?'
+    bi_val_ques3: Stores answer selected for 'What would be the impact of a data breach with this system?'
+
+    Then the average for the above variable is used to determine 'Business Impact'.
+    */
+
+    var bi_val_ques1 = 0;
+    var bi_val_ques2 = 0;
+    var bi_val_ques3 = 0;
+    if (current.x_675641_sbd_relea_intake_ques3 == 'low') {
+        bi_val_ques1 = 1;
+    } else if (current.x_675641_sbd_relea_intake_ques3 == 'medium') {
+        bi_val_ques1 = 2;
+    } else if (current.x_675641_sbd_relea_intake_ques3 == 'high') {
+        bi_val_ques1 = 3;
+    }
+    //gs.addInfoMessage('This variable stores ques 1:'+ bi_val_ques1);
+
+    if (current.x_675641_sbd_relea_intake_ques_2 == 'low') {
+        bi_val_ques2 = 1;
+    } else if (current.x_675641_sbd_relea_intake_ques_2 == 'medium') {
+        bi_val_ques2 = 2;
+    } else if (current.x_675641_sbd_relea_intake_ques_2 == 'high') {
+        bi_val_ques2 = 3;
+    }
+
+    //gs.addInfoMessage('This variable stores ques 2:' + bi_val_ques2);
+
+    if (current.x_675641_sbd_relea_what_would_be_the_impact_of_a_data_breach_with_this_system == 'low') {
+        bi_val_ques3 = 1;
+    } else if (current.x_675641_sbd_relea_what_would_be_the_impact_of_a_data_breach_with_this_system == 'medium')
+
+    {
+        bi_val_ques3 = 2;
+    } else if (current.x_675641_sbd_relea_what_would_be_the_impact_of_a_data_breach_with_this_system == 'high') {
+        bi_val_ques3 = 3;
+    }
+
+
+    //b_impact=(current.x_675641_sbd_relea_intake_ques3 + current.x_675641_sbd_relea_intake_ques_2 + current.x_675641_sbd_relea_what_would_be_the_impact_of_a_data_breach_with_this_system)/3;
+
+    b_impact = (bi_val_ques1 + bi_val_ques2 + bi_val_ques3) / 3;
+
+    //BUSINESS IMPACT POPULATION 
+
+    if (b_impact == 1) {
+        current.x_675641_sbd_relea_business_impact = 'low';
+        bi_val = 'Low';
+    } else if (b_impact > 1 && b_impact <= 2) {
+        current.x_675641_sbd_relea_business_impact = 'medium';
+        bi_val = 'Medium';
+    } else if (b_impact > 2) {
+
+        current.setValue('x_675641_sbd_relea_business_impact', 'high');
+        bi_val = 'High';
+    }
+
+    //CRITICALITY
+    /* The criticality is set based on the conditions defined using PCI, PII, Confidentiality as well as Business Impact values.
+     */
+
+    if (pci == 'true') {
+        current.x_675641_sbd_relea_criticality = 'high';
+    } else if (pii == 'true' && (bi_val == 'Medium' || bi_val == 'High')) {
+        current.x_675641_sbd_relea_criticality = 'high';
+    } else if (pci == 'false' && pii == 'false' && confi == 'false' && bi_val != 'High') {
+        current.x_675641_sbd_relea_criticality = 'low';
+    } else {
+        current.x_675641_sbd_relea_criticality = 'medium';
+
+    }
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Kriti</sys_created_by>
+        <sys_created_on>2022-11-07 10:33:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b981f609974b55100406bbc3f153af3f</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>SbD Populate Business Criticality &amp; RR</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_b981f609974b55100406bbc3f153af3f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-10 13:55:26</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b981f609974b55100406bbc3f153af3f"/>
+</record_update>

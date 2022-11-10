@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="x_675641_sbd_relea_pci" label="Is Payment Card Industry (PCI) Data involved in this project?" language="en" table="rm_release">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_pci</element>
+            <help/>
+            <hint>PCI Data includes credit card &amp; account information, payment records, etc.</hint>
+            <label>Is Payment Card Industry (PCI) Data involved in this project?</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <plural>Is Payment Card Industry (PCI) Data involved in this project?s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 09:00:49</sys_created_on>
+            <sys_id>c4ac5641970b55100406bbc3f153af96</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Is Payment Card Industry (PCI) Data involved in this project?</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_documentation_rm_release_x_675641_sbd_relea_pci_en</sys_update_name>
+            <sys_updated_by>Kriti</sys_updated_by>
+            <sys_updated_on>2022-11-08 13:34:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_675641_sbd_relea_sub_type" table="rm_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_sub_type</element>
+            <name>rm_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Ashutosh</sys_created_by>
+            <sys_created_on>2022-11-04 08:36:16</sys_created_on>
+            <sys_id>4b3a7a8897c751100406bbc3f153afd1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_675641_sbd_relea_sub_type</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_choice_rm_task_x_675641_sbd_relea_sub_type</sys_update_name>
+            <sys_updated_by>Ashutosh</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:36:16</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Review Architecture Diagrams</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>Ashutosh</sys_created_by>
+            <sys_created_on>2022-11-04 08:36:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a0c9ba0897c751100406bbc3f153af32</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:27:15</sys_updated_on>
+            <value>architecture intake and review</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete Security Assessment Questionnaire</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Ashutosh</sys_created_by>
+            <sys_created_on>2022-11-04 08:37:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b3a3a8897c751100406bbc3f153af1c</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:27:18</sys_updated_on>
+            <value>complete security assessment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete Baseline Controls Assessment</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>Ashutosh</sys_created_by>
+            <sys_created_on>2022-11-04 08:38:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b6af68897c751100406bbc3f153afbb</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:27:22</sys_updated_on>
+            <value>complete baseline assessment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Identify Cloud Components</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>Ashutosh</sys_created_by>
+            <sys_created_on>2022-11-04 08:39:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3edab6c897c751100406bbc3f153aff0</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:27:54</sys_updated_on>
+            <value>generate cloud security controls</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Approval for Security Controls</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>Ashutosh</sys_created_by>
+            <sys_created_on>2022-11-04 08:41:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>250b7ec897c751100406bbc3f153af53</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:27:59</sys_updated_on>
+            <value>approval for security controls</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Generate &amp; Review Security Framework Controls Report</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:26:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33bf6285974b55100406bbc3f153afc8</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:28:08</sys_updated_on>
+            <value>security controls generation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Generate Identified CWEs Report</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:28:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>24403ac1974b55100406bbc3f153aff7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:28:53</sys_updated_on>
+            <value>generate application weakness report</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intake Testing Results</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:29:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f8b07a85974b55100406bbc3f153af64</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:30:48</sys_updated_on>
+            <value>intake testing results</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Review Security Framework Controls Implementation</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:30:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28e07ac5974b55100406bbc3f153af52</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:30:50</sys_updated_on>
+            <value>review control implementation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Review Cloud Controls Implementation</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:31:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3f11bac5974b55100406bbc3f153af74</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:31:41</sys_updated_on>
+            <value>review cloud control implementation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Review Data Classification</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:32:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0f513209974b55100406bbc3f153af54</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:32:48</sys_updated_on>
+            <value>data classification assessment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Identify Infrastructure Assets</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:33:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea91f6c5974b55100406bbc3f153af67</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:33:31</sys_updated_on>
+            <value>identify infrastructure assets</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Create Data Flow Diagram</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>11</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:34:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>06c1bec5974b55100406bbc3f153aff9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:35:16</sys_updated_on>
+            <value>create data flow diagram</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Create Threat Model</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>12</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:36:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3452b249974b55100406bbc3f153af24</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:36:31</sys_updated_on>
+            <value>create_threat_model</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Define Assets &amp; Trust Zones</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>13</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:35:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>47223e09974b55100406bbc3f153af2b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:36:06</sys_updated_on>
+            <value>define assets and trust zones</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Define Threats &amp; Controls</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>16</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:37:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c59236c5974b55100406bbc3f153af59</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:37:28</sys_updated_on>
+            <value>define threats and controls</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Review Threat Model Remediation</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>19</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:37:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>12a2ba49974b55100406bbc3f153af08</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:38:03</sys_updated_on>
+            <value>review threat model remediation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Generate Technical Report</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>22</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:38:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37c2ba49974b55100406bbc3f153afd8</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:38:35</sys_updated_on>
+            <value>generate technical report</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Security Testing Report</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>25</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:38:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>23e27649974b55100406bbc3f153af79</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:39:11</sys_updated_on>
+            <value>security testing report</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intake Scan Policy Requirements</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>28</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:39:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5223f689974b55100406bbc3f153af77</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:39:47</sys_updated_on>
+            <value>intake application weakness report</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Generate Scan Policy</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>31</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:40:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2533be49974b55100406bbc3f153afcf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:40:19</sys_updated_on>
+            <value>generate scan policy</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mobile Application Scan</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:40:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42537a89974b55100406bbc3f153afc0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:41:03</sys_updated_on>
+            <value>mobile application scan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>API Scan</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>45</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:41:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c9833249974b55100406bbc3f153afd0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:41:28</sys_updated_on>
+            <value>api scan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DAST Scan</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:41:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b937a89974b55100406bbc3f153af51</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:41:54</sys_updated_on>
+            <value>dast scan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SAST Scan</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>55</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:42:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>86b3f2c9974b55100406bbc3f153afa5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:42:22</sys_updated_on>
+            <value>sast scan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SCA Scan</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:42:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>64f3bac9974b55100406bbc3f153af31</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:43:11</sys_updated_on>
+            <value>sca scan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Infrastructure Scan</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:43:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58043ec9974b55100406bbc3f153af67</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:43:35</sys_updated_on>
+            <value>infrastructure scan</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_sub_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Container Scan</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>75</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-07 10:43:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32147ec9974b55100406bbc3f153afdf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-07 10:44:02</sys_updated_on>
+            <value>container scan</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,2114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>SBD flow to initiate the flow of Release, Release phase and release task</description>
+        <internal_name>sbd_flow</internal_name>
+        <label_cache>[{"name":"ea5bb224-c7fc-4979-82c2-c69ed142cc63.review_phase_output","label":"7 - SBD Threat Task Subflow➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}},{"name":"ea5bb224-c7fc-4979-82c2-c69ed142cc63.context","label":"7 - SBD Threat Task Subflow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"b5c758b6-884b-49da-a420-c47c608f713a.__dont_treat_as_error__","label":"6 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b5c758b6-884b-49da-a420-c47c608f713a.__action_status__","label":"6 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b5c758b6-884b-49da-a420-c47c608f713a.table_name","label":"6 - Create Record➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b5c758b6-884b-49da-a420-c47c608f713a.record","label":"6 - Create Record➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd65f262-7014-442f-86bc-b1189ebaf62f.__dont_treat_as_error__","label":"9 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd65f262-7014-442f-86bc-b1189ebaf62f.__action_status__","label":"9 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd65f262-7014-442f-86bc-b1189ebaf62f.table_name","label":"9 - Create Record➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd65f262-7014-442f-86bc-b1189ebaf62f.record","label":"9 - Create Record➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.x_675641_sbd_relea_criticality","label":"Trigger - Record Created➛Release Record➛Criticality","reference":"","reference_display":"Criticality","type":"choice","base_type":"choice","parent_table_name":"rm_release","column_name":"x_675641_sbd_relea_criticality","choices":[{"label":"High","image":"","rawLabel":"High","selected":false,"missing":false,"used":false,"reference":false,"value":"high","parameters":{"name":"rm_release"}},{"label":"Medium","image":"","rawLabel":"Medium","selected":false,"missing":false,"used":false,"reference":false,"value":"Medium","parameters":{"name":"rm_release"}},{"label":"Low","image":"","rawLabel":"Low","selected":false,"missing":false,"used":false,"reference":false,"value":"Low","parameters":{"name":"rm_release"}}]},{"name":"a5c49727-ffb1-465a-8311-d336756fabc2.__dont_treat_as_error__","label":"6 - Create Record➛7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a5c49727-ffb1-465a-8311-d336756fabc2.__action_status__","label":"6 - Create Record➛7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a5c49727-ffb1-465a-8311-d336756fabc2.table_name","label":"6 - Create Record➛7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5c49727-ffb1-465a-8311-d336756fabc2.record","label":"6 - Create Record➛7➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268a12c-6040-479c-b13b-afbff18808d9.record","label":"2 - Create Record➛3➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268a12c-6040-479c-b13b-afbff18808d9.table_name","label":"2 - Create Record➛3➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268a12c-6040-479c-b13b-afbff18808d9.__action_status__","label":"2 - Create Record➛3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268a12c-6040-479c-b13b-afbff18808d9.__dont_treat_as_error__","label":"2 - Create Record➛3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57ade7b6-d4f1-48d2-bfe6-bc91c3990adf.record","label":"5 - Create Record➛6➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57ade7b6-d4f1-48d2-bfe6-bc91c3990adf.table_name","label":"5 - Create Record➛6➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57ade7b6-d4f1-48d2-bfe6-bc91c3990adf.__action_status__","label":"5 - Create Record➛6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57ade7b6-d4f1-48d2-bfe6-bc91c3990adf.__dont_treat_as_error__","label":"5 - Create Record➛6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Release Record➛Description(description)","reference":"","reference_display":"Description(description)","type":"string","base_type":"string","parent_table_name":"rm_release","column_name":"description"},{"name":"Created_1.current","label":"Trigger - Record Created➛Release Record","reference":"rm_release","reference_display":"Release","type":"reference","base_type":"reference","attributes":{}},{"name":"33fbd830-3812-43b7-a36c-e0d9f93ab903.context","label":"4 - Review Task subflows 1➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"33fbd830-3812-43b7-a36c-e0d9f93ab903.review_phase_output","label":"4 - Review Task subflows 1➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}},{"name":"705c54c0-70f5-4cd4-b98b-d49b23481c4f.record","label":"1 - Create Record➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"705c54c0-70f5-4cd4-b98b-d49b23481c4f.table_name","label":"1 - Create Record➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"705c54c0-70f5-4cd4-b98b-d49b23481c4f.__action_status__","label":"1 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"705c54c0-70f5-4cd4-b98b-d49b23481c4f.__dont_treat_as_error__","label":"1 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"809507f0-1cd6-46a0-8c9e-58b6b01e4cc7.context","label":"2 - Review Task subflows 1➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"809507f0-1cd6-46a0-8c9e-58b6b01e4cc7.review_phase_output","label":"2 - Review Task subflows 1➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}},{"name":"c66652ad-2a60-400e-aa6d-281501d95036.record","label":"3 - Create Record➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c66652ad-2a60-400e-aa6d-281501d95036.table_name","label":"3 - Create Record➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c66652ad-2a60-400e-aa6d-281501d95036.__action_status__","label":"3 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c66652ad-2a60-400e-aa6d-281501d95036.__dont_treat_as_error__","label":"3 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"69b4ef94-32a0-4a65-a62d-3a017032a772.context","label":"4 - SBD Security Testing subflow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"69b4ef94-32a0-4a65-a62d-3a017032a772.test_phase_task_output","label":"4 - SBD Security Testing subflow➛Test Phase task output","reference_display":"Test Phase task output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8f127e14-65da-4b90-b733-cd629eefb2d0"}},{"name":"7af3a39d-4682-4480-b8ee-c63ffb13d676.context","label":"2 - SBD Review Task Subflow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"7af3a39d-4682-4480-b8ee-c63ffb13d676.review_phase_output","label":"2 - SBD Review Task Subflow➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}},{"name":"81d1ddc6-2cea-4c1c-b0bb-4550b5f15c4f.context","label":"2 - SBD Review Task Subflow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"81d1ddc6-2cea-4c1c-b0bb-4550b5f15c4f.review_phase_output","label":"2 - SBD Review Task Subflow➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}}]</label_cache>
+        <master_snapshot>1cd4324d974b55100406bbc3f153af23</master_snapshot>
+        <name>SBD flow</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>39d2b57997cb19100406bbc3f153af25</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:48:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>384e7105974755100406bbc3f153afcd</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>SBD flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_hub_flow_384e7105974755100406bbc3f153afcd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=384e7105974755100406bbc3f153afcd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=384e7105974755100406bbc3f153afcd"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="rm_release">x_675641_sbd_relea_sbd_release=true<item endquery="false" field="x_675641_sbd_relea_sbd_release" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 13:53:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39d2b57997cb19100406bbc3f153af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:41</sys_updated_on>
+        <table>rm_release</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>384e7105974755100406bbc3f153afcd</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 13:53:41</sys_created_on>
+        <sys_id>f1d2b57997cb19100406bbc3f153af26</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <trigger display_value="">39d2b57997cb19100406bbc3f153af25</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=384e7105974755100406bbc3f153afcd^sys_idNOT INf1d2b57997cb19100406bbc3f153af26"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=384e7105974755100406bbc3f153afcd^sys_idNOT IN69ff714d974755100406bbc3f153af18"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:55:35</sys_created_on>
+        <sys_id>69ff714d974755100406bbc3f153af18</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=69ff714d974755100406bbc3f153af18"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>69ff714d974755100406bbc3f153af18</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:55:35</sys_created_on>
+        <sys_id>25ff714d974755100406bbc3f153af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 06:55:35</sys_updated_on>
+        <value>rm_release</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>69ff714d974755100406bbc3f153af18</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:55:35</sys_created_on>
+        <sys_id>a9ff714d974755100406bbc3f153af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 06:55:35</sys_updated_on>
+        <value>x_675641_sbd_relea_sbd_release=true</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=384e7105974755100406bbc3f153afcd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=384e7105974755100406bbc3f153afcd^sys_idNOT INb84e7105974755100406bbc3f153afcf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>384e7105974755100406bbc3f153afcd</id>
+        <name>SBD flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:48:10</sys_created_on>
+        <sys_id>b84e7105974755100406bbc3f153afcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 06:48:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b84e7105974755100406bbc3f153afcf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=384e7105974755100406bbc3f153afcd^sys_idNOT IN1dffb50d974755100406bbc3f153afcd,a9ffb50d974755100406bbc3f153afd2"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SBD flow">384e7105974755100406bbc3f153afcd</model>
+        <model_id>384e7105974755100406bbc3f153afcd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_384e7105974755100406bbc3f153afcd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:55:34</sys_created_on>
+        <sys_id>1dffb50d974755100406bbc3f153afcd</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SBD flow">384e7105974755100406bbc3f153afcd</model>
+        <model_id>384e7105974755100406bbc3f153afcd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_384e7105974755100406bbc3f153afcd</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:55:35</sys_created_on>
+        <sys_id>a9ffb50d974755100406bbc3f153afd2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=384e7105974755100406bbc3f153afcd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=384e7105974755100406bbc3f153afcd"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=384e7105974755100406bbc3f153afcd^sys_idNOT IN047ddf49970f55100406bbc3f153af47,407ddf49970f55100406bbc3f153af64,ca3801b997c719100406bbc3f153afa8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment>Security Review</comment>
+        <display_text/>
+        <flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:43:59</sys_created_on>
+        <sys_id>047ddf49970f55100406bbc3f153af47</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:56:00</sys_updated_on>
+        <ui_id>705c54c0-70f5-4cd4-b98b-d49b23481c4f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=047ddf49970f55100406bbc3f153af47"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>047ddf49970f55100406bbc3f153af47</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:43:59</sys_created_on>
+        <sys_id>c87ddf49970f55100406bbc3f153af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 13:43:59</sys_updated_on>
+        <value>rm_release_phase</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=047ddf49970f55100406bbc3f153af47"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>047ddf49970f55100406bbc3f153af47</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:43:59</sys_created_on>
+        <sys_id>807ddf49970f55100406bbc3f153af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 13:43:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>047ddf49970f55100406bbc3f153af47</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:43:59</sys_created_on>
+        <sys_id>487ddf49970f55100406bbc3f153af49</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-08 08:16:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>x_675641_sbd_relea_type=security review^x_675641_sbd_relea_phase_description=Security Review to take Assessments and Control Generation﻿^parent={{Created_1.current}}^x_675641_sbd_relea_release={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=047ddf49970f55100406bbc3f153af47"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=047ddf49970f55100406bbc3f153af47"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment>Security Testing Phase</comment>
+        <display_text/>
+        <flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:00</sys_created_on>
+        <sys_id>407ddf49970f55100406bbc3f153af64</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:56:00</sys_updated_on>
+        <ui_id>c66652ad-2a60-400e-aa6d-281501d95036</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=407ddf49970f55100406bbc3f153af64"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>407ddf49970f55100406bbc3f153af64</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:00</sys_created_on>
+        <sys_id>447ddf49970f55100406bbc3f153af65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 13:44:00</sys_updated_on>
+        <value>rm_release_phase</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=407ddf49970f55100406bbc3f153af64"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>407ddf49970f55100406bbc3f153af64</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:00</sys_created_on>
+        <sys_id>007ddf49970f55100406bbc3f153af65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 13:44:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>407ddf49970f55100406bbc3f153af64</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:00</sys_created_on>
+        <sys_id>c07ddf49970f55100406bbc3f153af65</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-08 08:16:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>x_675641_sbd_relea_phase_description=In Security Testing Phase the Scan tasks are getting generated﻿^x_675641_sbd_relea_type=application security scan^parent={{Created_1.current}}^x_675641_sbd_relea_release={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=407ddf49970f55100406bbc3f153af64"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=407ddf49970f55100406bbc3f153af64"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment>Threat Modeler</comment>
+        <display_text/>
+        <flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</flow>
+        <order>6</order>
+        <parent_ui_id>77783098-6df2-4a2e-b5fb-8a5adaf24d68</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:29</sys_created_on>
+        <sys_id>ca3801b997c719100406bbc3f153afa8</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:56:00</sys_updated_on>
+        <ui_id>b5c758b6-884b-49da-a420-c47c608f713a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ca3801b997c719100406bbc3f153afa8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ca3801b997c719100406bbc3f153afa8</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:29</sys_created_on>
+        <sys_id>0a3801b997c719100406bbc3f153afaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:29</sys_updated_on>
+        <value>rm_release_phase</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ca3801b997c719100406bbc3f153afa8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ca3801b997c719100406bbc3f153afa8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:29</sys_created_on>
+        <sys_id>c23801b997c719100406bbc3f153afaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ca3801b997c719100406bbc3f153afa8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:29</sys_created_on>
+        <sys_id>863801b997c719100406bbc3f153afaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>x_675641_sbd_relea_phase_description=Threat Model Phase﻿^parent={{Created_1.current}}^x_675641_sbd_relea_release={{Created_1.current}}^x_675641_sbd_relea_type=threat model</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ca3801b997c719100406bbc3f153afa8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ca3801b997c719100406bbc3f153afa8"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=384e7105974755100406bbc3f153afcd^sys_idNOT IN0ddd2b2997cfd5100406bbc3f153af95,55195dbd970b19100406bbc3f153afa0,9331bf2d97cfd5100406bbc3f153af01"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</flow>
+        <inputs/>
+        <inputs/>
+        <order>4</order>
+        <parent_ui_id/>
+        <subflow display_value="SBD Security Testing subflow">e27debe597cfd5100406bbc3f153affb</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:33</sys_created_on>
+        <sys_id>0ddd2b2997cfd5100406bbc3f153af95</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <ui_id>69b4ef94-32a0-4a65-a62d-3a017032a772</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0ddd2b2997cfd5100406bbc3f153af95"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>0ddd2b2997cfd5100406bbc3f153af95</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:33</sys_created_on>
+        <sys_id>cddd2b2997cfd5100406bbc3f153afa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:33</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">4ddd2b2997cfd5100406bbc3f153af96</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0ddd2b2997cfd5100406bbc3f153af95"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>test_release_phase_reference</field>
+        <id>0ddd2b2997cfd5100406bbc3f153af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:33</sys_created_on>
+        <sys_id>c1dd2b2997cfd5100406bbc3f153afa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:33</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_e27debe597cfd5100406bbc3f153affb</table>
+        <value>{{c66652ad-2a60-400e-aa6d-281501d95036.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>0ddd2b2997cfd5100406bbc3f153af95</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:33</sys_created_on>
+        <sys_id>4ddd2b2997cfd5100406bbc3f153afa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:33</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_0ddd2b2997cfd5100406bbc3f153af95</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_0ddd2b2997cfd5100406bbc3f153af95^id=0ddd2b2997cfd5100406bbc3f153af95"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=0ddd2b2997cfd5100406bbc3f153af95^sys_idNOT IN4ddd2b2997cfd5100406bbc3f153af96"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">0ddd2b2997cfd5100406bbc3f153af95</model>
+        <model_id>0ddd2b2997cfd5100406bbc3f153af95</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_0ddd2b2997cfd5100406bbc3f153af95</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:33</sys_created_on>
+        <sys_id>4ddd2b2997cfd5100406bbc3f153af96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0ddd2b2997cfd5100406bbc3f153af95"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</flow>
+        <inputs/>
+        <inputs/>
+        <order>7</order>
+        <parent_ui_id>77783098-6df2-4a2e-b5fb-8a5adaf24d68</parent_ui_id>
+        <subflow display_value="SBD Threat Task Subflow">7868997d970b19100406bbc3f153af87</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 12:01:09</sys_created_on>
+        <sys_id>55195dbd970b19100406bbc3f153afa0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <ui_id>ea5bb224-c7fc-4979-82c2-c69ed142cc63</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=55195dbd970b19100406bbc3f153afa0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>55195dbd970b19100406bbc3f153afa0</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 12:01:10</sys_created_on>
+        <sys_id>dd195dbd970b19100406bbc3f153afaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 12:01:10</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">55195dbd970b19100406bbc3f153afa1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=55195dbd970b19100406bbc3f153afa0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>release_phase_reference</field>
+        <id>55195dbd970b19100406bbc3f153afa0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 12:01:10</sys_created_on>
+        <sys_id>dd195dbd970b19100406bbc3f153afae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 12:01:10</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_7868997d970b19100406bbc3f153af87</table>
+        <value>{{b5c758b6-884b-49da-a420-c47c608f713a.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>55195dbd970b19100406bbc3f153afa0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 12:01:10</sys_created_on>
+        <sys_id>5d195dbd970b19100406bbc3f153afaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 12:01:10</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_55195dbd970b19100406bbc3f153afa0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_55195dbd970b19100406bbc3f153afa0^id=55195dbd970b19100406bbc3f153afa0"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=55195dbd970b19100406bbc3f153afa0^sys_idNOT IN55195dbd970b19100406bbc3f153afa1"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">55195dbd970b19100406bbc3f153afa0</model>
+        <model_id>55195dbd970b19100406bbc3f153afa0</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_55195dbd970b19100406bbc3f153afa0</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 12:01:09</sys_created_on>
+        <sys_id>55195dbd970b19100406bbc3f153afa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 12:01:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=55195dbd970b19100406bbc3f153afa0"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</flow>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="SBD Review Task Subflow">f12d26c1974b55100406bbc3f153af55</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:27:28</sys_created_on>
+        <sys_id>9331bf2d97cfd5100406bbc3f153af01</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <ui_id>81d1ddc6-2cea-4c1c-b0bb-4550b5f15c4f</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9331bf2d97cfd5100406bbc3f153af01"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>9331bf2d97cfd5100406bbc3f153af01</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:27:28</sys_created_on>
+        <sys_id>5b31bf2d97cfd5100406bbc3f153af42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:27:28</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">9731bf2d97cfd5100406bbc3f153af1b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9331bf2d97cfd5100406bbc3f153af01"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>release_phase_reference</field>
+        <id>9331bf2d97cfd5100406bbc3f153af01</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:27:28</sys_created_on>
+        <sys_id>5f31bf2d97cfd5100406bbc3f153af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:27:28</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f12d26c1974b55100406bbc3f153af55</table>
+        <value>{{705c54c0-70f5-4cd4-b98b-d49b23481c4f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>9331bf2d97cfd5100406bbc3f153af01</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:27:28</sys_created_on>
+        <sys_id>d731bf2d97cfd5100406bbc3f153af42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:27:28</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_9331bf2d97cfd5100406bbc3f153af01</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_9331bf2d97cfd5100406bbc3f153af01^id=9331bf2d97cfd5100406bbc3f153af01"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=9331bf2d97cfd5100406bbc3f153af01^sys_idNOT IN9731bf2d97cfd5100406bbc3f153af1b"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">9331bf2d97cfd5100406bbc3f153af01</model>
+        <model_id>9331bf2d97cfd5100406bbc3f153af01</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_9331bf2d97cfd5100406bbc3f153af01</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:27:28</sys_created_on>
+        <sys_id>9731bf2d97cfd5100406bbc3f153af1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:27:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9331bf2d97cfd5100406bbc3f153af01"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=384e7105974755100406bbc3f153afcd^sys_idNOT IN8e3801b997c719100406bbc3f153af9d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">023801b997c719100406bbc3f153af9d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:29</sys_created_on>
+        <sys_id>8e3801b997c719100406bbc3f153af9d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <ui_id>77783098-6df2-4a2e-b5fb-8a5adaf24d68</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8e3801b997c719100406bbc3f153af9d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8e3801b997c719100406bbc3f153af9d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:29</sys_created_on>
+        <sys_id>023801b997c719100406bbc3f153afa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:29</sys_updated_on>
+        <value>Criticality is High create Threat release phase</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8e3801b997c719100406bbc3f153af9d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>8e3801b997c719100406bbc3f153af9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:29</sys_created_on>
+        <sys_id>8e3801b997c719100406bbc3f153afa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.x_675641_sbd_relea_criticality}}=high</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>8e3801b997c719100406bbc3f153af9d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:29</sys_created_on>
+        <sys_id>c63801b997c719100406bbc3f153afa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8e3801b997c719100406bbc3f153af9d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8e3801b997c719100406bbc3f153af9d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=384e7105974755100406bbc3f153afcd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=384e7105974755100406bbc3f153afcd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_384e7105974755100406bbc3f153afcd^sys_idNOT INe9ffb50d974755100406bbc3f153afd1,edffb50d974755100406bbc3f153afd4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_384e7105974755100406bbc3f153afcd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:55:35</sys_created_on>
+        <sys_id>e9ffb50d974755100406bbc3f153afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 06:55:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_384e7105974755100406bbc3f153afcd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 06:55:35</sys_created_on>
+        <sys_id>edffb50d974755100406bbc3f153afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 06:55:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_384e7105974755100406bbc3f153afcd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_384e7105974755100406bbc3f153afcd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_384e7105974755100406bbc3f153afcd"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=384e7105974755100406bbc3f153afcd^sys_idNOT IN78d4324d974b55100406bbc3f153af8b"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"78d4324d974b55100406bbc3f153af8b","name":"plan","plan_signature":null}}</plan>
+        <plan_id>384e7105974755100406bbc3f153afcd</plan_id>
+        <snapshot>9f5379b997cb19100406bbc3f153afec</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>78d4324d974b55100406bbc3f153af8b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <trigger display_value="">39d2b57997cb19100406bbc3f153af25</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=384e7105974755100406bbc3f153afcd"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>SBD flow to initiate the flow of Release, Release phase and release task</description>
+        <internal_name>sbd_flow</internal_name>
+        <label_cache>[{"name":"ea5bb224-c7fc-4979-82c2-c69ed142cc63.review_phase_output","label":"7 - SBD Threat Task Subflow➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}},{"name":"ea5bb224-c7fc-4979-82c2-c69ed142cc63.context","label":"7 - SBD Threat Task Subflow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"b5c758b6-884b-49da-a420-c47c608f713a.__dont_treat_as_error__","label":"6 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b5c758b6-884b-49da-a420-c47c608f713a.__action_status__","label":"6 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b5c758b6-884b-49da-a420-c47c608f713a.table_name","label":"6 - Create Record➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b5c758b6-884b-49da-a420-c47c608f713a.record","label":"6 - Create Record➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd65f262-7014-442f-86bc-b1189ebaf62f.__dont_treat_as_error__","label":"9 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd65f262-7014-442f-86bc-b1189ebaf62f.__action_status__","label":"9 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd65f262-7014-442f-86bc-b1189ebaf62f.table_name","label":"9 - Create Record➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dd65f262-7014-442f-86bc-b1189ebaf62f.record","label":"9 - Create Record➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.x_675641_sbd_relea_criticality","label":"Trigger - Record Created➛Release Record➛Criticality","reference":"","reference_display":"Criticality","type":"choice","base_type":"choice","parent_table_name":"rm_release","column_name":"x_675641_sbd_relea_criticality","choices":[{"label":"High","image":"","rawLabel":"High","selected":false,"missing":false,"used":false,"reference":false,"value":"high","parameters":{"name":"rm_release"}},{"label":"Medium","image":"","rawLabel":"Medium","selected":false,"missing":false,"used":false,"reference":false,"value":"Medium","parameters":{"name":"rm_release"}},{"label":"Low","image":"","rawLabel":"Low","selected":false,"missing":false,"used":false,"reference":false,"value":"Low","parameters":{"name":"rm_release"}}]},{"name":"a5c49727-ffb1-465a-8311-d336756fabc2.__dont_treat_as_error__","label":"6 - Create Record➛7➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"a5c49727-ffb1-465a-8311-d336756fabc2.__action_status__","label":"6 - Create Record➛7➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"a5c49727-ffb1-465a-8311-d336756fabc2.table_name","label":"6 - Create Record➛7➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a5c49727-ffb1-465a-8311-d336756fabc2.record","label":"6 - Create Record➛7➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268a12c-6040-479c-b13b-afbff18808d9.record","label":"2 - Create Record➛3➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268a12c-6040-479c-b13b-afbff18808d9.table_name","label":"2 - Create Record➛3➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268a12c-6040-479c-b13b-afbff18808d9.__action_status__","label":"2 - Create Record➛3➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9268a12c-6040-479c-b13b-afbff18808d9.__dont_treat_as_error__","label":"2 - Create Record➛3➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57ade7b6-d4f1-48d2-bfe6-bc91c3990adf.record","label":"5 - Create Record➛6➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57ade7b6-d4f1-48d2-bfe6-bc91c3990adf.table_name","label":"5 - Create Record➛6➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57ade7b6-d4f1-48d2-bfe6-bc91c3990adf.__action_status__","label":"5 - Create Record➛6➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57ade7b6-d4f1-48d2-bfe6-bc91c3990adf.__dont_treat_as_error__","label":"5 - Create Record➛6➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Release Record➛Description(description)","reference":"","reference_display":"Description(description)","type":"string","base_type":"string","parent_table_name":"rm_release","column_name":"description"},{"name":"Created_1.current","label":"Trigger - Record Created➛Release Record","reference":"rm_release","reference_display":"Release","type":"reference","base_type":"reference","attributes":{}},{"name":"33fbd830-3812-43b7-a36c-e0d9f93ab903.context","label":"4 - Review Task subflows 1➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"33fbd830-3812-43b7-a36c-e0d9f93ab903.review_phase_output","label":"4 - Review Task subflows 1➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}},{"name":"705c54c0-70f5-4cd4-b98b-d49b23481c4f.record","label":"1 - Create Record➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"705c54c0-70f5-4cd4-b98b-d49b23481c4f.table_name","label":"1 - Create Record➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"705c54c0-70f5-4cd4-b98b-d49b23481c4f.__action_status__","label":"1 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"705c54c0-70f5-4cd4-b98b-d49b23481c4f.__dont_treat_as_error__","label":"1 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"809507f0-1cd6-46a0-8c9e-58b6b01e4cc7.context","label":"2 - Review Task subflows 1➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"809507f0-1cd6-46a0-8c9e-58b6b01e4cc7.review_phase_output","label":"2 - Review Task subflows 1➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}},{"name":"c66652ad-2a60-400e-aa6d-281501d95036.record","label":"3 - Create Record➛Release Phase Record","reference":"rm_release_phase","reference_display":"Release Phase","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c66652ad-2a60-400e-aa6d-281501d95036.table_name","label":"3 - Create Record➛Release Phase Table","reference":"rm_release_phase","reference_display":"Release Phase","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c66652ad-2a60-400e-aa6d-281501d95036.__action_status__","label":"3 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c66652ad-2a60-400e-aa6d-281501d95036.__dont_treat_as_error__","label":"3 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"69b4ef94-32a0-4a65-a62d-3a017032a772.context","label":"4 - SBD Security Testing subflow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"69b4ef94-32a0-4a65-a62d-3a017032a772.test_phase_task_output","label":"4 - SBD Security Testing subflow➛Test Phase task output","reference_display":"Test Phase task output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8f127e14-65da-4b90-b733-cd629eefb2d0"}},{"name":"7af3a39d-4682-4480-b8ee-c63ffb13d676.context","label":"2 - SBD Review Task Subflow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"7af3a39d-4682-4480-b8ee-c63ffb13d676.review_phase_output","label":"2 - SBD Review Task Subflow➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}},{"name":"81d1ddc6-2cea-4c1c-b0bb-4550b5f15c4f.context","label":"2 - SBD Review Task Subflow➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"81d1ddc6-2cea-4c1c-b0bb-4550b5f15c4f.review_phase_output","label":"2 - SBD Review Task Subflow➛Review Phase Output","reference_display":"Review Phase Output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"7f7c506a-e8a9-4ab2-96d1-dd1fc4abaabf"}}]</label_cache>
+        <master>true</master>
+        <name>SBD flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="SBD flow">384e7105974755100406bbc3f153afcd</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1cd4324d974b55100406bbc3f153af23</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=1cd4324d974b55100406bbc3f153af23"/>
+    <sys_variable_value action="delete_multiple" query="document_key=1cd4324d974b55100406bbc3f153af23"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1cd4324d974b55100406bbc3f153af23^sys_idNOT IN2cd4324d974b55100406bbc3f153af6a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:32</sys_created_on>
+        <sys_id>2cd4324d974b55100406bbc3f153af6a</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:42</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2cd4324d974b55100406bbc3f153af6a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2cd4324d974b55100406bbc3f153af6a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:32</sys_created_on>
+        <sys_id>28d4324d974b55100406bbc3f153af6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:46:32</sys_updated_on>
+        <value>rm_release</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>2cd4324d974b55100406bbc3f153af6a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:32</sys_created_on>
+        <sys_id>64d4324d974b55100406bbc3f153af6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:46:32</sys_updated_on>
+        <value>x_675641_sbd_relea_sbd_release=true</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=1cd4324d974b55100406bbc3f153af23"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1cd4324d974b55100406bbc3f153af23^sys_idNOT IN9cd4324d974b55100406bbc3f153af24"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1cd4324d974b55100406bbc3f153af23</id>
+        <name>SBD flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:31</sys_created_on>
+        <sys_id>9cd4324d974b55100406bbc3f153af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:46:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9cd4324d974b55100406bbc3f153af24"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=1cd4324d974b55100406bbc3f153af23^sys_idNOT INd0d4324d974b55100406bbc3f153af26,e0d4324d974b55100406bbc3f153af3d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</model>
+        <model_id>1cd4324d974b55100406bbc3f153af23</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1cd4324d974b55100406bbc3f153af23</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:31</sys_created_on>
+        <sys_id>d0d4324d974b55100406bbc3f153af26</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</model>
+        <model_id>1cd4324d974b55100406bbc3f153af23</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1cd4324d974b55100406bbc3f153af23</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:31</sys_created_on>
+        <sys_id>e0d4324d974b55100406bbc3f153af3d</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=1cd4324d974b55100406bbc3f153af23"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1cd4324d974b55100406bbc3f153af23"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1cd4324d974b55100406bbc3f153af23^sys_idNOT IN685845b997c719100406bbc3f153af13,e38d1789970f55100406bbc3f153af3a,e38d1789970f55100406bbc3f153af3f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment>Threat Modeler</comment>
+        <display_text/>
+        <flow display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</flow>
+        <order>6</order>
+        <parent_ui_id>77783098-6df2-4a2e-b5fb-8a5adaf24d68</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>685845b997c719100406bbc3f153af13</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <ui_id>b5c758b6-884b-49da-a420-c47c608f713a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=685845b997c719100406bbc3f153af13"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>685845b997c719100406bbc3f153af13</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>6c5845b997c719100406bbc3f153af14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <value>rm_release_phase</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=685845b997c719100406bbc3f153af13"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>685845b997c719100406bbc3f153af13</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>285845b997c719100406bbc3f153af14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>685845b997c719100406bbc3f153af13</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>e85845b997c719100406bbc3f153af14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>x_675641_sbd_relea_phase_description=Threat Model Phase﻿^parent={{Created_1.current}}^x_675641_sbd_relea_release={{Created_1.current}}^x_675641_sbd_relea_type=threat model</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=685845b997c719100406bbc3f153af13"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=685845b997c719100406bbc3f153af13"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment>Security Review</comment>
+        <display_text/>
+        <flow display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:30</sys_created_on>
+        <sys_id>e38d1789970f55100406bbc3f153af3a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <ui_id>705c54c0-70f5-4cd4-b98b-d49b23481c4f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e38d1789970f55100406bbc3f153af3a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e38d1789970f55100406bbc3f153af3a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:30</sys_created_on>
+        <sys_id>e78d1789970f55100406bbc3f153af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 13:44:30</sys_updated_on>
+        <value>rm_release_phase</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e38d1789970f55100406bbc3f153af3a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e38d1789970f55100406bbc3f153af3a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:30</sys_created_on>
+        <sys_id>a38d1789970f55100406bbc3f153af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 13:44:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e38d1789970f55100406bbc3f153af3a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:30</sys_created_on>
+        <sys_id>678d1789970f55100406bbc3f153af3b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>x_675641_sbd_relea_type=security review^x_675641_sbd_relea_phase_description=Security Review to take Assessments and Control Generation﻿^parent={{Created_1.current}}^x_675641_sbd_relea_release={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e38d1789970f55100406bbc3f153af3a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e38d1789970f55100406bbc3f153af3a"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment>Security Testing Phase</comment>
+        <display_text/>
+        <flow display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:30</sys_created_on>
+        <sys_id>e38d1789970f55100406bbc3f153af3f</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <ui_id>c66652ad-2a60-400e-aa6d-281501d95036</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e38d1789970f55100406bbc3f153af3f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e38d1789970f55100406bbc3f153af3f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:30</sys_created_on>
+        <sys_id>e78d1789970f55100406bbc3f153af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 13:44:30</sys_updated_on>
+        <value>rm_release_phase</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e38d1789970f55100406bbc3f153af3f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e38d1789970f55100406bbc3f153af3f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:30</sys_created_on>
+        <sys_id>a38d1789970f55100406bbc3f153af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 13:44:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e38d1789970f55100406bbc3f153af3f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 13:44:30</sys_created_on>
+        <sys_id>678d1789970f55100406bbc3f153af40</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>x_675641_sbd_relea_phase_description=In Security Testing Phase the Scan tasks are getting generated﻿^x_675641_sbd_relea_type=application security scan^parent={{Created_1.current}}^x_675641_sbd_relea_release={{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e38d1789970f55100406bbc3f153af3f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e38d1789970f55100406bbc3f153af3f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=1cd4324d974b55100406bbc3f153af23^sys_idNOT IN5dd2757997cb19100406bbc3f153af86,73ddab2997cfd5100406bbc3f153afae,a85845b997c719100406bbc3f153af19"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</flow>
+        <inputs/>
+        <inputs/>
+        <order>7</order>
+        <parent_ui_id>77783098-6df2-4a2e-b5fb-8a5adaf24d68</parent_ui_id>
+        <subflow display_value="SBD Threat Task Subflow">7868997d970b19100406bbc3f153af87</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 13:53:40</sys_created_on>
+        <sys_id>5dd2757997cb19100406bbc3f153af86</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <ui_id>ea5bb224-c7fc-4979-82c2-c69ed142cc63</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5dd2757997cb19100406bbc3f153af86"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>5dd2757997cb19100406bbc3f153af86</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 13:53:40</sys_created_on>
+        <sys_id>11d2757997cb19100406bbc3f153af94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">5dd2757997cb19100406bbc3f153af87</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5dd2757997cb19100406bbc3f153af86"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>release_phase_reference</field>
+        <id>5dd2757997cb19100406bbc3f153af86</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 13:53:40</sys_created_on>
+        <sys_id>11d2757997cb19100406bbc3f153af93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_7868997d970b19100406bbc3f153af87</table>
+        <value>{{b5c758b6-884b-49da-a420-c47c608f713a.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>5dd2757997cb19100406bbc3f153af86</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 13:53:40</sys_created_on>
+        <sys_id>9dd2757997cb19100406bbc3f153af93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_5dd2757997cb19100406bbc3f153af86</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_5dd2757997cb19100406bbc3f153af86^id=5dd2757997cb19100406bbc3f153af86"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=5dd2757997cb19100406bbc3f153af86^sys_idNOT IN5dd2757997cb19100406bbc3f153af87"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">5dd2757997cb19100406bbc3f153af86</model>
+        <model_id>5dd2757997cb19100406bbc3f153af86</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_5dd2757997cb19100406bbc3f153af86</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 13:53:40</sys_created_on>
+        <sys_id>5dd2757997cb19100406bbc3f153af87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5dd2757997cb19100406bbc3f153af86"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</flow>
+        <inputs/>
+        <inputs/>
+        <order>4</order>
+        <parent_ui_id/>
+        <subflow display_value="SBD Security Testing subflow">e27debe597cfd5100406bbc3f153affb</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:45</sys_created_on>
+        <sys_id>73ddab2997cfd5100406bbc3f153afae</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <ui_id>69b4ef94-32a0-4a65-a62d-3a017032a772</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=73ddab2997cfd5100406bbc3f153afae"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>73ddab2997cfd5100406bbc3f153afae</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:45</sys_created_on>
+        <sys_id>b7ddab2997cfd5100406bbc3f153afb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:45</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">3fddab2997cfd5100406bbc3f153afae</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=73ddab2997cfd5100406bbc3f153afae"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>test_release_phase_reference</field>
+        <id>73ddab2997cfd5100406bbc3f153afae</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:45</sys_created_on>
+        <sys_id>3fddab2997cfd5100406bbc3f153afb8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_e27debe597cfd5100406bbc3f153affb</table>
+        <value>{{c66652ad-2a60-400e-aa6d-281501d95036.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>73ddab2997cfd5100406bbc3f153afae</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:45</sys_created_on>
+        <sys_id>37ddab2997cfd5100406bbc3f153afb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:45</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_73ddab2997cfd5100406bbc3f153afae</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_73ddab2997cfd5100406bbc3f153afae^id=73ddab2997cfd5100406bbc3f153afae"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=73ddab2997cfd5100406bbc3f153afae^sys_idNOT IN3fddab2997cfd5100406bbc3f153afae"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">73ddab2997cfd5100406bbc3f153afae</model>
+        <model_id>73ddab2997cfd5100406bbc3f153afae</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_73ddab2997cfd5100406bbc3f153afae</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 04:12:45</sys_created_on>
+        <sys_id>3fddab2997cfd5100406bbc3f153afae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 04:12:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=73ddab2997cfd5100406bbc3f153afae"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</flow>
+        <inputs/>
+        <inputs/>
+        <order>2</order>
+        <parent_ui_id/>
+        <subflow display_value="SBD Review Task Subflow">f12d26c1974b55100406bbc3f153af55</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>a85845b997c719100406bbc3f153af19</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <ui_id>81d1ddc6-2cea-4c1c-b0bb-4550b5f15c4f</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a85845b997c719100406bbc3f153af19"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>a85845b997c719100406bbc3f153af19</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>e05845b997c719100406bbc3f153af37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">a85845b997c719100406bbc3f153af1a</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a85845b997c719100406bbc3f153af19"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>release_phase_reference</field>
+        <id>a85845b997c719100406bbc3f153af19</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>e45845b997c719100406bbc3f153af36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_f12d26c1974b55100406bbc3f153af55</table>
+        <value>{{705c54c0-70f5-4cd4-b98b-d49b23481c4f.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>a85845b997c719100406bbc3f153af19</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>605845b997c719100406bbc3f153af37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_a85845b997c719100406bbc3f153af19</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_a85845b997c719100406bbc3f153af19^id=a85845b997c719100406bbc3f153af19"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=a85845b997c719100406bbc3f153af19^sys_idNOT INa85845b997c719100406bbc3f153af1a"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">a85845b997c719100406bbc3f153af19</model>
+        <model_id>a85845b997c719100406bbc3f153af19</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_a85845b997c719100406bbc3f153af19</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>a85845b997c719100406bbc3f153af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a85845b997c719100406bbc3f153af19"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=1cd4324d974b55100406bbc3f153af23^sys_idNOT INe85845b997c719100406bbc3f153af15"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">023801b997c719100406bbc3f153af9d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="SBD flow">1cd4324d974b55100406bbc3f153af23</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>e85845b997c719100406bbc3f153af15</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 13:53:40</sys_updated_on>
+        <ui_id>77783098-6df2-4a2e-b5fb-8a5adaf24d68</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e85845b997c719100406bbc3f153af15"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e85845b997c719100406bbc3f153af15</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>e45845b997c719100406bbc3f153af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <value>Criticality is High create Threat release phase</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e85845b997c719100406bbc3f153af15"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e85845b997c719100406bbc3f153af15</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>645845b997c719100406bbc3f153af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.x_675641_sbd_relea_criticality}}=high</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e85845b997c719100406bbc3f153af15</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-09 10:47:56</sys_created_on>
+        <sys_id>a05845b997c719100406bbc3f153af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-09 10:47:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e85845b997c719100406bbc3f153af15"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e85845b997c719100406bbc3f153af15"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=1cd4324d974b55100406bbc3f153af23"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=1cd4324d974b55100406bbc3f153af23"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1cd4324d974b55100406bbc3f153af23^sys_idNOT IN68d4324d974b55100406bbc3f153af41,a8d4324d974b55100406bbc3f153af39"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1cd4324d974b55100406bbc3f153af23</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:31</sys_created_on>
+        <sys_id>68d4324d974b55100406bbc3f153af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:46:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1cd4324d974b55100406bbc3f153af23</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-07 10:46:31</sys_created_on>
+        <sys_id>a8d4324d974b55100406bbc3f153af39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-07 10:46:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1cd4324d974b55100406bbc3f153af23"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_1cd4324d974b55100406bbc3f153af23"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1cd4324d974b55100406bbc3f153af23"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>384e7105974755100406bbc3f153afcd</sys_id>
+        <latest_snapshot>1cd4324d974b55100406bbc3f153af23</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch1-09-01-2022_09-16-2022_1610.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

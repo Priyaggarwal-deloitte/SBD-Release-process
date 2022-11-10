@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_675641_sbd_relea_production_approval" table="rm_release" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_production_approval</element>
+            <name>rm_release</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 07:49:07</sys_created_on>
+            <sys_id>ac7f2288978751100406bbc3f153afff</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_675641_sbd_relea_production_approval</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_choice_rm_release_x_675641_sbd_relea_production_approval</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 07:49:07</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_production_approval</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Not Yet Applicable</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 07:49:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cbfeee48978751100406bbc3f153afe9</sys_id>
+            <sys_mod_count>40</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-09 07:22:07</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_production_approval</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Yet Applicable</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 07:49:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>707fae88978751100406bbc3f153af6c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:02:11</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_production_approval</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Yet Applicable</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 07:49:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce7fae88978751100406bbc3f153af6c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:10:16</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_production_approval</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Yet Applicable</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 07:49:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af7f22c8978751100406bbc3f153af35</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:18:45</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_production_approval</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Yet Applicable</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-04 07:49:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>498f2688978751100406bbc3f153af66</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:29:32</sys_updated_on>
+            <value/>
+        </sys_choice>
+    </sys_choice>
+</record_update>

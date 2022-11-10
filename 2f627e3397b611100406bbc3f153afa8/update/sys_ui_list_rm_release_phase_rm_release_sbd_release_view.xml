@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="rm_release" relationship="" sys_domain="global" table="rm_release_phase" version="2" view="sbd_release_view">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="rm_release" relationship="NULL" sys_domain="global" view="b04eb148978351100406bbc3f153af40">5aba4689978755100406bbc3f153af62</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 07:42:36</sys_created_on>
+            <sys_id>9aba4689978755100406bbc3f153af63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 07:42:36</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_675641_sbd_relea_type</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="rm_release" relationship="NULL" sys_domain="global" view="b04eb148978351100406bbc3f153af40">5aba4689978755100406bbc3f153af62</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 07:42:36</sys_created_on>
+            <sys_id>12ba4689978755100406bbc3f153af64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 07:42:36</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_675641_sbd_relea_phase_description</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="rm_release" relationship="NULL" sys_domain="global" view="b04eb148978351100406bbc3f153af40">5aba4689978755100406bbc3f153af62</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 07:42:36</sys_created_on>
+            <sys_id>92ba4689978755100406bbc3f153af64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 07:42:36</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>rm_release_phase</name>
+            <parent>rm_release</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-07 07:42:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5aba4689978755100406bbc3f153af62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rm_release_phase</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_ui_list_rm_release_phase_rm_release_sbd_release_view</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-07 07:42:36</sys_updated_on>
+            <sys_user/>
+            <view display_value="SBD Release view" name="sbd_release_view">b04eb148978351100406bbc3f153af40</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

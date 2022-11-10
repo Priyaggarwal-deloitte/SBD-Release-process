@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_675641_sbd_relea_type" table="rm_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_type</element>
+            <name>rm_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-04 08:32:58</sys_created_on>
+            <sys_id>7e79fe0897c751100406bbc3f153af4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_675641_sbd_relea_type</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_choice_rm_task_x_675641_sbd_relea_type</sys_update_name>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:32:58</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Security Review</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-04 08:32:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c879f24897c751100406bbc3f153af08</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:35:57</sys_updated_on>
+            <value>security_review</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Threat Model</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-04 08:33:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4b79be0897c751100406bbc3f153afaa</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:36:02</sys_updated_on>
+            <value>threat_model</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Security Testing</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-04 08:34:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fc99fa0897c751100406bbc3f153afe8</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:36:07</sys_updated_on>
+            <value>security_testing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Penetration Test</label>
+            <language>en</language>
+            <name>rm_task</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-04 08:34:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e4d9f64897c751100406bbc3f153af2e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Aman</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:36:09</sys_updated_on>
+            <value>pen_test</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
