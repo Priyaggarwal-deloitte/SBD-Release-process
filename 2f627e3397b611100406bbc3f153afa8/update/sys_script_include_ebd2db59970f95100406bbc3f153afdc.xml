@@ -12,214 +12,81 @@ Control_objective_mapping.prototype = {
     initialize: function() {
     },
 	
-	getAssessmentCCFs: function(ser) {// getrelease number
-        var arrayUtil = new global.ArrayUtil();
+	findAssessment : function(trigger)
+	{
+		var arrayUtil = new global.ArrayUtil();
 
         var ccfIdArrayIA = [];
-
-        var fques = new GlideRecord('x_675641_sbd_relea_assessment_to_ccf_mapping');
-        fques.addQuery('question_number', '');
-        fques.query();
-        if (fques.next()) { //Questions mapping table for these specific questions
-            var reqListArray = fques.mapped_ccf_ids.toString().split(','); // for all CCFs linked on that mapping table, loop through
-            for (var i = 0; i < reqListArray.length; i++) {
-                if (!arrayUtil.contains(ccfIdArrayIA, reqListArray[i].toString()) && reqListArray[i].toString() != "") { // exclude adding CCFs already in the return
-                    ccfIdArrayIA.push(reqListArray[i].toString()); // add to list of unique CCF IDs
-                }
-            }
-        }
-
-        var instance = new GlideRecord('asmt_assessment_instance');
-        instance.addQuery('task_id', ser);
-        instance.addQuery('metric_type', '9a96fd81974755100406bbc3f153af73'); //find security assessment 
+		
+		var instance = new GlideRecord('asmt_assessment_instance');
+        instance.addQuery('task_id', trigger);
+        instance.addQuery('metric_type.sys_idSTARTSWITH9a96fd81974755100406bbc3f153af73'); //find security assessment 
         instance.query();
         while (instance.next()) { // if the assessment is asssigned to the release, get all the questions
-
+			
+			var releasephasesysid = instance.task_id.sys_id;
+			var product = instance.task_id.x_675641_sbd_relea_release.x_675641_sbd_relea_product.sys_id;
+			
             var questions = new GlideRecord('asmt_metric_result');
             questions.addQuery('instance', instance.sys_id);
             questions.query();
             while (questions.next()) { //engagement questions
-               //gs.addInfoMessage('Getting called 1');
+				//var releasephase = questions.instance.task_id.getDisplayValue();
                 var value = questions.actual_value;
                 var stringValue = questions.string_value;
                 var questionMetricSysId = questions.instance_question.getDisplayValue();
-                // Query mapping table to find applicable CCFs
+                
 
                 var questionMapping = new GlideRecord('x_675641_sbd_relea_assessment_to_ccf_mapping');
                 questionMapping.addQuery('question_number', questionMetricSysId);
                 questionMapping.addQuery('wheightage_assigned', stringValue);
                 questionMapping.query();
                 if (questionMapping.next()) { //Questions mapping table for these specific questions
-                    var reqListArray1 = questionMapping.u_ccfid_mapping.toString().split(','); // for all CCFs linked on that mapping table, loop through
+                    var reqListArray1 = questionMapping.mapped_ccf_ids.toString().split(','); // comma separated splitting
                     for (var i = 0; i < reqListArray1.length; i++) {
-
-
-                        if (!arrayUtil.contains(ccfIdArrayIA, reqListArray1[i].toString()) && reqListArray1[i].toString() != "") { // exclude adding CCFs already in the return
-                            ccfIdArrayIA.push(reqListArray1[i].toString()); // add to list of unique CCF IDs
-                        }
-                    }
-                }
+                        if (!arrayUtil.contains(ccfIdArrayIA, reqListArray1[i].toString()) && reqListArray1[i].toString() != "") 
+								{ // exclude adding CCFs already in the return
+								ccfIdArrayIA.push(reqListArray1[i].toString()); // add to list of unique CCF IDs
+									
+								}
+						
+                    }//gs.info('Final array'+ccfIdArrayIA);
+				
             }
         }
-        return ccfIdArrayIA;
-    },
-	
-// take in the HLT mapping and security engagement record and add a new HLSC to the engagement
-    addHLSC: function(HLTID, ser) { //check thissssssssssssssss
-        //gs.addInfoMessage('Hi');
-
-        var Task = new GlideRecord("rm_task");
-        Task.addQuery('sys_id', ser);
-        Task.query();
-        Task.next();
- //gs.addInfoMessage('HLTID.u_ccfid_mapping' + HLTID.u_ccfid_mapping);
-        var HLSC = new GlideRecord("sn_compliance_control");
-        //HLSC.addQuery('reference', 'IN', HLTID.mapped_ccf_ids);///commented this, need to check
-        //HLSC.addQuery('question_number', HLTID.sys_id);
-        HLSC.addQuery('x_675641_sbd_relea_release', Task.parent);
-        HLSC.query();
-        //gs.addInfoMessage('Looping:' + Task.security_engagement);
-
-        while (!HLSC.next()) {
-           
-           var values1 = HLTID.mapped_ccf_ids.split(',');
-            for (var i = 0; i < values1.length; i++) {
-                //gs.addInfoMessage('values1[i]:' + values1[i]);
-                var ccfc = new GlideRecord("sn_compliance_policy_statement");
-                ccfc.addQuery('reference', values1[i]);
-                ccfc.query();
-                while (ccfc.next()) {
-//gs.addInfoMessage('values1[i]: '+values1[i]);
-                    HLSC.initialize();
-                    HLSC.x_675641_sbd_relea_release = Task.parent;
-					HLSC.content = ccfc.name;
-                   // HLSC.u_sec_engagement = Task.security_engagement.number;
-//                     HLSC.u_ci = Task.u_ci;
-//                     HLSC.ccf_stored_value = values1[i];
-//                     HLSC.u_ccf_id = ccfc.sys_id;
-//                     HLSC.u_test_procedure = ccfc.u_test_procedures;
-//                    // HLSC.question_number = HLTID.sys_id;
-// 					HLSC.u_ir_theme2 = ccfc.u_ir_theme;
-// 					HLSC.u_capability = ccfc.u_ccf_capability;
-// 					HLSC.u_domain = ccfc.u_ccf_domain;
-// 					HLSC.u_sev = ccfc.u_severity;
-// 					HLSC.u_risk_statement2 =  ccfc.u_risk_statement;
-// 					HLSC.u_integrated_requirements2 = ccfc.u_integrated_requirements;
-// 					HLSC.u_cwe_display = ccfc.u_cwe;
-// 					HLSC.u_source = 'security questionnaire';
-//                    // HLSC.u_sec_ass_control = 'yes';
-                    HLSC.insert();
-					
-                }
-            }
-            return;
-        }
-
-    },
-	
-	assessmentUpdateRequirements: function(ser) {//check thissssssssssss
-
-        var arrayUtil = new global.ArrayUtil();
-
-        // get the CCFIDs based on assessment answers
-		//gs.addInfoMessage('getting called - assessment update requirements');
-       var reqListArray = this.getAssessmentCCFs(ser);
+		}
 		
-		gs.log('ssssssfindreqListArray'+reqListArray);
-        var HLTArray = [];
-
-        for (var i = 0; i < reqListArray.length; i++) {
-            var HLTID = new GlideRecord('x_675641_sbd_relea_assessment_to_ccf_mapping');
-            HLTID.addQuery('mapped_ccf_ids', 'CONTAINS', reqListArray[i].toString());
-            HLTID.query();
-            while (HLTID.next()) {
-                if (!arrayUtil.contains(HLTArray, HLTID.sys_id.toString())) {
-                    HLTArray.push(HLTID.sys_id.toString());
-                    var HLSC_sys_id = this.addHLSC(HLTID, ser);
-                }
-
-            }
-        }
-        
-
-//         var Task1 = new GlideRecord("x_dtusa_sbd_proces_security_tasks");
-//         Task1.addQuery('sys_id', ser);
-//         Task1.query();
-//         Task1.next();
-//         var cwes = new GlideAggregate('x_dtusa_sbd_proces_security_controls');
-//         cwes.addQuery('u_ci', Task1.u_ci);
-//         cwes.addAggregate('COUNT', 'u_sev');
-//         cwes.query();
-//         var lv_crtitical = 0;
-//         var lv_high = 0;
-//         var lv_medium = 0;
-//         var lv_low = 0;
-//         var lv_total = 0;
-//         //var lv_total = 0;
-//         var lv_count = 0;
-//         var lv_Status = '';
-//         while (cwes.next()) {
-//             lv_Status = cwes.u_sev;
-//             lv_count = cwes.getAggregate('COUNT', 'u_sev');
-//             if (lv_Status == 'critical') {
-//                 lv_crtitical = lv_count;
-//             } else if (lv_Status == 'high') {
-//                 lv_high = lv_count;
-//             } else if (lv_Status == 'medium') {
-//                 lv_medium = lv_count;
-//             } else if (lv_Status == 'low') {
-//                 lv_low = lv_count;
-//             }
-//             lv_total = +lv_crtitical + +lv_high + +lv_medium + +lv_low;
-
-//         }
-
-//         if (lv_total == '' || lv_total == null || lv_total == undefined) {
-//             lv_total = 0;
-//         }
-//         var lv_severity = 'critical,high,medium,low,total';
-//         lv_severity = lv_severity.split(',');
-//         for (b = 0; b < lv_severity.length; b++) {
-//             var con_view = new GlideRecord('x_dtusa_sbd_proces_control_implementation_view');
-//             if (lv_total != 0) {
-//                 con_view.initialize();
-//                 if (lv_severity[b] == 'critical') {
-//                     con_view.u_ci = Task1.u_ci;
-//                     con_view.u_engagement = Task1.security_engagement;
-//                     con_view.u_severity = 'critical';
-//                     con_view.u_not_implemented_outstanding_vul = lv_crtitical;
-//                     con_view.u_implemented_outstanding_vul = 0;
-//                 } else if (lv_severity[b] == 'high') {
-//                     con_view.u_ci = Task1.u_ci;
-//                     con_view.u_engagement = Task1.security_engagement;
-//                     con_view.u_severity = 'high';
-//                     con_view.u_not_implemented_outstanding_vul = lv_high;
-//                     con_view.u_implemented_outstanding_vul = 0;
-//                 } else if (lv_severity[b] == 'medium') {
-//                     con_view.u_ci = Task1.u_ci;
-//                     con_view.u_engagement = Task1.security_engagement;
-//                     con_view.u_severity = 'medium';
-//                     con_view.u_not_implemented_outstanding_vul = lv_medium;
-//                     con_view.u_implemented_outstanding_vul = 0;
-//                 } else if (lv_severity[b] == 'low') {
-//                     con_view.u_ci = Task1.u_ci;
-//                     con_view.u_engagement = Task1.security_engagement;
-//                     con_view.u_severity = 'low';
-//                     con_view.u_not_implemented_outstanding_vul = lv_low;
-//                     con_view.u_implemented_outstanding_vul = 0;
-//                 } else if (lv_severity[b] == 'total') {
-//                     con_view.u_ci = Task1.u_ci;
-//                     con_view.u_engagement = Task1.security_engagement;
-//                     con_view.u_severity = 'total';
-//                     con_view.u_not_implemented_outstanding_vul = lv_total;
-//                     con_view.u_implemented_outstanding_vul = 0;
-//                 }
-
-//                 con_view.insert();
-//             }
-//         }
-
-    },
+					var findConObj = new GlideRecord('sn_compliance_policy_statement');//find control objectives
+					findConObj.query();
+					while(findConObj.next())
+						{
+								var referenceValue = findConObj.reference;
+								var ccfvalue = ccfIdArrayIA.toString().split(',');
+								
+								for (var j = 0; j < ccfvalue.length; j++) 
+								{
+									if (referenceValue == ccfvalue[j])
+										{
+											var controlObjective = findConObj.sys_id;
+											this.createControl(controlObjective,releasephasesysid,product);
+										}
+							
+								}
+								
+						
+					}
+	},
+	
+	createControl : function (controlObjective,releasephasesysid,product)
+	{
+		var createControls = new GlideRecord('sn_compliance_control');//starting control creation
+		createControls.initialize();
+		createControls.content = controlObjective;
+		createControls.x_675641_sbd_relea_release = releasephasesysid;
+		createControls.profile = product;
+		createControls.insert();
+		
+	},
 	
 
     type: 'Control_objective_mapping'
@@ -228,13 +95,13 @@ Control_objective_mapping.prototype = {
         <sys_created_by>bishnu</sys_created_by>
         <sys_created_on>2022-11-08 07:37:03</sys_created_on>
         <sys_id>ebd2db59970f95100406bbc3f153afdc</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Control_objective_mapping</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_include_ebd2db59970f95100406bbc3f153afdc</sys_update_name>
         <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-09 07:23:12</sys_updated_on>
+        <sys_updated_on>2022-11-17 15:10:09</sys_updated_on>
     </sys_script_include>
 </record_update>
