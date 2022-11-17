@@ -33,42 +33,115 @@
 
 	// Add your code here
 	
-	var assignto = current.parent.x_675641_sbd_relea_primary_build_contact.sys_id;
+	var impact = current.parent.x_675641_sbd_relea_business_impact;
 	var tablesys = current.sys_id;
-	var base_type = '9a96fd81974755100406bbc3f153af73';
-    var base_category = 'c497f9c1974755100406bbc3f153af08';
+	var assignto = current.parent.x_675641_sbd_relea_primary_build_contact.sys_id;
+	if(impact == 'high')
+		{
+			var base_typeh = 'ced20b94971311100406bbc3f153af9b';
+			var base_category = '4e75c758971311100406bbc3f153af69';
+				var ga = new GlideAggregate(current.getTableName());
+				ga.addQuery('sys_id', tablesys);
+				ga.addAggregate('COUNT');
+				ga.query();
+					if (ga.next() && ga.getAggregate('COUNT') > 0)
+						new global.AssessmentUtils().checkRecord(current, base_typeh);
 	
-	var ga = new GlideAggregate(current.getTableName());
-        ga.addQuery('sys_id', tablesys);
-        ga.addAggregate('COUNT');
-        ga.query();
-        if (ga.next() && ga.getAggregate('COUNT') > 0)
-            new global.AssessmentUtils().checkRecord(current, base_type);
+					var assessable = new GlideRecord('asmt_assessable_record');
+						assessable.addQuery('source_id', tablesys);
+						assessable.addQuery('metric_type', base_typeh);
+						assessable.query();
+						assessable.next();
+
+					var catRecord = new GlideRecord('asmt_m2m_category_assessment');
+						catRecord.initialize();
+						catRecord.category = base_category;
+						catRecord.assessment_record = assessable.sys_id;
+						catRecord.insert();
+
+					var assessment = (new global.AssessmentUtils().createAssessments(base_typeh, tablesys, assignto));
+						var assessmentID = (assessment.split(','))[0];
+
+					var task = new GlideRecord('asmt_assessment_instance');
+						task.get(assessmentID);
+						task.task_id = tablesys;
+						task.metric_type = base_typeh;
+						task.trigger_id = tablesys;
+						task.user = assignto;
+						task.trigger_table = current.getTableName();
+						task.update();
+		}
+	else if (impact == 'medium')
+		{
+			var base_typem = '74030f54971311100406bbc3f153af0c';
+			var base_categorym = 'ee7307d4971311100406bbc3f153af1c';	
+				var ga1 = new GlideAggregate(current.getTableName());
+				ga1.addQuery('sys_id', tablesys);
+				ga1.addAggregate('COUNT');
+				ga1.query();
+					if (ga1.next() && ga1.getAggregate('COUNT') > 0)
+						new global.AssessmentUtils().checkRecord(current, base_typem);
 	
-	var assessable = new GlideRecord('asmt_assessable_record');
-        assessable.addQuery('source_id', tablesys);
-        assessable.addQuery('metric_type', base_type);
-        assessable.query();
-        assessable.next();
+					var assessable1 = new GlideRecord('asmt_assessable_record');
+						assessable1.addQuery('source_id', tablesys);
+						assessable1.addQuery('metric_type', base_typem);
+						assessable1.query();
+						assessable1.next();
+
+					var catRecord1 = new GlideRecord('asmt_m2m_category_assessment');
+						catRecord1.initialize();
+						catRecord1.category = base_categorym;
+						catRecord1.assessment_record = assessable1.sys_id;
+						catRecord1.insert();
+
+					var assessment1 = (new global.AssessmentUtils().createAssessments(base_typem, tablesys, assignto));
+						var assessmentID1 = (assessment1.split(','))[0];
+
+					var task1 = new GlideRecord('asmt_assessment_instance');
+						task1.get(assessmentID1);
+						task1.task_id = tablesys;
+						task1.metric_type = base_typem;
+						task1.trigger_id = tablesys;
+						task1.user = assignto;
+						task1.trigger_table = current.getTableName();
+						task1.update();
+		}
+	else if (impact == 'low')
+		{
+			var base_typel = 'e1234f94971311100406bbc3f153af69';
+			var base_categoryl = 'aad303d4971311100406bbc3f153af10';
 	
-	var catRecord = new GlideRecord('asmt_m2m_category_assessment');
-        catRecord.initialize();
-        catRecord.category = base_category;
-        catRecord.assessment_record = assessable.sys_id;
-        catRecord.insert();
+				var ga2 = new GlideAggregate(current.getTableName());
+				ga2.addQuery('sys_id', tablesys);
+				ga2.addAggregate('COUNT');
+				ga2.query();
+					if (ga2.next() && ga2.getAggregate('COUNT') > 0)
+						new global.AssessmentUtils().checkRecord(current, base_typel);
 	
-	var assessment = (new global.AssessmentUtils().createAssessments(base_type, tablesys, assignto));
-        var assessmentID = (assessment.split(','))[0];
-	
-	var task = new GlideRecord('asmt_assessment_instance');
-        task.get(assessmentID);
-        task.task_id = tablesys;
-		task.metric_type = base_type;
-        task.trigger_id = tablesys;
-        task.user = assignto;
-        task.trigger_table = current.getTableName();
-        task.update();
-	
+					var assessable2 = new GlideRecord('asmt_assessable_record');
+						assessable2.addQuery('source_id', tablesys);
+						assessable2.addQuery('metric_type', base_typel);
+						assessable2.query();
+						assessable2.next();
+
+					var catRecord2 = new GlideRecord('asmt_m2m_category_assessment');
+						catRecord2.initialize();
+						catRecord2.category = base_categoryl;
+						catRecord2.assessment_record = assessable2.sys_id;
+						catRecord2.insert();
+
+					var assessment2 = (new global.AssessmentUtils().createAssessments(base_typel, tablesys, assignto));
+						var assessmentID2 = (assessment2.split(','))[0];
+
+					var task2 = new GlideRecord('asmt_assessment_instance');
+						task2.get(assessmentID2);
+						task2.task_id = tablesys;
+						task2.metric_type = base_typel;
+						task2.trigger_id = tablesys;
+						task2.user = assignto;
+						task2.trigger_table = current.getTableName();
+						task2.update();
+		}
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -77,7 +150,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4f780ac5978755100406bbc3f153afd6</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Generate assessment</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
@@ -85,7 +158,7 @@
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_4f780ac5978755100406bbc3f153afd6</sys_update_name>
         <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-10 15:00:07</sys_updated_on>
+        <sys_updated_on>2022-11-17 15:31:22</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
