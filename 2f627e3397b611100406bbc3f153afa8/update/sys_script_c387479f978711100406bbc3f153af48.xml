@@ -33,10 +33,10 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	var releasePhase = current.x_675641_sbd_relea_release_phase.number;
+	var product = current.parent.x_675641_sbd_relea_release.x_675641_sbd_relea_product.sys_id;
+	var releasePhase = current.parent.sys_id;
 	var components = current.x_675641_sbd_relea_components.getDisplayValue();
-	gs.info('find componenteeee'+components);
-	var callSI = new Cloud_security_controlscreation()._create_cloud_security_controls(components,releasePhase);
+	var callSI = new Cloud_security_controlscreation()._create_cloud_security_controls(components,releasePhase,product);
 	
 
 })(current, previous);]]></script>
@@ -46,7 +46,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c387479f978711100406bbc3f153af48</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Create cloud security controls</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
@@ -54,7 +54,7 @@
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_c387479f978711100406bbc3f153af48</sys_update_name>
         <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-15 10:54:44</sys_updated_on>
+        <sys_updated_on>2022-11-17 09:28:24</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
