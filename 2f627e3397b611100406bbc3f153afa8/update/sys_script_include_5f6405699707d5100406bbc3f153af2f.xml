@@ -24,15 +24,12 @@ Controlobjective_mapping.prototype = {
         instance.query();
         while (instance.next()) { // if the assessment is asssigned to the release, get all the questions
 			
-			//gs.info("ssssssssStep1");
-			
-			var release11 = instance.task_id.getDisplayValue();
+			var releasephasesysid = instance.task_id.sys_id;
 			
             var questions = new GlideRecord('asmt_metric_result');
             questions.addQuery('instance', instance.sys_id);
             questions.query();
             while (questions.next()) { //engagement questions
-				//gs.info("ssssssssStep2"+instance.sys_id);
 				var releasephase = questions.instance.task_id.getDisplayValue();
                 var value = questions.actual_value;
                 var stringValue = questions.string_value;
@@ -52,22 +49,11 @@ Controlobjective_mapping.prototype = {
 									
 								}
 						
-                    }gs.info('Final array2 '+ccfIdArrayIA);
+                    }//gs.info('Final array'+ccfIdArrayIA);
 				
             }
         }
 		}
-					var findRelease = new GlideRecord('rm_release_phase');//find release number
-					findRelease.addQuery('number',release11);
-					findRelease.query();
-					gs.info('Stepppppp1111'+release11);
-						if(findRelease.next())
-							{
-								gs.info('Stepppppp'+release11);
-								var release = findRelease.x_675641_sbd_relea_release.sys_id;
-							}
-					
-		
 		
 					var findConObj = new GlideRecord('sn_compliance_policy_statement');//find control objectives
 					findConObj.query();
@@ -78,11 +64,10 @@ Controlobjective_mapping.prototype = {
 								
 								for (var j = 0; j < ccfvalue.length; j++) 
 								{
-								gs.info('ccfIdArrayIA' + ccfvalue[j]);
 									if (referenceValue == ccfvalue[j])
 										{
 											var controlObjective = findConObj.sys_id;
-											this.createControl(controlObjective,release);
+											this.createControl(controlObjective,releasephasesysid);
 										}
 							
 								}
@@ -91,12 +76,12 @@ Controlobjective_mapping.prototype = {
 					}
 	},
 	
-	createControl : function (controlObjective,releasephase)
+	createControl : function (controlObjective,releasephasesysid)
 	{
 		var createControls = new GlideRecord('sn_compliance_control');//starting control creation
 		createControls.initialize();
 		createControls.content = controlObjective;
-		createControls.x_675641_sbd_relea_release = releasephase;
+		createControls.x_675641_sbd_relea_release = releasephasesysid;
 		createControls.insert();
 		
 	},
@@ -108,13 +93,13 @@ Controlobjective_mapping.prototype = {
         <sys_created_by>bishnu</sys_created_by>
         <sys_created_on>2022-11-08 15:54:28</sys_created_on>
         <sys_id>5f6405699707d5100406bbc3f153af2f</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>Controlobjective_mapping</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_include_5f6405699707d5100406bbc3f153af2f</sys_update_name>
         <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-09 13:43:14</sys_updated_on>
+        <sys_updated_on>2022-11-15 13:54:40</sys_updated_on>
     </sys_script_include>
 </record_update>

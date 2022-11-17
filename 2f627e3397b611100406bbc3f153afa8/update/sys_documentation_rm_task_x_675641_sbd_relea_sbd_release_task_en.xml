@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="x_675641_sbd_relea_configuration_item" label="Configuration Item" language="en" table="rm_product">
+    <sys_documentation element="x_675641_sbd_relea_sbd_release_task" label="SBD Release Task" language="en" table="rm_task">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>x_675641_sbd_relea_configuration_item</element>
+            <element>x_675641_sbd_relea_sbd_release_task</element>
             <help/>
             <hint/>
-            <label>Configuration Item</label>
+            <label>SBD Release Task</label>
             <language>en</language>
-            <name>rm_product</name>
-            <plural>Configuration Items</plural>
+            <name>rm_task</name>
+            <plural>SBD Release Tasks</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-04 09:45:20</sys_created_on>
-            <sys_id>0f0a8300974b51100406bbc3f153af47</sys_id>
+            <sys_created_on>2022-11-11 12:33:09</sys_created_on>
+            <sys_id>5d93b392974bd9100406bbc3f153af24</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Configuration Item</sys_name>
+            <sys_name>SBD Release Task</sys_name>
             <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
             <sys_policy/>
             <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
-            <sys_update_name>sys_documentation_rm_product_x_675641_sbd_relea_configuration_item_en</sys_update_name>
+            <sys_update_name>sys_documentation_rm_task_x_675641_sbd_relea_sbd_release_task_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-04 09:45:20</sys_updated_on>
+            <sys_updated_on>2022-11-11 12:33:09</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

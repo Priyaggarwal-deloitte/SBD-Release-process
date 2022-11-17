@@ -5,12 +5,12 @@
         <allow_add_info>false</allow_add_info>
         <allow_not_applicable>true</allow_not_applicable>
         <auto_gen>false</auto_gen>
-        <category display_value="Security questions">c497f9c1974755100406bbc3f153af08</category>
+        <category display_value="Security Questions">c497f9c1974755100406bbc3f153af08</category>
         <cond_question>always</cond_question>
         <condition/>
         <context/>
-        <correct_answer/>
-        <correct_answer_checkbox>1</correct_answer_checkbox>
+        <correct_answer>1</correct_answer>
+        <correct_answer_checkbox/>
         <correct_answer_choice/>
         <correct_answer_template/>
         <correct_answer_yesno>1</correct_answer_yesno>
@@ -21,9 +21,9 @@
         <description/>
         <details/>
         <displayed_when/>
-        <displayed_when_checkbox>1</displayed_when_checkbox>
+        <displayed_when_checkbox/>
         <displayed_when_template/>
-        <displayed_when_yesno>1</displayed_when_yesno>
+        <displayed_when_yesno/>
         <duration/>
         <field_validation/>
         <mandatory>true</mandatory>
@@ -31,17 +31,17 @@
         <max_weight/>
         <maximum_normalization_input>false</maximum_normalization_input>
         <method>assessment</method>
-        <metric_type display_value="SbD assessment">9a96fd81974755100406bbc3f153af73</metric_type>
+        <metric_type display_value="SbD Assessment">9a96fd81974755100406bbc3f153af73</metric_type>
         <min>0</min>
         <name>Question-38</name>
-        <order>100</order>
+        <order>4400</order>
         <plugin/>
         <question>Are there measures to remediate system flaws such as vulnerabilities?</question>
         <randomize_answers>false</randomize_answers>
         <read_only>false</read_only>
         <reference_table/>
         <scale>high</scale>
-        <scored>false</scored>
+        <scored>true</scored>
         <script><![CDATA[// The following variables are available: 
  // - primary: contains the sys_id of the assessable object to be evaluated 
  // - string_result: the script sets the display string value for this metric to this variable 
@@ -64,14 +64,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d6b65ec297cf59100406bbc3f153af61</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Question-38</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>asmt_metric_d6b65ec297cf59100406bbc3f153af61</sys_update_name>
-        <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-10 11:09:13</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-16 07:41:32</sys_updated_on>
         <template/>
         <value_parameters/>
         <weight>10</weight>

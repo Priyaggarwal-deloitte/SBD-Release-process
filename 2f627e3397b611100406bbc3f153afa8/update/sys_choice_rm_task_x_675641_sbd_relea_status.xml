@@ -21,7 +21,7 @@
             <element>x_675641_sbd_relea_status</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Currently Available</label>
+            <label>Currently Unavailable</label>
             <language>en</language>
             <name>rm_task</name>
             <sequence>0</sequence>
@@ -31,10 +31,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>3d35f64097c751100406bbc3f153af74</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>Aman</sys_updated_by>
-            <sys_updated_on>2022-11-04 08:17:59</sys_updated_on>
-            <value>Currently Available</value>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-14 11:59:51</sys_updated_on>
+            <value>Currently_Unavailable</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -71,10 +71,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>4aa5f6c097c751100406bbc3f153aff0</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>Aman</sys_updated_by>
-            <sys_updated_on>2022-11-04 08:17:49</sys_updated_on>
-            <value>ready to take</value>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-14 11:59:28</sys_updated_on>
+            <value>ready_to_take</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -91,10 +91,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e9c5bac097c751100406bbc3f153af8e</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>Aman</sys_updated_by>
-            <sys_updated_on>2022-11-04 08:17:52</sys_updated_on>
-            <value>work in progress</value>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-14 11:59:36</sys_updated_on>
+            <value>work_in_progress</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>

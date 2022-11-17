@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="x_675641_sbd_relea_configuration_item" table="rm_product">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="x_675641_sbd_relea_sbd_release_task" table="rm_task">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,10 +13,10 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Configuration Item</column_label>
+        <column_label>SBD Release Task</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>false</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -26,21 +26,21 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>x_675641_sbd_relea_configuration_item</element>
+        <element>x_675641_sbd_relea_sbd_release_task</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="">boolean</internal_type>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <name>rm_product</name>
+        <max_length>40</max_length>
+        <name>rm_task</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="cmdb_ci">cmdb_ci</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -51,15 +51,15 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-04 09:45:20</sys_created_on>
-        <sys_id>cf4947cc970b51100406bbc3f153afbe</sys_id>
-        <sys_name>Configuration Item</sys_name>
+        <sys_created_on>2022-11-11 12:33:08</sys_created_on>
+        <sys_id>b8537f52974bd9100406bbc3f153af92</sys_id>
+        <sys_name>SBD Release Task</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
-        <sys_update_name>sys_dictionary_rm_product_x_675641_sbd_relea_configuration_item</sys_update_name>
+        <sys_update_name>sys_dictionary_rm_task_x_675641_sbd_relea_sbd_release_task</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-04 09:45:20</sys_updated_on>
+        <sys_updated_on>2022-11-11 13:24:29</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

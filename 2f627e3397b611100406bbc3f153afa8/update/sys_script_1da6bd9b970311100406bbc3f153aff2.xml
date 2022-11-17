@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>rm_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="rm_task">x_675641_sbd_relea_type=security_testing^x_675641_sbd_relea_sub_type=mobile application scan^EQ<item display_value="Security Testing" endquery="false" field="x_675641_sbd_relea_type" goto="false" newquery="false" operator="=" or="false" value="security_testing"/>
+            <item display_value="Mobile Application Scan" endquery="false" field="x_675641_sbd_relea_sub_type" goto="false" newquery="false" operator="=" or="false" value="mobile application scan"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Generate Mobile Scan Assessment</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	
+	var assignto = current.x_675641_sbd_relea_primary_build_contact.sys_id;
+	var tablesys = current.sys_id;
+	var base_type = 'e6b36fda97c7d9100406bbc3f153afdb';
+    var base_category = '40542b12970bd9100406bbc3f153af25';
+	
+	var ga = new GlideAggregate(current.getTableName());
+        ga.addQuery('sys_id', tablesys);
+        ga.addAggregate('COUNT');
+        ga.query();
+        if (ga.next() && ga.getAggregate('COUNT') > 0)
+            new global.AssessmentUtils().checkRecord(current, base_type);
+	
+	var assessable = new GlideRecord('asmt_assessable_record');
+        assessable.addQuery('source_id', tablesys);
+        assessable.addQuery('metric_type', base_type);
+        assessable.query();
+        assessable.next();
+	
+	var catRecord = new GlideRecord('asmt_m2m_category_assessment');
+        catRecord.initialize();
+        catRecord.category = base_category;
+        catRecord.assessment_record = assessable.sys_id;
+        catRecord.insert();
+	
+	var assessment = (new global.AssessmentUtils().createAssessments(base_type, tablesys, assignto));
+        var assessmentID = (assessment.split(','))[0];
+	
+	var task = new GlideRecord('asmt_assessment_instance');
+        task.get(assessmentID);
+        task.task_id = tablesys;
+		task.metric_type = base_type;
+        task.trigger_id = tablesys;
+        task.user = assignto;
+        task.trigger_table = current.getTableName();
+        task.update();
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-14 06:04:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1da6bd9b970311100406bbc3f153aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Generate Mobile Scan Assessment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_1da6bd9b970311100406bbc3f153aff2</sys_update_name>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-14 06:04:55</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=1da6bd9b970311100406bbc3f153aff2"/>
+</record_update>

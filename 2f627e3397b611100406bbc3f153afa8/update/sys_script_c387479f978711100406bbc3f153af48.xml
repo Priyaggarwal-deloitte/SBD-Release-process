@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>rm_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="rm_task">x_675641_sbd_relea_sub_type=generate cloud security controls^x_675641_sbd_relea_componentsVALCHANGES^EQ<item display_value="Identify Cloud Components" endquery="false" field="x_675641_sbd_relea_sub_type" goto="false" newquery="false" operator="=" or="false" value="generate cloud security controls"/>
+            <item endquery="false" field="x_675641_sbd_relea_components" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create cloud security controls</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var releasePhase = current.x_675641_sbd_relea_release_phase.number;
+	var components = current.x_675641_sbd_relea_components.getDisplayValue();
+	gs.info('find componenteeee'+components);
+	var callSI = new Cloud_security_controlscreation()._create_cloud_security_controls(components,releasePhase);
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-14 12:52:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c387479f978711100406bbc3f153af48</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Create cloud security controls</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_c387479f978711100406bbc3f153af48</sys_update_name>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-15 10:54:44</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c387479f978711100406bbc3f153af48"/>
+</record_update>

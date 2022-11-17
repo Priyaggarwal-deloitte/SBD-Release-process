@@ -61,7 +61,7 @@
             <element>x_675641_sbd_relea_data_volume</element>
             <hint/>
             <inactive>false</inactive>
-            <label>1 to 0.5 million</label>
+            <label>0.5 to 1 \million</label>
             <language>en</language>
             <name>rm_release</name>
             <sequence>20</sequence>
@@ -71,9 +71,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e4373e4497c751100406bbc3f153af80</sys_id>
-            <sys_mod_count>15</sys_mod_count>
-            <sys_updated_by>Aman</sys_updated_by>
-            <sys_updated_on>2022-11-08 07:50:20</sys_updated_on>
+            <sys_mod_count>16</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-15 08:28:21</sys_updated_on>
             <value>1t0.5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">

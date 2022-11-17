@@ -19,8 +19,8 @@
         <default_value/>
         <defaultsort/>
         <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
+        <dependent>x_675641_sbd_relea_type</dependent>
+        <dependent_on_field>x_675641_sbd_relea_type</dependent_on_field>
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
@@ -59,11 +59,11 @@
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_dictionary_rm_task_x_675641_sbd_relea_sub_type</sys_update_name>
         <sys_updated_by>Aman</sys_updated_by>
-        <sys_updated_on>2022-11-07 10:45:17</sys_updated_on>
+        <sys_updated_on>2022-11-11 07:19:42</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
+        <use_dependent_field>true</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>

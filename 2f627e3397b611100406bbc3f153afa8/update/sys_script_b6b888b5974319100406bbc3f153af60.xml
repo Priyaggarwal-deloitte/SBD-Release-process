@@ -15,7 +15,7 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="asmt_assessment_instance">metric_type=9a96fd81974755100406bbc3f153af73^stateCHANGESTOcomplete^EQ<item display_table="asmt_metric_type" display_value="SbD assessment" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="false" value="9a96fd81974755100406bbc3f153af73"/>
+        <filter_condition table="asmt_assessment_instance">metric_type=9a96fd81974755100406bbc3f153af73^stateCHANGESTOcomplete^EQ<item display_table="asmt_metric_type" display_value="SbD Assessment" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="false" value="9a96fd81974755100406bbc3f153af73"/>
             <item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="complete"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>

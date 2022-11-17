@@ -15,7 +15,7 @@
         <name>rm_release_phase</name>
         <order>18</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>&amp;sysparm_query=sys_class_name=rm_release_phase^x_675641_sbd_relea_sbd=true&amp;sysparm_view_forced=true</query>
         <report/>
         <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -24,7 +24,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ba933eb397b611100406bbc3f153af55</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>All</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
@@ -32,11 +32,11 @@
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_app_module_ba933eb397b611100406bbc3f153af55</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-03 13:28:49</sys_updated_on>
+        <sys_updated_on>2022-11-11 12:42:29</sys_updated_on>
         <timeline_page/>
         <title>All</title>
         <uncancelable>false</uncancelable>
-        <view_name/>
+        <view_name>sbd_release_phase</view_name>
         <window_name/>
     </sys_app_module>
 </record_update>

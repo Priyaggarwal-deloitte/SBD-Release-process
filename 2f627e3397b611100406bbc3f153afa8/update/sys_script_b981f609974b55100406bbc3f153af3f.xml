@@ -15,7 +15,9 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="rm_release">x_675641_sbd_relea_sbd_release=true^EQ<item endquery="false" field="x_675641_sbd_relea_sbd_release" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
         <name>SbD Populate Business Criticality &amp; RR</name>
@@ -133,15 +135,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b981f609974b55100406bbc3f153af3f</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>SbD Populate Business Criticality &amp; RR</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_b981f609974b55100406bbc3f153af3f</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-10 13:55:26</sys_updated_on>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-14 13:19:26</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
