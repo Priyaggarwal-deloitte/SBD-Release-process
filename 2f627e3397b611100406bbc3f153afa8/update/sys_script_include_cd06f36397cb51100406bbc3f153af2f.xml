@@ -20,15 +20,60 @@ SBDControlUtil.prototype = {
 
 
 		var grControlTotal = new GlideRecord("sn_compliance_control");
-grControlTotal.addEncodedQuery("x_675641_sbd_relea_release="+releasePhaseID);
+		//state!=retired^x_675641_sbd_relea_cloud_security_control=false
+grControlTotal.addEncodedQuery("x_675641_sbd_relea_cloud_security_control=false^x_675641_sbd_relea_release="+releasePhaseID);
 	//	x_675641_sbd_relea_release=06a94e09978755100406bbc3f153af72
+		//state!=retired^x_675641_sbd_relea_cloud_security_control=true
+		//state!=retired^x_675641_sbd_relea_cloud_security_control=false
 grControlTotal.query();
 //if (grControlTotal.getRowCount() > 0)
  control_total =  grControlTotal.getRowCount();
 		
 		var grControlTotalImp = new GlideRecord("sn_compliance_control");
 grControlTotalImp.addQuery("x_675641_sbd_relea_release", releasePhaseID+'');
-grControlTotalImp.addQuery("state", 'monitor');		
+grControlTotalImp.addQuery("state", 'monitor');	
+grControlTotalImp.addQuery("x_675641_sbd_relea_cloud_security_control", 'false');	
+	//grControlTotalImp.addEncodedQuery('state=monitor^x_675641_sbd_relea_release='+releasePhaseID);
+grControlTotalImp.query();
+//if (grControlTotalImp.getRowCount() > 0)
+control_implemented  =  grControlTotalImp.getRowCount();
+		
+		control_notImplemented = parseInt(control_total) - parseInt(control_implemented);
+		gs.info('sbd control implemenetd------->'+control_implemented+'--control_total---'+control_total+'----control_notImplemented---'+control_notImplemented);
+		var gr = new GlideRecord("rm_release_phase");
+gr.addQuery("sys_id", releasePhaseID);
+gr.query();
+if (gr.next()) {
+   gr.x_675641_sbd_relea_implemented_controls=control_implemented;
+	gr.x_675641_sbd_relea_non_implemented_controls=control_notImplemented;
+	
+	gr.x_675641_sbd_relea_total_controls = control_total;
+	gr.update();
+}
+		
+	},
+	
+	calculateCloudControlImplentationView: function(releasePhaseID){
+		gs.info('sbd control implemenetd inside');
+		var control_total = 0;
+		var control_implemented = 0;
+		var control_notImplemented = 0;
+
+
+		var grControlTotal = new GlideRecord("sn_compliance_control");
+		//state!=retired^x_675641_sbd_relea_cloud_security_control=false
+grControlTotal.addEncodedQuery("x_675641_sbd_relea_cloud_security_control=true^x_675641_sbd_relea_release="+releasePhaseID);
+	//	x_675641_sbd_relea_release=06a94e09978755100406bbc3f153af72
+		//state!=retired^x_675641_sbd_relea_cloud_security_control=true
+		//state!=retired^x_675641_sbd_relea_cloud_security_control=false
+grControlTotal.query();
+//if (grControlTotal.getRowCount() > 0)
+ control_total =  grControlTotal.getRowCount();
+		
+		var grControlTotalImp = new GlideRecord("sn_compliance_control");
+grControlTotalImp.addQuery("x_675641_sbd_relea_release", releasePhaseID+'');
+grControlTotalImp.addQuery("state", 'monitor');	
+grControlTotalImp.addQuery("x_675641_sbd_relea_cloud_security_control", 'true');	
 	//grControlTotalImp.addEncodedQuery('state=monitor^x_675641_sbd_relea_release='+releasePhaseID);
 grControlTotalImp.query();
 //if (grControlTotalImp.getRowCount() > 0)
@@ -54,13 +99,13 @@ if (gr.next()) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-15 09:58:16</sys_created_on>
         <sys_id>cd06f36397cb51100406bbc3f153af2f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>SBDControlUtil</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_include_cd06f36397cb51100406bbc3f153af2f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-16 06:36:00</sys_updated_on>
+        <sys_updated_on>2022-11-17 10:40:24</sys_updated_on>
     </sys_script_include>
 </record_update>

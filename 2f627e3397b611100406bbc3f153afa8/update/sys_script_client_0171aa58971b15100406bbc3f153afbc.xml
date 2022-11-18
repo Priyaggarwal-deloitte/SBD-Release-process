@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Display css, cs etc.</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if((g_form.getValue('x_675641_sbd_relea_type'))=='security review')
+	{
+		g_form.setSectionDisplay('control_implementationview',true);
+		g_form.setSectionDisplay('cloud_controlimplementationview',true);
+		g_form.showRelatedList('asmt_assessment_instance.task_id');
+		g_form.showRelatedList('REL:054f38bd978719100406bbc3f153af4c');
+		g_form.showRelatedList('REL:9254c8f3970f51100406bbc3f153af60');
+	}
+	else
+		{
+			g_form.setSectionDisplay('control_implementationview',false);
+			g_form.setSectionDisplay('cloud_controlimplementationview',false);
+			g_form.hideRelatedList('asmt_assessment_instance.task_id');
+			g_form.hideRelatedList('REL:054f38bd978719100406bbc3f153af4c');
+			g_form.hideRelatedList('REL:9254c8f3970f51100406bbc3f153af60');
+		}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-17 11:42:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0171aa58971b15100406bbc3f153afbc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Display css, cs etc.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_client_0171aa58971b15100406bbc3f153afbc</sys_update_name>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-17 11:55:48</sys_updated_on>
+        <table>rm_release_phase</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

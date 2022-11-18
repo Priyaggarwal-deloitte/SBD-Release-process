@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments>Saves a new record and redirects back to self (context version)</comments>
-        <condition>current.canCreate();</condition>
+        <condition>current.canCreate() &amp;&amp; (RP.getViewName() == "sbd_release_view")</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -27,7 +27,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Save</name>
+        <name>Save &amp; Stay</name>
         <onclick/>
         <order>-200</order>
         <script><![CDATA[action.setRedirectURL(current);
@@ -45,15 +45,15 @@ au.postInsert(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>206f87af97c751100406bbc3f153af5c</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>Save</sys_name>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Save &amp; Stay</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_ui_action_206f87af97c751100406bbc3f153af5c</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-15 10:57:24</sys_updated_on>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-17 07:58:58</sys_updated_on>
         <table>rm_release</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

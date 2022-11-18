@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="SDLC - SCRUM" source="com.snc.sdlc.scrum">8e9b0694979715100406bbc3f153afc9</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-18 04:30:37</sys_created_on>
+        <sys_id>cd48cee8975b11100406bbc3f153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-18 04:30:37</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>
