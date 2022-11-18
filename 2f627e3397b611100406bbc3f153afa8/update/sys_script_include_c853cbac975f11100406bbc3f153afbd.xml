@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_675641_sbd_relea.Create_PCI_PII_controls</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Create_PCI_PII_controls</name>
+        <script><![CDATA[var Create_PCI_PII_controls = Class.create();
+Create_PCI_PII_controls.prototype = {
+    initialize: function() {
+    },
+	
+	_createPCIPII: function(taskID)
+	{
+		var findRelease = new GlideRecord('rm_release_phase');
+		findRelease.addQuery('sys_id',taskID);
+		findRelease.query();
+		while(findRelease.next())
+			{
+				var PCI = findRelease.parent.x_675641_sbd_relea_pci;
+				var PII = findRelease.parent.x_675641_sbd_relea_pii;
+				var releasephasesysid = findRelease.sys_id;
+				var product = findRelease.parent.x_675641_sbd_relea_product.sys_id;
+				
+				if( PCI == 'yes')
+					{
+						this.createPCI(releasephasesysid,product);
+					}
+				else if (PII == 'yes')
+					{
+						this.createPII(releasephasesysid,product);
+					}
+				
+			}
+	},
+	
+	createPII : function(releasephasesysid,product)
+	{
+		var contObj = new GlideRecord('sn_compliance_policy_statement');
+		contObj.addEncodedQuery('referenceINSI-12(1),PM-25');
+		contObj.query();
+		while(contObj.next())
+			{
+				var createPIIcontrol = new GlideRecord('sn_compliance_control');
+				createPIIcontrol.initialize();
+				createPIIcontrol.content = contObj.sys_id;
+				createPIIcontrol.x_675641_sbd_relea_release = releasephasesysid;
+				createPIIcontrol.profile = product;
+				createPIIcontrol.insert();
+			}
+	},
+	
+	createPCI : function(releasephasesysid,product)
+	{
+		var fcontObj = new GlideRecord('sn_compliance_policy_statement');
+		fcontObj.addEncodedQuery('referenceINAC-3(11),CM-8, CM-12, CM-13, PM-5');
+		fcontObj.query();
+		while(fcontObj.next())
+			{
+				var createPCIcontrol = new GlideRecord('sn_compliance_control');
+				createPCIcontrol.initialize();
+				createPCIcontrol.content = fcontObj.sys_id;
+				createPCIcontrol.x_675641_sbd_relea_release = releasephasesysid;
+				createPCIcontrol.profile = product;
+				createPCIcontrol.insert();
+			}
+		
+	},
+	
+    type: 'Create_PCI_PII_controls'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-18 08:49:58</sys_created_on>
+        <sys_id>c853cbac975f11100406bbc3f153afbd</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Create_PCI_PII_controls</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_include_c853cbac975f11100406bbc3f153afbd</sys_update_name>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-18 09:08:56</sys_updated_on>
+    </sys_script_include>
+</record_update>
