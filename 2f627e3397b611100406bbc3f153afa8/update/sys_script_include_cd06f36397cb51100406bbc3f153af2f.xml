@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_675641_sbd_relea.SBDControlUtil</api_name>
         <caller_access/>
@@ -81,15 +81,15 @@ control_implemented  =  grControlTotalImp.getRowCount();
 		
 		control_notImplemented = parseInt(control_total) - parseInt(control_implemented);
 		gs.info('sbd control implemenetd------->'+control_implemented+'--control_total---'+control_total+'----control_notImplemented---'+control_notImplemented);
-		var gr = new GlideRecord("rm_release_phase");
-gr.addQuery("sys_id", releasePhaseID);
-gr.query();
-if (gr.next()) {
-   gr.x_675641_sbd_relea_implemented_controls=control_implemented;
-	gr.x_675641_sbd_relea_non_implemented_controls=control_notImplemented;
+		var gr1 = new GlideRecord("rm_release_phase");
+gr1.addQuery("sys_id", releasePhaseID);
+gr1.query();
+if (gr1.next()) {
+   gr1.x_675641_sbd_relea_implemented_cloud_controls=control_implemented;
+	gr1.x_675641_sbd_relea_non_implemented_cloud_controls=control_notImplemented;
 	
-	gr.x_675641_sbd_relea_total_controls = control_total;
-	gr.update();
+	gr1.x_675641_sbd_relea_total_cloud_controls = control_total;
+	gr1.update();
 }
 		
 	},
@@ -99,13 +99,13 @@ if (gr.next()) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-15 09:58:16</sys_created_on>
         <sys_id>cd06f36397cb51100406bbc3f153af2f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>SBDControlUtil</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_include_cd06f36397cb51100406bbc3f153af2f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-17 10:40:24</sys_updated_on>
+        <sys_updated_on>2022-11-18 08:16:02</sys_updated_on>
     </sys_script_include>
 </record_update>
