@@ -31,9 +31,11 @@ grControlTotal.query();
 		
 		var grControlTotalImp = new GlideRecord("sn_compliance_control");
 grControlTotalImp.addQuery("x_675641_sbd_relea_release", releasePhaseID+'');
-grControlTotalImp.addQuery("state", 'monitor');	
+//grControlTotalImp.addQuery("state", 'monitor');	
+grControlTotalImp.addEncodedQuery("status=compliant^ORstate=monitor");
 grControlTotalImp.addQuery("x_675641_sbd_relea_cloud_security_control", 'false');	
 	//grControlTotalImp.addEncodedQuery('state=monitor^x_675641_sbd_relea_release='+releasePhaseID);
+		//status=compliant^ORstate=monitor
 grControlTotalImp.query();
 //if (grControlTotalImp.getRowCount() > 0)
 control_implemented  =  grControlTotalImp.getRowCount();
@@ -72,7 +74,8 @@ grControlTotal.query();
 		
 		var grControlTotalImp = new GlideRecord("sn_compliance_control");
 grControlTotalImp.addQuery("x_675641_sbd_relea_release", releasePhaseID+'');
-grControlTotalImp.addQuery("state", 'monitor');	
+//grControlTotalImp.addQuery("state", 'monitor');	
+grControlTotalImp.addEncodedQuery("status=compliant^ORstate=monitor");
 grControlTotalImp.addQuery("x_675641_sbd_relea_cloud_security_control", 'true');	
 	//grControlTotalImp.addEncodedQuery('state=monitor^x_675641_sbd_relea_release='+releasePhaseID);
 grControlTotalImp.query();
@@ -99,13 +102,13 @@ if (gr1.next()) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-15 09:58:16</sys_created_on>
         <sys_id>cd06f36397cb51100406bbc3f153af2f</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>SBDControlUtil</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_include_cd06f36397cb51100406bbc3f153af2f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-18 08:16:02</sys_updated_on>
+        <sys_updated_on>2022-11-21 09:15:11</sys_updated_on>
     </sys_script_include>
 </record_update>

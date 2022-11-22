@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_675641_sbd_relea.SBDTaskUtil</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>SBDTaskUtil</name>
+        <script><![CDATA[var SBDTaskUtil = Class.create();
+SBDTaskUtil.prototype = {
+    initialize: function() {},
+
+    createScanTASK: function(scanType, relPhase) {
+        var scanTASKDEsc = '';
+        var scanTASksubType = '';
+        if (scanType == 'SAST') {
+            scanTASKDEsc = 'Perform the SAST Scan and update the respective questionnaire.';
+            scanTASksubType = 'sast scan';
+        }
+        if (scanType == 'SCA') {
+            scanTASKDEsc = 'Perform the SCA Scan and update the respective questionnaire.';
+            scanTASksubType = 'sca scan';
+        }
+
+        var sbdSCanTask = new GlideRecord("rm_task");
+        sbdSCanTask.initialize();
+
+        sbdSCanTask.description = scanTASKDEsc;
+        sbdSCanTask.parent = relPhase.sys_id;
+        sbdSCanTask.x_675641_sbd_relea_release_phase = relPhase.sys_id;
+        sbdSCanTask.x_675641_sbd_relea_type = 'security_testing';
+        sbdSCanTask.x_675641_sbd_relea_sub_type = scanTASksubType;
+        sbdSCanTask.state = '1';
+        sbdSCanTask.x_675641_sbd_relea_status = 'ready_to_take';
+        sbdSCanTask.assigned_to = relPhase.x_675641_sbd_relea_release.x_675641_sbd_relea_primary_build_contact + '';
+        sbdSCanTask.x_675641_sbd_relea_sbd_release_task = 'true';
+        sbdSCanTask.insert();
+
+
+    },
+    type: 'SBDTaskUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 04:24:52</sys_created_on>
+        <sys_id>3c3da239975751100406bbc3f153afdc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>SBDTaskUtil</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_include_3c3da239975751100406bbc3f153afdc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-22 04:48:23</sys_updated_on>
+    </sys_script_include>
+</record_update>

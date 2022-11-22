@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2022-11-22 12:20:50">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-22 10:49:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b555c48e97db51100406bbc3f153af64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Product and Release</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_portal_page_b555c48e97db51100406bbc3f153af64</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-22 10:49:27</sys_updated_on>
+        <title>PA Product and Release</title>
+        <user/>
+        <view>pa_sbd_overview_-_new_tab_1</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Product and Release">b555c48e97db51100406bbc3f153af64</page>
+                <summary>Release Business Impact</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                <sys_id>3155888e97db51100406bbc3f153afe0</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3155888e97db51100406bbc3f153afe3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afe0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afe2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3955888e97db51100406bbc3f153afe1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3d55888e97db51100406bbc3f153afe0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>Release Business Impact</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afe2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7555888e97db51100406bbc3f153afe1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7d55888e97db51100406bbc3f153afe2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b155888e97db51100406bbc3f153afe1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#f8f4f4</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b955888e97db51100406bbc3f153afe2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afe1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>center</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>header_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f155888e97db51100406bbc3f153afe3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#46999c</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afe0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>68173d6d971311100406bbc3f153afce</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afe2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f955888e97db51100406bbc3f153afe1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">3155888e97db51100406bbc3f153afe0</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>fd55888e97db51100406bbc3f153afe0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Product and Release">b555c48e97db51100406bbc3f153af64</page>
+                <summary>No. of Release Involving PII(Personally Identifiable Information)</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                <sys_id>b155888e97db51100406bbc3f153afe7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3155888e97db51100406bbc3f153afe9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afe8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3955888e97db51100406bbc3f153afea</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#f8f4f4</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3d55888e97db51100406bbc3f153afe9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afe8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7555888e97db51100406bbc3f153afea</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7955888e97db51100406bbc3f153afe7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>8579f521975311100406bbc3f153af17</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7955888e97db51100406bbc3f153afe9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7d55888e97db51100406bbc3f153afe8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>center</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>header_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b155888e97db51100406bbc3f153afea</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#46999c</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b555888e97db51100406bbc3f153afe7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b555888e97db51100406bbc3f153afe9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b955888e97db51100406bbc3f153afe8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afe7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>No. of Release Involving PII(Personally Identifiable Information)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f155888e97db51100406bbc3f153afe9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afe8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f955888e97db51100406bbc3f153afea</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b155888e97db51100406bbc3f153afe7</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>fd55888e97db51100406bbc3f153afe9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Product and Release">b555c48e97db51100406bbc3f153af64</page>
+                <summary>No. of Release Involving PCI(Payment Card Industry) Data</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                <sys_id>b555888e97db51100406bbc3f153afe3</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3155888e97db51100406bbc3f153afe4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3155888e97db51100406bbc3f153afe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afe5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3955888e97db51100406bbc3f153afe4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3d55888e97db51100406bbc3f153afe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afe5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>center</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7955888e97db51100406bbc3f153afe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7d55888e97db51100406bbc3f153afe3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>No. of Release Involving PCI(Payment Card Industry) Data</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7d55888e97db51100406bbc3f153afe5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b555888e97db51100406bbc3f153afe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b955888e97db51100406bbc3f153afe3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#f8f4f4</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b955888e97db51100406bbc3f153afe5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afe4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f155888e97db51100406bbc3f153afe4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>38d97d21975311100406bbc3f153af99</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f155888e97db51100406bbc3f153afe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afe5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f955888e97db51100406bbc3f153afe4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>header_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b555888e97db51100406bbc3f153afe3</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>fd55888e97db51100406bbc3f153afe6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#46999c</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Product and Release">b555c48e97db51100406bbc3f153af64</page>
+                <summary>SBD Release Build scope</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                <sys_id>b955888e97db51100406bbc3f153afdc</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afdd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#f8f4f4</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afdf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3955888e97db51100406bbc3f153afde</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3d55888e97db51100406bbc3f153afdd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afdd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afdf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7555888e97db51100406bbc3f153afde</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>center</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>header_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7d55888e97db51100406bbc3f153afdf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#46999c</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b155888e97db51100406bbc3f153afde</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b955888e97db51100406bbc3f153afdf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>SBD Release Build scope</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afdc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>donut</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afde</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afdd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>9b3bdf6897df11100406bbc3f153afe5</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afdf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f955888e97db51100406bbc3f153afde</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">b955888e97db51100406bbc3f153afdc</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>fd55888e97db51100406bbc3f153afdd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Product and Release">b555c48e97db51100406bbc3f153af64</page>
+                <summary>Release Criticality</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-11-22 10:49:27</sys_created_on>
+                <sys_id>b955c48e97db51100406bbc3f153af65</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-11-22 10:49:27</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afda</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>6e06752d971311100406bbc3f153af51</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afdc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#f8f4f4</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>header_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3955888e97db51100406bbc3f153afdb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#46999c</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3d55888e97db51100406bbc3f153afda</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afda</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afdc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7555888e97db51100406bbc3f153afdb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7955888e97db51100406bbc3f153afda</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>center</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b155888e97db51100406bbc3f153afdb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:27</sys_created_on>
+                        <sys_id>b155c48e97db51100406bbc3f153af66</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:27</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afd9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afdb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afdc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f955888e97db51100406bbc3f153afd9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f955888e97db51100406bbc3f153afdb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>Release Criticality</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:27">b955c48e97db51100406bbc3f153af65</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>fd55888e97db51100406bbc3f153afda</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA Product and Release">b555c48e97db51100406bbc3f153af64</page>
+                <summary>No. of Release Involving  BCD(Business Confidential Data)</summary>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                <sys_id>bd55888e97db51100406bbc3f153afea</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3155888e97db51100406bbc3f153afed</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afec</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3555888e97db51100406bbc3f153afee</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3955888e97db51100406bbc3f153afeb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>3955888e97db51100406bbc3f153afed</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afec</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>center</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7155888e97db51100406bbc3f153afee</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>No. of Release Involving  BCD(Business Confidential Data)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7555888e97db51100406bbc3f153afeb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>7d55888e97db51100406bbc3f153afec</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b155888e97db51100406bbc3f153afeb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#f8f4f4</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>b955888e97db51100406bbc3f153afec</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afeb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>bd55888e97db51100406bbc3f153afed</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f155888e97db51100406bbc3f153afed</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>4c1af161975311100406bbc3f153af92</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afec</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f555888e97db51100406bbc3f153afee</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_header</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f955888e97db51100406bbc3f153afeb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>header_color</name>
+                        <portal_section display_value="Created 2022-11-22 10:49:28">bd55888e97db51100406bbc3f153afea</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+                        <sys_id>f955888e97db51100406bbc3f153afed</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
+                        <value>#46999c</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

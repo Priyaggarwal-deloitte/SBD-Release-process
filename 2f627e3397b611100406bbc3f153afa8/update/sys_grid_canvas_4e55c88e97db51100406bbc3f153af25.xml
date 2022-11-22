@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
     <sys_grid_canvas action="INSERT_OR_UPDATE">
-        <legacy_page display_value="PA Baseline Controls">87e031a5971311100406bbc3f153af89</legacy_page>
-        <name>PA SBD Overview - New Tab 2</name>
+        <legacy_page display_value="PA SBD Overview -Detailed">0655c88e97db51100406bbc3f153af14</legacy_page>
+        <name>PA SBD Overview -Detailed</name>
         <sys_class_name>sys_grid_canvas</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-21 05:22:32</sys_created_on>
-        <sys_id>c7e031a5971311100406bbc3f153af8a</sys_id>
+        <sys_created_on>2022-11-22 10:49:28</sys_created_on>
+        <sys_id>4e55c88e97db51100406bbc3f153af25</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>PA SBD Overview - New Tab 2</sys_name>
+        <sys_name>PA SBD Overview -Detailed</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
-        <sys_update_name>sys_grid_canvas_c7e031a5971311100406bbc3f153af8a</sys_update_name>
+        <sys_update_name>sys_grid_canvas_4e55c88e97db51100406bbc3f153af25</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-21 05:22:32</sys_updated_on>
+        <sys_updated_on>2022-11-22 10:49:28</sys_updated_on>
     </sys_grid_canvas>
 </record_update>

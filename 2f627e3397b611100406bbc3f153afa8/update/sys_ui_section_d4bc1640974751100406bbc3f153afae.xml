@@ -3,266 +3,196 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>0</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>65581210971b15100406bbc3f153af5f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>00c5a3b9975b51100406bbc3f153afde</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>x_675641_sbd_relea_release</element>
+            <element>parent</element>
             <position>1</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>e9581210971b15100406bbc3f153af5f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>84c5a3b9975b51100406bbc3f153afde</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_release.x_675641_sbd_relea_name</element>
             <position>2</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>6d581210971b15100406bbc3f153af5f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>08c5a3b9975b51100406bbc3f153afde</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_type</element>
             <position>3</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>ed581210971b15100406bbc3f153af5f</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>88c5a3b9975b51100406bbc3f153afde</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_approval_group</element>
             <position>4</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>ad589210971b15100406bbc3f153af76</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>0cc5a3b9975b51100406bbc3f153afde</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_assigned_to</element>
             <position>5</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>21589210971b15100406bbc3f153af77</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>44c5a3b9975b51100406bbc3f153afeb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_release.x_675641_sbd_relea_project_manager_requester</element>
             <position>6</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>a1589210971b15100406bbc3f153af77</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>c4c5a3b9975b51100406bbc3f153afeb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>parent</element>
-            <position>7</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>25589210971b15100406bbc3f153af77</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>8</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>a5589210971b15100406bbc3f153af77</sys_id>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>48c5a3b9975b51100406bbc3f153afeb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_release_phase_status</element>
-            <position>9</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>29589210971b15100406bbc3f153af77</sys_id>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>c8c5a3b9975b51100406bbc3f153afeb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>x_675641_sbd_relea_u_priority</element>
-            <position>10</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>a9589210971b15100406bbc3f153af77</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>x_675641_sbd_relea_start_date</element>
-            <position>11</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>2d589210971b15100406bbc3f153af77</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>x_675641_sbd_relea_due_date</element>
-            <position>12</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>ad589210971b15100406bbc3f153af77</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>x_675641_sbd_relea_end_date</element>
-            <position>13</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>21589210971b15100406bbc3f153af78</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_approver</element>
-            <position>14</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>a1589210971b15100406bbc3f153af78</sys_id>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>4cc5a3b9975b51100406bbc3f153afeb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_release.x_675641_sbd_relea_primary_build_contact</element>
-            <position>15</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>25589210971b15100406bbc3f153af78</sys_id>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>ccc5a3b9975b51100406bbc3f153afeb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_vulnerability_policy_compliance</element>
-            <position>16</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>a5589210971b15100406bbc3f153af78</sys_id>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>40c5a3b9975b51100406bbc3f153afec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>17</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>29589210971b15100406bbc3f153af78</sys_id>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>c0c5a3b9975b51100406bbc3f153afec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_phase_description</element>
-            <position>18</position>
-            <sys_created_by>bishnu</sys_created_by>
-            <sys_created_on>2022-11-17 11:02:20</sys_created_on>
-            <sys_id>a9589210971b15100406bbc3f153af78</sys_id>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-22 08:31:26</sys_created_on>
+            <sys_id>44c5a3b9975b51100406bbc3f153afec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="rm_release_phase" sys_domain="global" view="88bc1e0c970751100406bbc3f153af9b">d4bc1640974751100406bbc3f153afae</sys_ui_section>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-17 11:02:20</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-22 08:31:26</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

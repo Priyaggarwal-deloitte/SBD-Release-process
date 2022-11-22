@@ -32,7 +32,7 @@
         <column/>
         <compute_percent>aggregate</compute_percent>
         <content/>
-        <created_by_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</created_by_user>
+        <created_by_user display_value="Priya Aggarwal">6816f79cc0a8016401c5a33be04be441</created_by_user>
         <custom_chart_size>false</custom_chart_size>
         <custom_chart_title_position>false</custom_chart_title_position>
         <custom_config>{"transforms":[{"transform":{"transform":"Reference","name":"chart-subjects"}}]}</custom_config>
@@ -47,8 +47,9 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>x_675641_sbd_relea_build_scope</field>
         <field_list>number,priority,state,short_description,start_date,end_date,percent_complete</field_list>
-        <filter table="rm_release">x_675641_sbd_relea_sbd_release=true^x_675641_sbd_relea_build_scope!=<item endquery="false" field="x_675641_sbd_relea_sbd_release" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter table="rm_release">x_675641_sbd_relea_sbd_release=true^x_675641_sbd_relea_build_scope!=^sys_class_name=rm_release<item endquery="false" field="x_675641_sbd_relea_sbd_release" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item display_value="-- None --" endquery="false" field="x_675641_sbd_relea_build_scope" goto="false" newquery="false" operator="!=" or="false" value=""/>
+            <item display_value="Release" endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="false" value="rm_release"/>
         </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -108,16 +109,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-18 10:33:07</sys_created_on>
         <sys_id>9b3bdf6897df11100406bbc3f153afe5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>SBD Release Build scope</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>SBD Release by Build scope</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_report_9b3bdf6897df11100406bbc3f153afe5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-18 10:36:08</sys_updated_on>
+        <sys_updated_on>2022-11-22 10:47:51</sys_updated_on>
         <table>rm_release</table>
-        <title>SBD Release Build scope</title>
+        <title>SBD Release by Build scope</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>

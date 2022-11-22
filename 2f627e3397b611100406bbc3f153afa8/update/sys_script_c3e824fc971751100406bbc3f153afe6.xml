@@ -22,7 +22,7 @@
         <is_rest>false</is_rest>
         <message/>
         <name>Generate Production Baseline Assessment</name>
-        <order>100</order>
+        <order>500</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -34,7 +34,7 @@
 
 	// Add your code here
 	
-	var assignto = current.x_675641_sbd_relea_primary_build_contact.sys_id;
+	var assignto = current.assigned_to.sys_id;
 	var tablesys = current.sys_id;
 	var base_type = 'c6b9295c97d315100406bbc3f153af37';
     var base_category = 'b9ca6d9c97d315100406bbc3f153af5d';
@@ -69,7 +69,7 @@
         task.user = assignto;
         task.trigger_table = current.getTableName();
         task.update();
-
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>vaishakh</sys_created_by>
@@ -77,7 +77,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c3e824fc971751100406bbc3f153afe6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Generate Production Baseline Assessment</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
@@ -85,9 +85,9 @@
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_c3e824fc971751100406bbc3f153afe6</sys_update_name>
         <sys_updated_by>vaishakh</sys_updated_by>
-        <sys_updated_on>2022-11-18 16:31:10</sys_updated_on>
+        <sys_updated_on>2022-11-21 10:47:39</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>async_always</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=c3e824fc971751100406bbc3f153afe6"/>
 </record_update>

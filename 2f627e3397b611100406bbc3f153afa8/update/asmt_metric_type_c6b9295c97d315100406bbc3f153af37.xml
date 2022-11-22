@@ -6,10 +6,7 @@
         <anonymize>false</anonymize>
         <business_rule display_value="Auto business rule for Assessments">6f6a255c97d315100406bbc3f153afd3</business_rule>
         <chat_survey>false</chat_survey>
-        <condition table="rm_task">x_675641_sbd_relea_type=security_review^x_675641_sbd_relea_sub_type=complete baseline assessment^EQ<item display_value="Security Review" endquery="false" field="x_675641_sbd_relea_type" goto="false" newquery="false" operator="=" or="false" value="security_review"/>
-            <item display_value="Complete Baseline Controls Assessment" endquery="false" field="x_675641_sbd_relea_sub_type" goto="false" newquery="false" operator="=" or="false" value="complete baseline assessment"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </condition>
+        <condition/>
         <default_filter>-- None --</default_filter>
         <delete_business_rule display_value="Auto deletion rule for Assessments">b36ae59c97d315100406bbc3f153af04</delete_business_rule>
         <description>Questionnaire for generating the controls present at production.</description>
@@ -51,14 +48,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c6b9295c97d315100406bbc3f153af37</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Production Baseline Assessment</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>asmt_metric_type_c6b9295c97d315100406bbc3f153af37</sys_update_name>
         <sys_updated_by>vaishakh</sys_updated_by>
-        <sys_updated_on>2022-11-18 14:21:18</sys_updated_on>
+        <sys_updated_on>2022-11-21 07:21:30</sys_updated_on>
         <table>rm_task</table>
         <url/>
         <user_field/>

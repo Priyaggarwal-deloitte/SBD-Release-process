@@ -4,19 +4,19 @@
         <height>12</height>
         <portal_widget display_value="Created 2022-11-18 10:36:47">8d1c97a897df11100406bbc3f153afe3</portal_widget>
         <posx>0</posx>
-        <posy>0</posy>
+        <posy>17</posy>
         <sys_class_name>sys_grid_canvas_pane</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-18 10:36:47</sys_created_on>
         <sys_id>4d1c97a897df11100406bbc3f153afe6</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>eb69dfe497df11100406bbc3f153af63</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_grid_canvas_pane_4d1c97a897df11100406bbc3f153afe6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-18 10:38:06</sys_updated_on>
-        <width>8</width>
+        <sys_updated_on>2022-11-22 10:44:26</sys_updated_on>
+        <width>6</width>
     </sys_grid_canvas_pane>
 </record_update>
