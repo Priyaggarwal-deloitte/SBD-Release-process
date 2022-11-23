@@ -15,12 +15,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="asmt_assessment_instance">stateCHANGESTOcomplete^EQ<item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="complete"/>
+        <filter_condition table="asmt_assessment_instance">state=complete^EQ<item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="complete"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>Close security review assessment task</name>
+        <name>Make security tasks in progress</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,43 +29,40 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	// Add your code here
-	var releasePhase = current.trigger_id.sys_id;
-	
-	var releaseTask = new GlideRecord('rm_task');
-	releaseTask.addEncodedQuery('parent.sys_idSTARTSWITH'+releasePhase);
-	releaseTask.query();
-	while(releaseTask.next())
-		{
-					var subType = releaseTask.x_675641_sbd_relea_sub_type;
-					if (subType == 'complete security assessment' || subType == 'complete baseline assessment')
-						{
-							releaseTask.x_675641_sbd_relea_status = 'completed';
-							releaseTask.state = 3;
-							releaseTask.update();
-						}	
-		}
+    // Add your code here
+    var releasePhase = current.trigger_id.sys_id;
 
+    var releaseTask = new GlideRecord('rm_task');
+    releaseTask.addEncodedQuery('parent.sys_idSTARTSWITH' + releasePhase);
+    releaseTask.query();
+    while (releaseTask.next()) {
+        var subType = releaseTask.x_675641_sbd_relea_sub_type;
+        if (subType == 'container scan' || subType == 'mobile application scan' || subType == 'dast scan' || subType == 'infrastructure scan' || subType == 'api scan') {
+            releaseTask.x_675641_sbd_relea_status = 'work_in_progress';
+            releaseTask.state = 2;
+            releaseTask.update();
+        }
+    }
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>bishnu</sys_created_by>
-        <sys_created_on>2022-11-18 15:21:54</sys_created_on>
+        <sys_created_on>2022-11-22 16:55:56</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>38bad4bc97d351100406bbc3f153afac</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>Close security review assessment task</sys_name>
+        <sys_id>6682d142975391100406bbc3f153af08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Make security tasks in progress</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
-        <sys_update_name>sys_script_38bad4bc97d351100406bbc3f153afac</sys_update_name>
+        <sys_update_name>sys_script_6682d142975391100406bbc3f153af08</sys_update_name>
         <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-22 16:26:37</sys_updated_on>
+        <sys_updated_on>2022-11-22 16:55:56</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=38bad4bc97d351100406bbc3f153afac"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=6682d142975391100406bbc3f153af08"/>
 </record_update>

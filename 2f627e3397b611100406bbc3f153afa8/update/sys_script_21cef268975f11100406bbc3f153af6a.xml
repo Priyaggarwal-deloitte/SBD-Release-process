@@ -41,13 +41,14 @@
 	//Question-30.2 Does the application leverage open source components/libraries? If yes, SCA Scan == True
 	//Question-16 Are all users of the system identified and authenticated? YES
 	//Question-16.1 If yes, is Client SSO being used? If yes, SSO Pattern== True
-	//Question-11 Are audit creation, protection and storage capabilities in place?  YES
-	//Question-11.1 If yes, are all access attempts and administrative activities logged? YES
-	//Question-11.1.1 Are logs stored on a central server? If NO, Logging Pattern == True
+	//Question-11 Are audit creation, protection and storage capabilities in place?  YES 
+	//Question-11.1 If yes, are all access attempts and administrative activities logged? YES || NO Logging Pattern == True
+	//Question-11.1.1 Are logs stored on a central server? YES|| NO Logging Pattern == True
 	//Question-42 Are systems/applications in the project accesible to remote users inside or outside of the organization's internal network? If YES, Remote Access Pattern == True
-	//Question-8 Is the data encrypted to protect it during remote sessions and wireless access? NO, Rest Encryption Pattern == True
+	//Question-8 Is the data encrypted to protect it during remote sessions and wireless access? NO ||YES Rest Encryption Pattern == True
 	//Question-2 Is system access restricted to only permitted activities and functions? YES
-	//Question-2.1 Is there a formal user provisioning and deprovisioning process in place? Answer is NO, Active Directory Pattern == True
+	//Question-2.1 Is there a formal user provisioning and deprovisioning process in place? Answer is YES||NO, Active Directory Pattern == True
+	
 	var RelPhase_resultSrc = current.trigger_id+'';
 	var assmet_instance = current.sys_id+'';
 	var ret_result_obj = [] ;
@@ -105,7 +106,7 @@ gs.info('SBD SAST'+ret_result_obj[j][1]+'----------'+mapping[j][1]);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>21cef268975f11100406bbc3f153af6a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>SBD SAST and SCA Data Elements Check</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
@@ -113,7 +114,7 @@ gs.info('SBD SAST'+ret_result_obj[j][1]+'----------'+mapping[j][1]);
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_21cef268975f11100406bbc3f153af6a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-22 06:55:01</sys_updated_on>
+        <sys_updated_on>2022-11-22 15:59:55</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
