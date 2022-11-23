@@ -10,7 +10,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="rm_task" name="rm_task" sys_domain="global" view="7b0a3e4897c751100406bbc3f153af48">fc210704970b51100406bbc3f153afab</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="rm_task" sys_domain="global" view="7b0a3e4897c751100406bbc3f153af48">fb0a768897c751100406bbc3f153af32</sys_ui_section>
+            <sys_ui_section caption="Security Task" display_value="Security Task" name="rm_task" sys_domain="global" view="7b0a3e4897c751100406bbc3f153af48">fb0a768897c751100406bbc3f153af32</sys_ui_section>
             <sys_updated_by>Aman</sys_updated_by>
             <sys_updated_on>2022-11-04 09:06:25</sys_updated_on>
         </sys_ui_form_section>

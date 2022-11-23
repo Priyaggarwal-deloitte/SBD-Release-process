@@ -10,7 +10,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="rm_release" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">e3f006c097c351100406bbc3f153af8e</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">f44eb148978351100406bbc3f153af46</sys_ui_section>
+            <sys_ui_section caption="Security Project" display_value="Security Project" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">f44eb148978351100406bbc3f153af46</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2022-11-04 04:26:10</sys_updated_on>
         </sys_ui_form_section>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="x_675641_sbd_relea_release_phase_status" label="Release Phase Status" language="en" table="rm_release_phase">
+    <sys_documentation element="x_675641_sbd_relea_release_phase_status" label="Engagement Status" language="en" table="rm_release_phase">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_release_phase_status</element>
             <help/>
             <hint/>
-            <label>Release Phase Status</label>
+            <label>Engagement Status</label>
             <language>en</language>
             <name>rm_release_phase</name>
-            <plural>Release Phase Status</plural>
+            <plural>Engagement Status</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>Aman</sys_created_by>
             <sys_created_on>2022-11-09 09:36:02</sys_created_on>
             <sys_id>dbd73075978719100406bbc3f153af59</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Release Phase Status</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Engagement Status</sys_name>
             <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
             <sys_policy/>
             <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
             <sys_update_name>sys_documentation_rm_release_phase_x_675641_sbd_relea_release_phase_status_en</sys_update_name>
-            <sys_updated_by>Aman</sys_updated_by>
-            <sys_updated_on>2022-11-09 09:36:02</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-23 10:21:52</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

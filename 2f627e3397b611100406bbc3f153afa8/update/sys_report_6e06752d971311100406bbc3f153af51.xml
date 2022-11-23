@@ -47,8 +47,9 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>x_675641_sbd_relea_criticality</field>
         <field_list>number,priority,state,short_description,start_date,end_date,percent_complete</field_list>
-        <filter table="rm_release">x_675641_sbd_relea_sbd_release=true^sys_class_name=rm_release<item endquery="false" field="x_675641_sbd_relea_sbd_release" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter table="rm_release">x_675641_sbd_relea_sbd_release=true^sys_class_name=rm_release^EQ<item endquery="false" field="x_675641_sbd_relea_sbd_release" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item display_value="Release" endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="false" value="rm_release"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -108,16 +109,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-21 05:44:53</sys_created_on>
         <sys_id>6e06752d971311100406bbc3f153af51</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Release by Criticality</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Security Project by Criticality</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_report_6e06752d971311100406bbc3f153af51</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-22 10:46:09</sys_updated_on>
+        <sys_updated_on>2022-11-23 10:51:23</sys_updated_on>
         <table>rm_release</table>
-        <title>Release by Criticality</title>
+        <title>Security Project by Criticality</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>

@@ -3,25 +3,25 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>11292fbd975b51100406bbc3f153af80</sys_id>
+            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
+            <sys_id>7b79e89e979311100406bbc3f153af6c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
             <text>Overview of various types of systems being developed as part of project build.</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>11292fbd975b51100406bbc3f153af80</element>
+            <element>7b79e89e979311100406bbc3f153af6c</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>11292fbd975b51100406bbc3f153af87</sys_id>
+            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
+            <sys_id>7b79e89e979311100406bbc3f153af73</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -29,13 +29,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>91292fbd975b51100406bbc3f153af87</sys_id>
+            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
+            <sys_id>fb79e89e979311100406bbc3f153af73</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -43,13 +43,13 @@
             <element>x_675641_sbd_relea_hosting_location</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>15292fbd975b51100406bbc3f153af87</sys_id>
+            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
+            <sys_id>7f79e89e979311100406bbc3f153af73</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -57,13 +57,13 @@
             <element>x_675641_sbd_relea_system_type</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>95292fbd975b51100406bbc3f153af87</sys_id>
+            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
+            <sys_id>ff79e89e979311100406bbc3f153af73</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -71,13 +71,13 @@
             <element>x_675641_sbd_relea_invoice_containerization</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>19292fbd975b51100406bbc3f153af87</sys_id>
+            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
+            <sys_id>7379e89e979311100406bbc3f153af74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -85,13 +85,13 @@
             <element>x_675641_sbd_relea_api</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>99292fbd975b51100406bbc3f153af87</sys_id>
+            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
+            <sys_id>f379e89e979311100406bbc3f153af74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -99,13 +99,13 @@
             <element>x_675641_sbd_relea_intake_ques4</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>1d292fbd975b51100406bbc3f153af87</sys_id>
+            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
+            <sys_id>7779e89e979311100406bbc3f153af74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -113,13 +113,13 @@
             <element>.split</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>9d292fbd975b51100406bbc3f153af87</sys_id>
+            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
+            <sys_id>f779e89e979311100406bbc3f153af74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -127,13 +127,13 @@
             <element>x_675641_sbd_relea_build_scope</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>11292fbd975b51100406bbc3f153af88</sys_id>
+            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
+            <sys_id>7b79e89e979311100406bbc3f153af74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -141,13 +141,13 @@
             <element>x_675641_sbd_relea_public_cloud</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>91292fbd975b51100406bbc3f153af88</sys_id>
+            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
+            <sys_id>fb79e89e979311100406bbc3f153af74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -155,13 +155,13 @@
             <element>x_675641_sbd_relea_reference_architecture</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>15292fbd975b51100406bbc3f153af88</sys_id>
+            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
+            <sys_id>7f79e89e979311100406bbc3f153af74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -169,13 +169,13 @@
             <element>x_675641_sbd_relea_target_architecture</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-22 08:46:16</sys_created_on>
-            <sys_id>95292fbd975b51100406bbc3f153af88</sys_id>
+            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
+            <sys_id>ff79e89e979311100406bbc3f153af74</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Project Build Scope" display_value="Project Build Scope" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">b7f41475978319100406bbc3f153afbd</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-22 08:46:16</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

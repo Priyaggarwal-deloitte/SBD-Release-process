@@ -68,7 +68,7 @@
             <name>rm_task</name>
             <parent>rm_release_phase</parent>
             <position/>
-            <relationship display_value="Release Task">560f861b978311100406bbc3f153af86</relationship>
+            <relationship display_value="Security Task">560f861b978311100406bbc3f153af86</relationship>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>

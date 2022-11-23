@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
         <additional_groupby/>
-        <aggregate>COUNT</aggregate>
+        <aggregate>SUM</aggregate>
         <aggregation_source>no_override</aggregation_source>
         <allow_data_label_overlap>false</allow_data_label_overlap>
         <apply_alias>false</apply_alias>
@@ -29,7 +29,7 @@
         <color display_value="Default Color">de699435d7033100b4964ebfae610331</color>
         <color_palette display_value="Default UI14">aa558ab3d7732100fa6c0c12ce610377</color_palette>
         <colors/>
-        <column/>
+        <column>x_675641_sbd_relea_total_controls</column>
         <compute_percent>aggregate</compute_percent>
         <content/>
         <created_by_user display_value="Priya Aggarwal">6816f79cc0a8016401c5a33be04be441</created_by_user>
@@ -47,11 +47,11 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field/>
         <field_list>number,priority,state,short_description,start_date,end_date,percent_complete</field_list>
-        <filter table="rm_release">x_675641_sbd_relea_sbd_release=true^sys_class_name=rm_release^x_675641_sbd_relea_pii=yes<item endquery="false" field="x_675641_sbd_relea_sbd_release" goto="false" newquery="false" operator="=" or="false" value="true"/>
-            <item display_value="Release" endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="false" value="rm_release"/>
-            <item display_value="Yes" endquery="false" field="x_675641_sbd_relea_pii" goto="false" newquery="false" operator="=" or="false" value="yes"/>
+        <filter table="rm_release_phase">x_675641_sbd_relea_sbd=true^x_675641_sbd_relea_type=security review^x_675641_sbd_relea_total_controls!=0<item endquery="false" field="x_675641_sbd_relea_sbd" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item display_value="Security Review" endquery="false" field="x_675641_sbd_relea_type" goto="false" newquery="false" operator="=" or="false" value="security review"/>
+            <item endquery="false" field="x_675641_sbd_relea_total_controls" goto="false" newquery="false" operator="!=" or="false" value="0"/>
         </filter>
-        <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{"$COUNT_FIELD$,AGGREGATION":{"decimalPrecision":2,"groupingUsed":true,"roundingMode":"HALF_UP","metricPrefixSymbolUsed":false,"showOriginalNumberInTooltip":true,"addValueInTooltip":true}}}</formatting_configuration>
+        <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -82,14 +82,14 @@
         <report_drilldown/>
         <report_source/>
         <roles/>
-        <row/>
+        <row>x_675641_sbd_relea_release.x_675641_sbd_relea_name,x_675641_sbd_relea_implemented_controls,x_675641_sbd_relea_non_implemented_controls</row>
         <sc_groupby_item_id/>
         <sc_groupby_variable_id/>
         <sc_stackby_item_id/>
         <sc_stackby_variable_id/>
         <score_color display_value="Black">65b30218a9fe3dba0120df8611520d97</score_color>
         <series_name_text/>
-        <set_color>null</set_color>
+        <set_color>one_color</set_color>
         <show_chart_border>false</show_chart_border>
         <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
@@ -100,30 +100,30 @@
         <show_legend>true</show_legend>
         <show_legend_border>false</show_legend_border>
         <show_marker>false</show_marker>
-        <show_zero>true</show_zero>
+        <show_zero>false</show_zero>
         <source_type>table</source_type>
         <start_time/>
         <style_config/>
-        <sumfield/>
+        <sumfield>x_675641_sbd_relea_non_implemented_controls</sumfield>
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-11-21 05:59:48</sys_created_on>
-        <sys_id>8579f521975311100406bbc3f153af17</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Number of Security Project Involving PII(Personally Identifiable Information)</sys_name>
+        <sys_created_on>2022-11-23 10:55:38</sys_created_on>
+        <sys_id>825099da975711100406bbc3f153af08</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>No of Controls</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
-        <sys_update_name>sys_report_8579f521975311100406bbc3f153af17</sys_update_name>
+        <sys_update_name>sys_report_825099da975711100406bbc3f153af08</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-23 10:52:04</sys_updated_on>
-        <table>rm_release</table>
-        <title>Number of Security Project Involving PII(Personally Identifiable Information)</title>
+        <sys_updated_on>2022-11-23 12:04:23</sys_updated_on>
+        <table>rm_release_phase</table>
+        <title>No of Controls</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
         <trend_field/>
-        <type>single_score</type>
+        <type>pivot_v2</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
         <use_null_in_trend>false</use_null_in_trend>

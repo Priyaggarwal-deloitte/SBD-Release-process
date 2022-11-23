@@ -53,7 +53,7 @@
             <name>rm_release_phase</name>
             <parent>rm_release</parent>
             <position/>
-            <relationship display_value="Release Phase">eb9706df974311100406bbc3f153af12</relationship>
+            <relationship display_value="Security Engagement">eb9706df974311100406bbc3f153af12</relationship>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>

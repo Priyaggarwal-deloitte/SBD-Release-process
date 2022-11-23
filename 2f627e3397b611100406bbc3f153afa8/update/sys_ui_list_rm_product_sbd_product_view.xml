@@ -2,18 +2,48 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="rm_product" version="2" view="sbd_product_view">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>active</element>
-            <list_id display_value="rm_product" element="NULL" name="rm_product" parent="NULL" relationship="NULL" sys_domain="global" view="0a08b23b97b611100406bbc3f153af32">2dcdd0de975311100406bbc3f153aff8</list_id>
+            <element>number</element>
+            <list_id display_value="rm_product" element="NULL" name="rm_product" parent="NULL" relationship="NULL" sys_domain="global" view="0a08b23b97b611100406bbc3f153af32">4e28a8da979311100406bbc3f153af91</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 07:14:42</sys_created_on>
-            <sys_id>29cdd0de975311100406bbc3f153aff9</sys_id>
+            <sys_created_on>2022-11-23 08:00:03</sys_created_on>
+            <sys_id>8e28a8da979311100406bbc3f153af92</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 07:14:42</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:00:03</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="rm_product" element="NULL" name="rm_product" parent="NULL" relationship="NULL" sys_domain="global" view="0a08b23b97b611100406bbc3f153af32">4e28a8da979311100406bbc3f153af91</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-23 08:00:04</sys_created_on>
+            <sys_id>0628a8da979311100406bbc3f153af93</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-23 08:00:04</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_675641_sbd_relea_product_reference</element>
+            <list_id display_value="rm_product" element="NULL" name="rm_product" parent="NULL" relationship="NULL" sys_domain="global" view="0a08b23b97b611100406bbc3f153af32">4e28a8da979311100406bbc3f153af91</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-23 08:00:04</sys_created_on>
+            <sys_id>8628a8da979311100406bbc3f153af93</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-23 08:00:04</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -27,10 +57,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 07:14:42</sys_created_on>
+            <sys_created_on>2022-11-23 08:00:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2dcdd0de975311100406bbc3f153aff8</sys_id>
+            <sys_id>4e28a8da979311100406bbc3f153af91</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>rm_product</sys_name>
             <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
@@ -38,7 +68,7 @@
             <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
             <sys_update_name>sys_ui_list_rm_product_sbd_product_view</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 07:14:42</sys_updated_on>
+            <sys_updated_on>2022-11-23 08:00:03</sys_updated_on>
             <sys_user/>
             <view display_value="SBD Product View" name="sbd_product_view">0a08b23b97b611100406bbc3f153af32</view>
             <view_name/>

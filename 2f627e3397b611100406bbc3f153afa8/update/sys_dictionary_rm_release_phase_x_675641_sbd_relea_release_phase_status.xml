@@ -13,7 +13,7 @@
         <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Release Phase Status</column_label>
+        <column_label>Engagement Status</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -53,13 +53,13 @@
         <sys_created_by>Aman</sys_created_by>
         <sys_created_on>2022-11-09 09:36:02</sys_created_on>
         <sys_id>adc7bc35978719100406bbc3f153af80</sys_id>
-        <sys_name>Release Phase Status</sys_name>
+        <sys_name>Engagement Status</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_dictionary_rm_release_phase_x_675641_sbd_relea_release_phase_status</sys_update_name>
-        <sys_updated_by>Aman</sys_updated_by>
-        <sys_updated_on>2022-11-09 09:52:25</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-23 10:21:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

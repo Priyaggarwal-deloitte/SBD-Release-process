@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>false</active>
-        <application display_value="SBD Release process">36937e33977611100406bbc3f153afec</application>
+        <application display_value="SBD process">36937e33977611100406bbc3f153afec</application>
         <assessment/>
         <device_type/>
         <filter/>
