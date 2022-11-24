@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="rm_release_phase" version="2" view="RPTf6d4746a971751100406bbc3f153af04">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="NULL" relationship="NULL" sys_domain="global" view="72d4b8aa971751100406bbc3f153af20">2f65f0ea971751100406bbc3f153aff4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-24 03:36:31</sys_created_on>
+            <sys_id>2765f0ea971751100406bbc3f153aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 03:36:31</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_675641_sbd_relea_release.x_675641_sbd_relea_name</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="NULL" relationship="NULL" sys_domain="global" view="72d4b8aa971751100406bbc3f153af20">2f65f0ea971751100406bbc3f153aff4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-24 03:36:31</sys_created_on>
+            <sys_id>a765f0ea971751100406bbc3f153aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 03:36:31</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_675641_sbd_relea_release.x_675641_sbd_relea_primary_build_contact</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="NULL" relationship="NULL" sys_domain="global" view="72d4b8aa971751100406bbc3f153af20">2f65f0ea971751100406bbc3f153aff4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-24 03:36:31</sys_created_on>
+            <sys_id>2b65f0ea971751100406bbc3f153aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 03:36:31</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_675641_sbd_relea_implemented_controls</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="NULL" relationship="NULL" sys_domain="global" view="72d4b8aa971751100406bbc3f153af20">2f65f0ea971751100406bbc3f153aff4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-24 03:36:31</sys_created_on>
+            <sys_id>ab65f0ea971751100406bbc3f153aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 03:36:31</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_675641_sbd_relea_non_implemented_controls</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="NULL" relationship="NULL" sys_domain="global" view="72d4b8aa971751100406bbc3f153af20">2f65f0ea971751100406bbc3f153aff4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-24 03:36:31</sys_created_on>
+            <sys_id>2f65f0ea971751100406bbc3f153aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 03:36:31</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_675641_sbd_relea_total_controls</element>
+            <list_id display_value="rm_release_phase" element="NULL" name="rm_release_phase" parent="NULL" relationship="NULL" sys_domain="global" view="72d4b8aa971751100406bbc3f153af20">2f65f0ea971751100406bbc3f153aff4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-24 03:36:31</sys_created_on>
+            <sys_id>af65f0ea971751100406bbc3f153aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 03:36:31</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>rm_release_phase</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-11-24 03:36:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f65f0ea971751100406bbc3f153aff4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rm_release_phase</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_ui_list_rm_release_phase_RPTf6d4746a971751100406bbc3f153af04</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 03:36:31</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptf6d4746a971751100406bbc3f153af04" name="RPTf6d4746a971751100406bbc3f153af04">72d4b8aa971751100406bbc3f153af20</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

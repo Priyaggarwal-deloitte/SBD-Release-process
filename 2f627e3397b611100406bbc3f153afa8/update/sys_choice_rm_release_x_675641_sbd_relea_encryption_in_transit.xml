@@ -31,10 +31,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>65f8760897c751100406bbc3f153af56</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>Kriti</sys_updated_by>
-            <sys_updated_on>2022-11-04 08:30:56</sys_updated_on>
-            <value>yes</value>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 02:40:16</sys_updated_on>
+            <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -51,10 +51,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>47f8fa0897c751100406bbc3f153afb8</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>Kriti</sys_updated_by>
-            <sys_updated_on>2022-11-04 08:31:16</sys_updated_on>
-            <value>no</value>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 02:40:19</sys_updated_on>
+            <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -71,10 +71,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c8193e0897c751100406bbc3f153af60</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>Kriti</sys_updated_by>
-            <sys_updated_on>2022-11-04 08:31:33</sys_updated_on>
-            <value>na</value>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-11-24 02:40:23</sys_updated_on>
+            <value>3</value>
         </sys_choice>
     </sys_choice>
 </record_update>

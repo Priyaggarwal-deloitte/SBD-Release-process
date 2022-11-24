@@ -6,7 +6,7 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>false</active>
+        <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -31,63 +31,74 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	// Add your code here
-var RelPhase_resultSrc = current.trigger_id+'';
-	var assmet_instance = current.sys_id+'';
-	var ret_result_obj = [] ;
-	var rel_sso = '';
-	var rel_rbac = '';
-	var rel_mfa = '';
-	var rel_pam = '';
-	var rel_log = '';
-	var rel_app_data = '';
-	
-	var result_query = 'source_id='+RelPhase_resultSrc+'^instance='+''+assmet_instance+'^metric.name='+ques[i];
-var gr = new GlideRecord("asmt_metric_result");
-gr.addEncodedQuery(result_query);
-gr.query();
-while (gr.next()) {
-	if(gr.metric.name == '')
-	   
-	   gr.actual_value;
-}
+    // Add your code here
+    var Reltask_resultSrc = current.trigger_id + '';
+    var assmet_instance = current.sys_id + '';
+    var Reltask_RElease = '';
 
-	
-	
-	
-	var gr = new GlideRecord("rm_task");
-gr.addQuery("sys_id", RelPhase_resultSrc);
-gr.query();
-if (gr.next()) {
- var gr1 = new GlideRecord("rm_release_phase");
-gr1.addQuery("sys_id", gr.parent);
-gr1.query();
-if (gr1.next()) {
-	
 
-   var gr2 = new GlideRecord("rm_release");
-gr2.addQuery("sys_id", gr1.parent);
-gr2.query();
-if (gr2.next()) {
-	
-	if(ret_result_obj[i][0]=='Question 6'){
-		gr2.x_675641_sbd_relea_single_sign_on_sso  = '';
-	}
-		if(ret_result_obj[i][0]=='Question 8.1'){
-		gr2.x_675641_sbd_relea_multi_factor_authentication_mfa  = ret_result_obj[i][1];
-	}
-				if(ret_result_obj[i][0]=='Question 13'){
-		gr2.x_675641_sbd_relea_role_based_access_control_rbac  = ret_result_obj[i][1];
-	}
-		
-	
-	
- 
-} gr2.update(); }
-} 
+    //GPS Control Databse - Production control assessment
+    //================================
+    var ret_result_obj = [];
+    var ques_field_map = [];
+    var ques = ['Question 6', 'Question 13', 'Question 8.1', 'Question 15', 'Question 19', 'Question 20', 'Question 19.2.1', 'Question 22', 'Question 24', 'Question 27.1'];
+    for (var i = 0; i < ques.length; i++) {
+        var result_query = 'source_id=' + Reltask_resultSrc + '^instance=' + '' + assmet_instance + '^metric.name=' + ques[i] + '^actual_value!=-1^ORactual_value=NULL';
+        //var result_query = 'source_id='+'ef355fb5971b51100406bbc3f153afc2'+'^instance='+'fb351fb5971b51100406bbc3f153afe3'+''+'^metric.name='+ques[i]+'^actual_value!=-1^ORactual_value=NULL';
+        var grResult = new GlideRecord("asmt_metric_result");
+        grResult.addEncodedQuery(result_query);
+        grResult.query();
+        if (grResult.next()) {
+            ret_result_obj.push([grResult.metric.name, grResult.actual_value]);
+        }
+    }
+    gs.info('1. SBP Prod Baseline======='+ret_result_obj);
+    ////Question 6,1,Question 13,2,Question 8.1,3,Question 15,-1,Question 19,-1,Question 20,-1,Question 22,-1,Question 24,-1
 
+    ques_field_map = [
+        ['Question 6', 'x_675641_sbd_relea_single_sign_on_sso'],
+        ['Question 13', 'x_675641_sbd_relea_role_based_access_control_rbac'],
+        ['Question 8.1', 'x_675641_sbd_relea_multi_factor_authentication_mfa'],
+        ['Question 15', 'x_675641_sbd_relea_privileged_access_management_pam'],
+        ['Question 19', 'x_675641_sbd_relea_central_application_logging'],
+        ['Question 20', 'x_675641_sbd_relea_encryption_at_rest'],
+        ['Question 19.2.1', 'x_675641_sbd_relea_monitoring_alerting'],
+        ['Question 22', 'x_675641_sbd_relea_encryption_in_transit'],
+        ['Question 24', 'x_675641_sbd_relea_vulnerability_testing'],
+        ['Question 27.1', 'x_675641_sbd_relea_mobile_device_management_mdm']
+    ];
+
+
+
+    var grRelTAsk = new GlideRecord("rm_task");
+    grRelTAsk.addQuery("sys_id", Reltask_resultSrc);
+    grRelTAsk.query();
+    if (grRelTAsk.next()) {
+        Reltask_RElease = grRelTAsk.parent.parent + ''; //to get the release of the task
+
+
+
+        var grREL = new GlideRecord("rm_release");
+        grREL.addQuery("sys_id", Reltask_RElease);
+        grREL.query();
+        if (grREL.next()) {
+
+            for (var j = 0; j < ret_result_obj.length; j++) {
+                if (ret_result_obj[j][0] == ques_field_map[j][0]) {
+                   gs.info('2. SBP Prod Baseline======='+ret_result_obj[j][1] + '===========' + ques_field_map[j][1] + '=============' + ret_result_obj[j][0]);
+                    //x_675641_sbd_relea: Question 6,1,Question 13,2,Question 8.1,3
+                    //x_675641_sbd_relea: 1===========x_675641_sbd_relea_single_sign_on_sso=============Question 6
+                    //x_675641_sbd_relea: 2===========x_675641_sbd_relea_role_based_access_control_rbac=============Question 13
+                    //x_675641_sbd_relea: 3===========x_675641_sbd_relea_multi_factor_authentication_mfa=============Question 8.1
+
+                    grREL[ques_field_map[j][1]] = ret_result_obj[j][1] + '';
+                }
+            }
+            grREL.update();
+        }
+    }
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -96,7 +107,7 @@ if (gr2.next()) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ff5c1ffd971b51100406bbc3f153afd1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>SBD Production Baseline Control</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
@@ -104,7 +115,7 @@ if (gr2.next()) {
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_ff5c1ffd971b51100406bbc3f153afd1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-22 08:22:25</sys_updated_on>
+        <sys_updated_on>2022-11-24 02:59:05</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
