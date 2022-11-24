@@ -24,16 +24,16 @@
             <label>Above 5 million</label>
             <language>en</language>
             <name>rm_release</name>
-            <sequence>10</sequence>
+            <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>Aman</sys_created_by>
             <sys_created_on>2022-11-08 07:48:36</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6a65575d970f95100406bbc3f153afb6</sys_id>
-            <sys_mod_count>4</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-10 13:04:24</sys_updated_on>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 11:32:55</sys_updated_on>
             <value>above1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -44,16 +44,16 @@
             <label>1 to 5 Million</label>
             <language>en</language>
             <name>rm_release</name>
-            <sequence>15</sequence>
+            <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-11-10 13:04:38</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e7a07a02974399100406bbc3f153aff3</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-10 13:05:15</sys_updated_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 11:32:55</sys_updated_on>
             <value>1to5M</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -61,19 +61,19 @@
             <element>x_675641_sbd_relea_data_volume</element>
             <hint/>
             <inactive>false</inactive>
-            <label>0.5 to 1 \million</label>
+            <label>0.5 to 1 Million</label>
             <language>en</language>
             <name>rm_release</name>
-            <sequence>20</sequence>
+            <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-11-04 08:23:17</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e4373e4497c751100406bbc3f153af80</sys_id>
-            <sys_mod_count>16</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-15 08:28:21</sys_updated_on>
+            <sys_mod_count>18</sys_mod_count>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 11:32:55</sys_updated_on>
             <value>1t0.5</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -81,19 +81,19 @@
             <element>x_675641_sbd_relea_data_volume</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Below 0.5 million</label>
+            <label>Below 0.5 Million</label>
             <language>en</language>
             <name>rm_release</name>
-            <sequence>30</sequence>
+            <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2022-11-04 11:02:44</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c5bbd700978b51100406bbc3f153af16</sys_id>
-            <sys_mod_count>7</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-10 13:03:31</sys_updated_on>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <value>below0_5</value>
         </sys_choice>
     </sys_choice>

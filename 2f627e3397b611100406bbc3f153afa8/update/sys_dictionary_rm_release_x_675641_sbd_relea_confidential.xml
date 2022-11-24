@@ -16,7 +16,7 @@
         <column_label>Is Business Confidential Data involved in this project?</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>yes</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -58,8 +58,8 @@
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_dictionary_rm_release_x_675641_sbd_relea_confidential</sys_update_name>
-        <sys_updated_by>Kriti</sys_updated_by>
-        <sys_updated_on>2022-11-08 13:46:27</sys_updated_on>
+        <sys_updated_by>vaishakh</sys_updated_by>
+        <sys_updated_on>2022-11-24 11:32:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

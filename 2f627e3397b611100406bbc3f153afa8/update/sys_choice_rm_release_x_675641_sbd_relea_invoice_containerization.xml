@@ -21,40 +21,40 @@
             <element>x_675641_sbd_relea_invoice_containerization</element>
             <hint/>
             <inactive>false</inactive>
-            <label>No</label>
-            <language>en</language>
-            <name>rm_release</name>
-            <sequence>0</sequence>
-            <synonyms/>
-            <sys_created_by>Aman</sys_created_by>
-            <sys_created_on>2022-11-08 08:21:17</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>d52d1795974f95100406bbc3f153affd</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>Aman</sys_updated_by>
-            <sys_updated_on>2022-11-08 08:21:25</sys_updated_on>
-            <value>No</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>x_675641_sbd_relea_invoice_containerization</element>
-            <hint/>
-            <inactive>false</inactive>
             <label>Yes</label>
             <language>en</language>
             <name>rm_release</name>
-            <sequence>1</sequence>
+            <sequence>0</sequence>
             <synonyms/>
             <sys_created_by>Aman</sys_created_by>
             <sys_created_on>2022-11-08 08:21:10</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>eb1d1b95974f95100406bbc3f153af53</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>Aman</sys_updated_by>
-            <sys_updated_on>2022-11-08 08:21:27</sys_updated_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 11:32:56</sys_updated_on>
             <value>yes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_invoice_containerization</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>No</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-08 08:21:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d52d1795974f95100406bbc3f153affd</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 11:32:56</sys_updated_on>
+            <value>No</value>
         </sys_choice>
     </sys_choice>
 </record_update>

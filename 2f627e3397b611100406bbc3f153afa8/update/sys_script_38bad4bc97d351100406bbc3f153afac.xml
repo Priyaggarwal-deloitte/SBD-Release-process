@@ -15,7 +15,11 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="asmt_assessment_instance">stateCHANGESTOcomplete^EQ<item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="complete"/>
+        <filter_condition table="asmt_assessment_instance">stateCHANGESTOcomplete^metric_type=74030f54971311100406bbc3f153af0c^ORmetric_type=ced20b94971311100406bbc3f153af9b^ORmetric_type=e1234f94971311100406bbc3f153af69^ORmetric_type=c6b9295c97d315100406bbc3f153af37^EQ<item display_value="Complete" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="complete"/>
+            <item display_table="asmt_metric_type" display_value="SbD assessment- Medium" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="false" value="74030f54971311100406bbc3f153af0c"/>
+            <item display_table="asmt_metric_type" display_value="SbD assessment-High" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="true" value="ced20b94971311100406bbc3f153af9b"/>
+            <item display_table="asmt_metric_type" display_value="SbD assessment-Low" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="true" value="e1234f94971311100406bbc3f153af69"/>
+            <item display_table="asmt_metric_type" display_value="Production Baseline Assessment" endquery="false" field="metric_type" goto="false" newquery="false" operator="=" or="true" value="c6b9295c97d315100406bbc3f153af37"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -29,24 +33,47 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	// Add your code here
-	var releasePhase = current.trigger_id.sys_id;
+    // Add your code here
+    var releasePhase = current.trigger_id.sys_id;
+    var metricType = current.metric_type.getDisplayValue();
+
+	gs.info('aaaaaaaaaaa'+metricType);
+    if (metricType == 'SbD assessment-High' || metricType == 'SbD assessment- Medium' || metricType == 'SbD assessment-Low') {
+        var releaseTask = new GlideRecord('rm_task');
+        releaseTask.addEncodedQuery('parent.sys_idSTARTSWITH' + releasePhase);
+        releaseTask.query();
+        while (releaseTask.next()) {
+            var subType = releaseTask.x_675641_sbd_relea_sub_type;
+            gs.info('sssssssssss111' + releaseTask);
+            if (subType == 'complete security assessment') {
+                releaseTask.x_675641_sbd_relea_status = 'completed';
+                releaseTask.state = 3;
+                releaseTask.update();
+            }
+        }
+
+    } 
 	
-	var releaseTask = new GlideRecord('rm_task');
-	releaseTask.addEncodedQuery('parent.sys_idSTARTSWITH'+releasePhase);
-	releaseTask.query();
-	while(releaseTask.next())
-		{
-					var subType = releaseTask.x_675641_sbd_relea_sub_type;
-					if (subType == 'complete security assessment' || subType == 'complete baseline assessment')
-						{
-							releaseTask.x_675641_sbd_relea_status = 'completed';
-							releaseTask.state = 3;
-							releaseTask.update();
-						}	
-		}
+	else if (metricType == 'Production Baseline Assessment') {
+        var releaseTask1 = new GlideRecord('rm_task');
+        releaseTask1.addEncodedQuery('sys_id',releasePhase);
+        releaseTask1.query();
+        while (releaseTask.next()) {
+            var subType1 = releaseTask1.x_675641_sbd_relea_sub_type;
+            gs.info('sssssssssss222' + releaseTask1);
+            if (subType1 == 'complete baseline assessment') {
+                releaseTask1.x_675641_sbd_relea_status = 'completed';
+                releaseTask1.state = 3;
+                releaseTask1.update();
+            }
+        }
+    }
+
+
+
+
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -55,7 +82,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>38bad4bc97d351100406bbc3f153afac</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Close security review assessment task</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
@@ -63,7 +90,7 @@
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_38bad4bc97d351100406bbc3f153afac</sys_update_name>
         <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-22 16:26:37</sys_updated_on>
+        <sys_updated_on>2022-11-24 12:32:05</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

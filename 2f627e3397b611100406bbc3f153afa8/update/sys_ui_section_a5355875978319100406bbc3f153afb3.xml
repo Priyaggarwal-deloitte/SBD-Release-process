@@ -2,194 +2,194 @@
     <sys_ui_section caption="Security Controls in Production" section_id="a5355875978319100406bbc3f153afb3" sys_domain="global" table="rm_release" version="3" view="sbd_release_view">
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>b379e89e979311100406bbc3f153af7e</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>0a29666e971f51100406bbc3f153af98</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <text>Overview of Baseline Security Controls that are implemented as part of this project</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>b379e89e979311100406bbc3f153af7e</element>
+            <element>0a29666e971f51100406bbc3f153af98</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>7b79e89e979311100406bbc3f153af85</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>ce29666e971f51100406bbc3f153af9f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>fb79e89e979311100406bbc3f153af85</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>4229666e971f51100406bbc3f153afa0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_single_sign_on_sso</element>
             <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>7f79e89e979311100406bbc3f153af85</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>c229666e971f51100406bbc3f153afa0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_multi_factor_authentication_mfa</element>
             <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>ff79e89e979311100406bbc3f153af85</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>4629666e971f51100406bbc3f153afa0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_role_based_access_control_rbac</element>
             <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>7379e89e979311100406bbc3f153af86</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>c629666e971f51100406bbc3f153afa0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_encryption_in_transit</element>
             <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>f379e89e979311100406bbc3f153af86</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>4a29666e971f51100406bbc3f153afa0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_encryption_at_rest</element>
             <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>7779e89e979311100406bbc3f153af86</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>ca29666e971f51100406bbc3f153afa0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>f779e89e979311100406bbc3f153af86</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>4e29666e971f51100406bbc3f153afa0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_central_application_logging</element>
             <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>7b79e89e979311100406bbc3f153af86</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>ce29666e971f51100406bbc3f153afa0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_monitoring_alerting</element>
             <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>fb79e89e979311100406bbc3f153af86</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>4229666e971f51100406bbc3f153afa1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_mobile_device_management_mdm</element>
             <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>7f79e89e979311100406bbc3f153af86</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>c229666e971f51100406bbc3f153afa1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_privileged_access_management_pam</element>
             <position>11</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>ff79e89e979311100406bbc3f153af86</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>4629666e971f51100406bbc3f153afa1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_vulnerability_testing</element>
             <position>12</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:55</sys_created_on>
-            <sys_id>7379e89e979311100406bbc3f153af87</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:09</sys_created_on>
+            <sys_id>c629666e971f51100406bbc3f153afa1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Security Controls in Production" display_value="Security Controls in Production" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">a5355875978319100406bbc3f153afb3</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:55</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:09</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

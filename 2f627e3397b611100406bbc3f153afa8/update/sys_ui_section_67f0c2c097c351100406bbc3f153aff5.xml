@@ -2,292 +2,292 @@
     <sys_ui_section caption="Data Elements" section_id="67f0c2c097c351100406bbc3f153aff5" sys_domain="global" table="rm_release" version="3" view="sbd_release_view">
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3779e89e979311100406bbc3f153af56</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b929666e971f51100406bbc3f153af70</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <text>Overview of various data elements applicable to the current project scope.</text>
             <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
         </sys_ui_annotation>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>3779e89e979311100406bbc3f153af56</element>
+            <element>b929666e971f51100406bbc3f153af70</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3f79e89e979311100406bbc3f153af60</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b129666e971f51100406bbc3f153af7b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>bf79e89e979311100406bbc3f153af60</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3529666e971f51100406bbc3f153af7b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_pci</element>
             <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3379e89e979311100406bbc3f153af61</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b529666e971f51100406bbc3f153af7b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>b379e89e979311100406bbc3f153af61</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3929666e971f51100406bbc3f153af7b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_pii</element>
             <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3779e89e979311100406bbc3f153af61</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b929666e971f51100406bbc3f153af7b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
             <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>b779e89e979311100406bbc3f153af61</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3d29666e971f51100406bbc3f153af7b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_confidential</element>
             <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3b79e89e979311100406bbc3f153af61</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>bd29666e971f51100406bbc3f153af7b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_intake_ques5</element>
             <position>7</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>bb79e89e979311100406bbc3f153af61</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3129666e971f51100406bbc3f153af7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_data_volume</element>
             <position>8</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3f79e89e979311100406bbc3f153af61</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b129666e971f51100406bbc3f153af7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>9</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>bf79e89e979311100406bbc3f153af61</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3529666e971f51100406bbc3f153af7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_sca_scan</element>
             <position>10</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3379e89e979311100406bbc3f153af62</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b529666e971f51100406bbc3f153af7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_sast_scan</element>
             <position>11</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>b379e89e979311100406bbc3f153af62</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3929666e971f51100406bbc3f153af7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_public</element>
             <position>12</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3779e89e979311100406bbc3f153af62</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b929666e971f51100406bbc3f153af7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_remote_access_pattern</element>
             <position>13</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>b779e89e979311100406bbc3f153af62</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3d29666e971f51100406bbc3f153af7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_logging_pattern</element>
             <position>14</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3b79e89e979311100406bbc3f153af62</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>bd29666e971f51100406bbc3f153af7c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>15</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>bb79e89e979311100406bbc3f153af62</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3129666e971f51100406bbc3f153af7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_active_directory_pattern</element>
             <position>16</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3f79e89e979311100406bbc3f153af62</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b129666e971f51100406bbc3f153af7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_sso_pattern</element>
             <position>17</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>bf79e89e979311100406bbc3f153af62</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3529666e971f51100406bbc3f153af7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_security_pattern</element>
             <position>18</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>3379e89e979311100406bbc3f153af63</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>b529666e971f51100406bbc3f153af7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>x_675641_sbd_relea_rest_encryption_pattern</element>
             <position>19</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-11-23 08:05:54</sys_created_on>
-            <sys_id>b379e89e979311100406bbc3f153af63</sys_id>
+            <sys_created_by>vaishakh</sys_created_by>
+            <sys_created_on>2022-11-24 12:02:08</sys_created_on>
+            <sys_id>3929666e971f51100406bbc3f153af7d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data Elements" display_value="Data Elements" name="rm_release" sys_domain="global" view="b04eb148978351100406bbc3f153af40">67f0c2c097c351100406bbc3f153aff5</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-11-23 08:05:54</sys_updated_on>
+            <sys_updated_by>vaishakh</sys_updated_by>
+            <sys_updated_on>2022-11-24 12:02:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
