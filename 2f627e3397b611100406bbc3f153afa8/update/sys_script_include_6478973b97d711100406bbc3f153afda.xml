@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_675641_sbd_relea.Validate_control_attestation</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Validate_control_attestation</name>
+        <script><![CDATA[var Validate_control_attestation = Class.create();
+Validate_control_attestation.prototype = {
+    initialize: function() {
+    },
+	
+// 	_evaluateAssessmentResult: function(assessment) {
+//         var assessmentId = assessment.sys_id + '';
+//         var group = '';
+		
+// 		gs.info('bbbbbbbbbbbbbb111111111');
+
+//         if (assessment.sn_grc_parent && assessment.sn_grc_parent.state != 'complete' && assessment.sn_grc_parent.state != 'canceled' && assessment.sn_grc_status == 'no_action')
+//             this._removeFromGroup(assessment);
+
+//         if (!this._allAssessmentsFinished(assessmentId))
+//             return;
+
+//         var item = this._getItemByAssessment(assessmentId);
+//         if (!item)
+//             return;
+
+//         var itemId = item.sys_id + '';
+//         group = this._getGroupForAssessment(itemId, assessmentId);
+
+//         var sourceTable = item.sys_class_name + '';
+
+//         if (sourceTable == 'sn_risk_risk')
+//             this._evaluateRisk(itemId);
+//         else if (sourceTable == 'sn_compliance_control')
+//             this._evaluateControl(itemId, group);
+//     },
+
+	
+	_evaluateControl: function(itemId) {
+        var control = new GlideRecord('sn_compliance_control');
+        if (!control.get(itemId))
+            return;
+		gs.info('bbbbbbbbbbbbbb2222222222');
+        if (control.exempt) {
+            control.state = 'review';
+            control.update();
+            return;
+        }
+
+		if (control.x_675641_sbd_relea_evidence != '')
+			{
+				gs.info('bbbbbbbbbbbbbb3333333333');
+				control = new GlideRecord('sn_compliance_control');
+				control.get(itemId);
+				control.state = 'review';
+				control.status = 'compliant';
+				control.update();
+				gs.info('bbbbbbbbbbbbbb4444444444');
+			}
+		else 
+		{
+			gs.addInfoMessage('Kindly attach the evidence before submission');
+		}
+
+        
+    },
+
+    type: 'Validate_control_attestation'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-28 12:42:37</sys_created_on>
+        <sys_id>6478973b97d711100406bbc3f153afda</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Validate_control_attestation</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_include_6478973b97d711100406bbc3f153afda</sys_update_name>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-28 13:51:01</sys_updated_on>
+    </sys_script_include>
+</record_update>
