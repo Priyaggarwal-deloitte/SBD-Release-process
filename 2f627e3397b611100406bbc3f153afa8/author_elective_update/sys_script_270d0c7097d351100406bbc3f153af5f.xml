@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>rm_task</collection>
+        <condition>(new global.AssessmentUtils().conditionCheck(current, 'x_675641_sbd_relea_type=security_review^x_675641_sbd_relea_sub_type=complete baseline assessment^EQ'))</condition>
+        <description/>
+        <execute_function>true</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Auto assessment business rule</name>
+        <order>300</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onAfter(){ 
+ (new sn_assessment_core.AssessmentCreation()).conditionTrigger(current, 'e53ac8bc979351100406bbc3f153afb1'); 
+ }]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>vaishakh</sys_created_by>
+        <sys_created_on>2022-11-18 14:10:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>270d0c7097d351100406bbc3f153af5f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Auto assessment business rule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_270d0c7097d351100406bbc3f153af5f</sys_update_name>
+        <sys_updated_by>vaishakh</sys_updated_by>
+        <sys_updated_on>2022-11-18 14:37:57</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=270d0c7097d351100406bbc3f153af5f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</application>
+        <file_path/>
+        <instance_id>c6d0c8d9db8393c0cbf6d5b0cf9619fe</instance_id>
+        <instance_name>dev63087</instance_name>
+        <name>sys_script_270d0c7097d351100406bbc3f153af5f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;rm_task&lt;/collection&gt;&lt;condition&gt;(new global.AssessmentUtils().conditionCheck(current, 'x_675641_sbd_relea_type=security_review^x_675641_sbd_relea_sub_type=complete baseline assessment^EQ'))&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;true&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Auto assessment business rule&lt;/name&gt;&lt;order&gt;300&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[function onAfter(){ 
+ (new sn_assessment_core.AssessmentCreation()).conditionTrigger(current, 'e53ac8bc979351100406bbc3f153afb1'); 
+ }]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vaishakh&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-18 14:10:46&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;270d0c7097d351100406bbc3f153af5f&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;Auto assessment business rule&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SBD Release process" source="x_675641_sbd_relea"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SBD Release process"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_270d0c7097d351100406bbc3f153af5f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vaishakh&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-18 14:37:57&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=270d0c7097d351100406bbc3f153af5f"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>934341542</payload_hash>
+        <record_name>Auto assessment business rule</record_name>
+        <reverted_from/>
+        <source>eb627e3397b611100406bbc3f153afaa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>vaishakh</sys_created_by>
+        <sys_created_on>2022-11-18 14:37:57</sys_created_on>
+        <sys_id>7143983897d351100406bbc3f153af77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1848b2cc48e0000001</sys_recorded_at>
+        <sys_updated_by>vaishakh</sys_updated_by>
+        <sys_updated_on>2022-11-18 14:37:57</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>7543983883d351109caf3914831cc676</update_guid>
+        <update_guid_history>7543983883d351109caf3914831cc676:934341542,bb039438d3d35110dd478dc20f0236ac:-1305794645,ae6298f460d3511031699515a9f04fe9:1646043181,770d0c70c8d35110d979d16a91bf4c61:934341542</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>vaishakh</sys_created_by>
+        <sys_created_on>2022-11-21 06:21:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>7b5a9ed08d844dd989e77f95f831e691</sys_id>
+        <sys_metadata>270d0c7097d351100406bbc3f153af5f</sys_metadata>
+        <sys_name>Auto assessment business rule</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_parent display_value="Rm Task">13ea5577973211100406bbc3f153afb9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_scope_delete display_value="">b9e24fea3e314497908a004f75c28231</sys_scope_delete>
+        <sys_update_name>sys_script_270d0c7097d351100406bbc3f153af5f</sys_update_name>
+        <sys_update_version display_value="sys_script_270d0c7097d351100406bbc3f153af5f">7143983897d351100406bbc3f153af77</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="311f3fcc970f51100406bbc3f153af1b" label="x_675641_sbd_relea_m2m_Controls_Release Phases" max_length="40" name="x_675641_sbd_relea_m2m_sn_complianc_rm_release_p" type="collection">
+        <element attributes="encode_utf8=false" label="Release Phases" max_length="32" name="rm_release_phase" reference="rm_release_phase" type="reference"/>
+        <element attributes="encode_utf8=false" label="Controls" max_length="32" name="sn_compliance_control" reference="sn_compliance_control" type="reference"/>
+        <index name="index">
+            <element name="rm_release_phase"/>
+        </index>
+        <index name="index2">
+            <element name="sn_compliance_control"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ignore_delete_children=true" audit="true" db_object_id="13ea5577973211100406bbc3f153afb9" extends="planned_task" label="Release Task" max_length="40" name="rm_task" type="collection">
+        <element label="Access Key" max_length="255" name="x_675641_sbd_relea_access_key" type="password2"/>
+        <element label="Approval Group" max_length="32" name="x_675641_sbd_relea_approval_group" reference="sys_user_group" type="reference"/>
+        <element label="Approver" max_length="32" name="x_675641_sbd_relea_approver" reference="sys_user" type="reference"/>
+        <element label="AWS Account ID" max_length="200" name="x_675641_sbd_relea_aws_account_id" type="string"/>
+        <element choice="1" label="AWS or Azure" max_length="40" name="x_675641_sbd_relea_aws_or_azure" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Azure" sequence="0" value="azure"/>
+                <element inactive_on_update="false" label="AWS" sequence="1" value="aws"/>
+            </choice>
+        </element>
+        <element label="Azure Instance Name" max_length="100" name="x_675641_sbd_relea_azure_instance_name" type="string"/>
+        <element label="Client ID" max_length="100" name="x_675641_sbd_relea_client_id" type="string"/>
+        <element label="Client Secret" max_length="100" name="x_675641_sbd_relea_client_secret" type="string"/>
+        <element attributes="u_slushbucket_reference_no_expand" label="Cloud Service Provider" max_length="4000" name="x_675641_sbd_relea_cloud_service_provider" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Components" max_length="4000" name="x_675641_sbd_relea_components" reference="sn_compliance_policy_statement" reference_qual="javascript:&quot;x_675641_sbd_relea_component_typeIN&quot;+current.x_675641_sbd_relea_cloud_service_provider" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="Component Use Case" max_length="4000" name="x_675641_sbd_relea_component_use_case" type="glide_list"/>
+        <element label="Due Date" max_length="40" name="x_675641_sbd_relea_due_date" type="glide_date"/>
+        <element label="End Date" max_length="40" name="x_675641_sbd_relea_end_date" type="glide_date"/>
+        <element label="If they want to import CSP environment" max_length="40" name="x_675641_sbd_relea_if_they_want_to_import_csp_environment" type="boolean"/>
+        <element label="Level of Efforts" max_length="40" name="x_675641_sbd_relea_level_of_efforts" type="integer"/>
+        <element label="Name" max_length="40" name="x_675641_sbd_relea_name" type="string"/>
+        <element label="Primary Build Contact" max_length="32" name="x_675641_sbd_relea_primary_build_contact" reference="sys_user" type="reference"/>
+        <element label="Project Manager / Requestor" max_length="32" name="x_675641_sbd_relea_project_manager_requestor" reference="sys_user" type="reference"/>
+        <element label="Security Engagement" max_length="32" name="x_675641_sbd_relea_release_phase" reference="rm_release_phase" type="reference"/>
+        <element label="SBD Release Task" max_length="40" name="x_675641_sbd_relea_sbd_release_task" type="boolean"/>
+        <element label="Secret Key" max_length="255" name="x_675641_sbd_relea_secret_key" type="password2"/>
+        <element label="Start Date" max_length="40" name="x_675641_sbd_relea_start_date" type="glide_date"/>
+        <element choice="1" label="Status" max_length="40" name="x_675641_sbd_relea_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Currently Unavailable" sequence="0" value="Currently_Unavailable"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Ready to take" sequence="1" value="ready_to_take"/>
+                <element inactive_on_update="false" label="Work In Progress" sequence="2" value="work_in_progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+            </choice>
+        </element>
+        <element label="Subscription ID" max_length="100" name="x_675641_sbd_relea_subscription_id" type="string"/>
+        <element choice="1" dependent="x_675641_sbd_relea_type" dependent_on_field="x_675641_sbd_relea_type" label="Sub Type" max_length="40" name="x_675641_sbd_relea_sub_type" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="security_review" inactive_on_update="false" label="Review Architecture Diagrams" sequence="0" value="architecture intake and review"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Complete Security Assessment Questionnaire" sequence="1" value="complete security assessment"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Complete Baseline Controls Assessment" sequence="2" value="complete baseline assessment"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Identify Cloud Components" sequence="2" value="generate cloud security controls"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Approval for Security Controls" sequence="3" value="approval for security controls"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Generate &amp; Review Security Framework Controls Report" sequence="4" value="security controls generation"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Generate Identified CWEs Report" sequence="5" value="generate application weakness report"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Intake Testing Results" sequence="6" value="intake testing results"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Review Security Framework Controls Implementation" sequence="7" value="review control implementation"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Review Cloud Controls Implementation" sequence="8" value="review cloud control implementation"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Review Data Classification" sequence="9" value="data classification assessment"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Identify Infrastructure Assets" sequence="10" value="identify infrastructure assets"/>
+                <element dependent_value="security_review" inactive_on_update="false" label="Migration task" sequence="10" value="Migration task"/>
+                <element dependent_value="threat_model" inactive_on_update="false" label="Create Data Flow Diagram" sequence="11" value="create data flow diagram"/>
+                <element dependent_value="threat_model" inactive_on_update="false" label="Create Threat Model" sequence="12" value="create_threat_model"/>
+                <element dependent_value="threat_model" inactive_on_update="false" label="Define Assets &amp; Trust Zones" sequence="13" value="define assets and trust zones"/>
+                <element dependent_value="threat_model" inactive_on_update="false" label="Define Threats &amp; Controls" sequence="16" value="define threats and controls"/>
+                <element dependent_value="threat_model" inactive_on_update="false" label="Review Threat Model Remediation" sequence="19" value="review threat model remediation"/>
+                <element dependent_value="threat_model" inactive_on_update="false" label="Generate Technical Report" sequence="22" value="generate technical report"/>
+                <element dependent_value="threat_model" inactive_on_update="false" label="Security Testing Report" sequence="25" value="security testing report"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="Intake Scan Policy Requirements" sequence="28" value="intake application weakness report"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="Generate Scan Policy" sequence="31" value="generate scan policy"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="Mobile Application Scan" sequence="40" value="mobile application scan"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="API Scan" sequence="45" value="api scan"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="DAST Scan" sequence="50" value="dast scan"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="SAST Scan" sequence="55" value="sast scan"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="SCA Scan" sequence="60" value="sca scan"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="Infrastructure Scan" sequence="70" value="infrastructure scan"/>
+                <element dependent_value="security_testing" inactive_on_update="false" label="Container Scan" sequence="75" value="container scan"/>
+            </choice>
+        </element>
+        <element label="Tenant ID" max_length="50" name="x_675641_sbd_relea_tenant_id" type="string"/>
+        <element label="Threat Modeler Project Name" max_length="300" name="x_675641_sbd_relea_threat_modeler_project_name" type="string"/>
+        <element label="Threat Modeler Project Version" max_length="40" name="x_675641_sbd_relea_threat_modeler_project_version" type="string"/>
+        <element label="Threat Reference ID" max_length="40" name="x_675641_sbd_relea_threat_reference_id" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="x_675641_sbd_relea_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Security Review" sequence="0" value="security_review"/>
+                <element inactive_on_update="false" label="Threat Model" sequence="1" value="threat_model"/>
+                <element inactive_on_update="false" label="Security Testing" sequence="2" value="security_testing"/>
+                <element inactive_on_update="false" label="Penetration Test" sequence="3" value="pen_test"/>
+            </choice>
+        </element>
+        <element label="VNet" max_length="100" name="x_675641_sbd_relea_vnet" type="string"/>
+        <element label="VPC ID" max_length="200" name="x_675641_sbd_relea_vpc_id" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1e4f6bf997f211100406bbc3f153aff8" extends="sn_grc_content" label="Control objective" max_length="40" name="sn_compliance_policy_statement" type="collection">
+        <element label="CAPECs" max_length="40" name="x_675641_sbd_relea_capecs" type="string"/>
+        <element label="CCF capability" max_length="40" name="x_675641_sbd_relea_ccf_capability" type="string"/>
+        <element label="CCF Domain" max_length="40" name="x_675641_sbd_relea_ccf_domain" type="string"/>
+        <element label="CCF ID" max_length="40" name="x_675641_sbd_relea_ccf_id" type="string"/>
+        <element label="Cloud Security Blueprint ID" max_length="40" name="x_675641_sbd_relea_cloud_security_blueprint_id" type="string"/>
+        <element label="Component" max_length="40" name="x_675641_sbd_relea_component" type="string"/>
+        <element label="Component Type" max_length="40" name="x_675641_sbd_relea_component_type" type="string"/>
+        <element label="Create SbD control" max_length="40" name="x_675641_sbd_relea_create_sbd_control" type="boolean"/>
+        <element label="CWEs" max_length="40" name="x_675641_sbd_relea_cwes" type="string"/>
+        <element label="Diagram" max_length="40" name="x_675641_sbd_relea_diagram" type="file_attachment"/>
+        <element label="Integrated requirements" max_length="40" name="x_675641_sbd_relea_integrated_requirements" type="string"/>
+        <element label="IR Theme" max_length="40" name="x_675641_sbd_relea_ir_theme" type="string"/>
+        <element label="NIST CSF Category" max_length="40" name="x_675641_sbd_relea_nist_csf_category" type="string"/>
+        <element label="NIST CSF function" max_length="40" name="x_675641_sbd_relea_nist_csf_function" type="string"/>
+        <element label="Remediation" max_length="1000" name="x_675641_sbd_relea_remediation" type="string"/>
+        <element label="Risk statement" max_length="40" name="x_675641_sbd_relea_risk_statement" type="string"/>
+        <element label="Script" max_length="40" name="x_675641_sbd_relea_script" type="file_attachment"/>
+        <element choice="1" label="Severity" max_length="40" name="x_675641_sbd_relea_severity" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Critical" value="critical"/>
+                <element inactive_on_update="false" label="High" value="high"/>
+                <element inactive_on_update="false" label="Low" value="low"/>
+                <element inactive_on_update="false" label="Medium" value="medium"/>
+            </choice>
+        </element>
+        <element label="Test procedures" max_length="40" name="x_675641_sbd_relea_test_procedures" type="string"/>
+    </element>
+</database>

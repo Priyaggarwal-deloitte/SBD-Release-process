@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9586875997cb95100406bbc3f153af79" label="Assessment to CCF mapping" max_length="40" name="x_675641_sbd_relea_assessment_to_ccf_mapping" type="collection">
+        <element label="Mapped CCF IDs" max_length="1000" name="mapped_ccf_ids" type="string"/>
+        <element label="Question" max_length="100" name="question" type="string"/>
+        <element label="Question number" max_length="40" name="question_number" type="string"/>
+        <element label="Weightage" max_length="40" name="wheightage" type="string"/>
+        <element label="Weightage assigned" max_length="40" name="wheightage_assigned" type="string"/>
+    </element>
+</database>

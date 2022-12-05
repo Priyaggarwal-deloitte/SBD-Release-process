@@ -110,14 +110,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-21 06:02:28</sys_created_on>
         <sys_id>4c1af161975311100406bbc3f153af92</sys_id>
-        <sys_mod_count>3</sys_mod_count>
         <sys_name>Number of Security Project Involving  BCD(Business Confidential Data)</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_report_4c1af161975311100406bbc3f153af92</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-23 10:51:03</sys_updated_on>
         <table>rm_release</table>
         <title>Number of Security Project Involving  BCD(Business Confidential Data)</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

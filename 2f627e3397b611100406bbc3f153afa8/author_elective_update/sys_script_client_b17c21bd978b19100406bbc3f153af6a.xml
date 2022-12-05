@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>x_675641_sbd_relea_sub_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Displaying AWS or Azure field</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	if(newValue == 'create_threat_model' && g_form.getValue('x_675641_sbd_relea_if_they_want_to_import_csp_environment') == 'true')
+		{
+			g_form.setMandatory('x_675641_sbd_relea_aws_or_azure',true);
+		}
+	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-09 13:46:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b17c21bd978b19100406bbc3f153af6a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Displaying AWS or Azure field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_client_b17c21bd978b19100406bbc3f153af6a</sys_update_name>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-10 04:35:51</sys_updated_on>
+        <table>rm_task</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</application>
+        <file_path/>
+        <instance_id>c6d0c8d9db8393c0cbf6d5b0cf9619fe</instance_id>
+        <instance_name>dev63087</instance_name>
+        <name>sys_script_client_b17c21bd978b19100406bbc3f153af6a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;x_675641_sbd_relea_sub_type&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Displaying AWS or Azure field&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	if(newValue == 'create_threat_model' &amp;&amp; g_form.getValue('x_675641_sbd_relea_if_they_want_to_import_csp_environment') == 'true')
+		{
+			g_form.setMandatory('x_675641_sbd_relea_aws_or_azure',true);
+		}
+	
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Aman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-09 13:46:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b17c21bd978b19100406bbc3f153af6a&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Displaying AWS or Azure field&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SBD Release process" source="x_675641_sbd_relea"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SBD Release process"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b17c21bd978b19100406bbc3f153af6a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Aman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-10 04:35:51&lt;/sys_updated_on&gt;&lt;table&gt;rm_task&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-662335811</payload_hash>
+        <record_name>Displaying AWS or Azure field</record_name>
+        <reverted_from/>
+        <source>eb52aac4974751100406bbc3f153af7f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-10 04:35:51</sys_created_on>
+        <sys_id>73bc70ca970b59100406bbc3f153afdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1845fd2a5660000001</sys_recorded_at>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-10 04:35:51</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>bbbc70ca920b5910a83fc7d881852edb</update_guid>
+        <update_guid_history>bbbc70ca920b5910a83fc7d881852edb:-662335811,74a879315a0f19108a9f34f5a6415700:2021764266,1437b9bddacb1910d67d61d0aa410a45:-1299866787,ff1631bd67cb191086133f18b5cd2e4d:946394986,1134f9f919cb1910e605f258c4858339:-1704464702,c643b579b3cb191062506de6618e84f4:-1031459769,58d2b17927cb19100b863ff3c250877a:1178180895,4c12f5b522cb19103c04253828706533:386582399,342131355dcb1910b742a45534cdda63:192205151</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-10 06:39:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>24981089f88c4b00909668cae47f4a40</sys_id>
+        <sys_metadata>b17c21bd978b19100406bbc3f153af6a</sys_metadata>
+        <sys_name>Displaying AWS or Azure field</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_parent display_value="Rm Task">13ea5577973211100406bbc3f153afb9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_scope_delete display_value="">b9e24fea3e314497908a004f75c28231</sys_scope_delete>
+        <sys_update_name>sys_script_client_b17c21bd978b19100406bbc3f153af6a</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b17c21bd978b19100406bbc3f153af6a">73bc70ca970b59100406bbc3f153afdc</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

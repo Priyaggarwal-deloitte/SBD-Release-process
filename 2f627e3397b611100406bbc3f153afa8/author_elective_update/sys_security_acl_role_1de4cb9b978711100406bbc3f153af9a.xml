@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-14 11:43:05</sys_created_on>
+        <sys_id>1de4cb9b978711100406bbc3f153af9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_675641_sbd_relea_cloud_security_controls.x_675641_sbd_relea.cloud_security_controls_user</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_security_acl display_value="x_675641_sbd_relea_cloud_security_controls">55e4cb9b978711100406bbc3f153af98</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1de4cb9b978711100406bbc3f153af9a</sys_update_name>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-14 11:43:05</sys_updated_on>
+        <sys_user_role display_value="x_675641_sbd_relea.cloud_security_controls_user" name="x_675641_sbd_relea.cloud_security_controls_user">85e44b9b978711100406bbc3f153af8d</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</application>
+        <file_path/>
+        <instance_id>c6d0c8d9db8393c0cbf6d5b0cf9619fe</instance_id>
+        <instance_name>dev63087</instance_name>
+        <name>sys_security_acl_role_1de4cb9b978711100406bbc3f153af9a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>bishnu</sys_created_by><sys_created_on>2022-11-14 11:43:05</sys_created_on><sys_id>1de4cb9b978711100406bbc3f153af9a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_675641_sbd_relea_cloud_security_controls.x_675641_sbd_relea.cloud_security_controls_user</sys_name><sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package><sys_policy/><sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope><sys_security_acl display_value="x_675641_sbd_relea_cloud_security_controls">55e4cb9b978711100406bbc3f153af98</sys_security_acl><sys_update_name>sys_security_acl_role_1de4cb9b978711100406bbc3f153af9a</sys_update_name><sys_updated_by>bishnu</sys_updated_by><sys_updated_on>2022-11-14 11:43:05</sys_updated_on><sys_user_role display_value="x_675641_sbd_relea.cloud_security_controls_user" name="x_675641_sbd_relea.cloud_security_controls_user">85e44b9b978711100406bbc3f153af8d</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1602433815</payload_hash>
+        <record_name>x_675641_sbd_relea_cloud_security_controls.x_675641_sbd_relea.cloud_security_controls_user</record_name>
+        <reverted_from/>
+        <source>fe9cf117974311100406bbc3f153af7d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-14 11:43:05</sys_created_on>
+        <sys_id>9de4cb9b978711100406bbc3f153af9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18475f33c960000001</sys_recorded_at>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-14 11:43:05</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>d5e4cb9b7c871110690bcc115cf3d99c</update_guid>
+        <update_guid_history>d5e4cb9b7c871110690bcc115cf3d99c:1602433815</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_675641_sbd_relea_cloud_security_controls.x_675641_sbd_relea.cloud_security_con">23630773979711100406bbc3f153afdc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-28 11:09:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>000bede3dea74478aa8fdac58e2af7c4</sys_id>
+        <sys_metadata>1de4cb9b978711100406bbc3f153af9a</sys_metadata>
+        <sys_name>x_675641_sbd_relea_cloud_security_controls.x_675641_sbd_relea.cloud_security_controls_user</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_parent display_value="">55e4cb9b978711100406bbc3f153af98</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_scope_delete display_value="">b9e24fea3e314497908a004f75c28231</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_1de4cb9b978711100406bbc3f153af9a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_1de4cb9b978711100406bbc3f153af9a">9de4cb9b978711100406bbc3f153af9c</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

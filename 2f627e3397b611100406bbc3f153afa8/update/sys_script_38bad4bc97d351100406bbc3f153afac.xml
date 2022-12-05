@@ -79,15 +79,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>38bad4bc97d351100406bbc3f153afac</sys_id>
-        <sys_mod_count>14</sys_mod_count>
         <sys_name>Close security review assessment task</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_38bad4bc97d351100406bbc3f153afac</sys_update_name>
-        <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-28 08:45:21</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

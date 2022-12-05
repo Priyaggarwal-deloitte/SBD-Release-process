@@ -8,14 +8,11 @@
         <sys_created_by>Aman</sys_created_by>
         <sys_created_on>2022-11-07 14:03:17</sys_created_on>
         <sys_id>7a91eb8d970f55100406bbc3f153af6c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>x_675641_sbd_relea_pci</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_ui_policy_action_7a91eb8d970f55100406bbc3f153af6c</sys_update_name>
-        <sys_updated_by>Aman</sys_updated_by>
-        <sys_updated_on>2022-11-07 14:03:17</sys_updated_on>
         <table>rm_release</table>
         <ui_policy display_value="Make PCI Mandatory">5f612b8d970f55100406bbc3f153af01</ui_policy>
         <visible>ignore</visible>

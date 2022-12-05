@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control">
+    <sys_ui_list_control action="DELETE">
+        <columns_condition/>
+        <disable_nlq>false</disable_nlq>
+        <edit_condition/>
+        <edit_default_filter/>
+        <edit_roles/>
+        <empty_condition/>
+        <filter_condition/>
+        <filter_roles/>
+        <hierarchical_lists>false</hierarchical_lists>
+        <label>SBD product1</label>
+        <link_condition/>
+        <link_roles/>
+        <list_edit_insert_row>false</list_edit_insert_row>
+        <list_edit_ref_qual_tag/>
+        <list_edit_type/>
+        <name/>
+        <new_condition/>
+        <new_roles/>
+        <omit_columns_if_empty>false</omit_columns_if_empty>
+        <omit_count>false</omit_count>
+        <omit_count_views>false</omit_count_views>
+        <omit_count_views_list name="sbd_product_view">0a08b23b97b611100406bbc3f153af32</omit_count_views_list>
+        <omit_drilldown_link>false</omit_drilldown_link>
+        <omit_edit_button>false</omit_edit_button>
+        <omit_filters>false</omit_filters>
+        <omit_if_empty>false</omit_if_empty>
+        <omit_links>false</omit_links>
+        <omit_new_button>false</omit_new_button>
+        <related_list/>
+        <sys_class_name>sys_ui_list_control</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-23 07:32:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77b16cd2979311100406bbc3f153af4a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_ui_list_control_77b16cd2979311100406bbc3f153af4a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-23 07:32:52</sys_updated_on>
+    </sys_ui_list_control>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</application>
+        <file_path/>
+        <instance_id>c6d0c8d9db8393c0cbf6d5b0cf9619fe</instance_id>
+        <instance_name>dev63087</instance_name>
+        <name>sys_ui_list_control_77b16cd2979311100406bbc3f153af4a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control"><sys_ui_list_control action="INSERT_OR_UPDATE"><columns_condition/><disable_nlq>false</disable_nlq><edit_condition/><edit_default_filter/><edit_roles/><empty_condition/><filter_condition/><filter_roles/><hierarchical_lists>false</hierarchical_lists><label>SBD product1</label><link_condition/><link_roles/><list_edit_insert_row>false</list_edit_insert_row><list_edit_ref_qual_tag/><list_edit_type/><name/><new_condition/><new_roles/><omit_columns_if_empty>false</omit_columns_if_empty><omit_count>false</omit_count><omit_count_views>false</omit_count_views><omit_count_views_list name="sbd_product_view">0a08b23b97b611100406bbc3f153af32</omit_count_views_list><omit_drilldown_link>false</omit_drilldown_link><omit_edit_button>false</omit_edit_button><omit_filters>false</omit_filters><omit_if_empty>false</omit_if_empty><omit_links>false</omit_links><omit_new_button>false</omit_new_button><related_list/><sys_class_name>sys_ui_list_control</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-11-23 07:32:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>77b16cd2979311100406bbc3f153af4a</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_overrides display_value="">global</sys_overrides><sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package><sys_policy/><sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope><sys_update_name>sys_ui_list_control_77b16cd2979311100406bbc3f153af4a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-11-23 07:32:52</sys_updated_on></sys_ui_list_control></record_update>]]></payload>
+        <payload_hash>418829621</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>eb627e3397b611100406bbc3f153afaa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-23 07:32:52</sys_created_on>
+        <sys_id>73e16c16979311100406bbc3f153af9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184a36763b50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-11-23 07:32:52</sys_updated_on>
+        <type>List Control</type>
+        <update_guid>3be16c16ff9311103365b72d954cf89a</update_guid>
+        <update_guid_history>3be16c16ff9311103365b72d954cf89a:418829621,66e1e056e993111095bd8260822fb7b1:-1125409160,4fd160d2af931110bc56e59a71716361:1357120569</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-23 07:41:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list_control">sys_ui_list_control</sys_db_object>
+        <sys_id>0fa521d010944c0083c42f953198dc40</sys_id>
+        <sys_metadata>77b16cd2979311100406bbc3f153af4a</sys_metadata>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_scope_delete display_value="">b9e24fea3e314497908a004f75c28231</sys_scope_delete>
+        <sys_update_name>sys_ui_list_control_77b16cd2979311100406bbc3f153af4a</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_control_77b16cd2979311100406bbc3f153af4a">73e16c16979311100406bbc3f153af9b</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

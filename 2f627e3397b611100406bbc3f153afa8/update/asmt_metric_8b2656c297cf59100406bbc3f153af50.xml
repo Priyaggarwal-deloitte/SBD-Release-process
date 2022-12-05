@@ -64,14 +64,11 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8b2656c297cf59100406bbc3f153af50</sys_id>
-        <sys_mod_count>1</sys_mod_count>
         <sys_name>Question-33</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>asmt_metric_8b2656c297cf59100406bbc3f153af50</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-16 07:41:31</sys_updated_on>
         <template/>
         <value_parameters/>
         <weight>10</weight>

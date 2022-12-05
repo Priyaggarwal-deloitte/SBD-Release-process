@@ -110,14 +110,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-21 07:30:08</sys_created_on>
         <sys_id>542ec2e5979311100406bbc3f153af58</sys_id>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Releases with Unimplemented Controls</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_report_542ec2e5979311100406bbc3f153af58</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-21 07:30:08</sys_updated_on>
         <table>sn_compliance_control</table>
         <title>Releases with Unimplemented Controls</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

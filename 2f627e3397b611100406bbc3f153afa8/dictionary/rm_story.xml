@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ignore_delete_children=true" audit="true" db_object_id="769b4694979715100406bbc3f153af82" extends="rm_feature" label="Story" max_length="40" name="rm_story" type="collection">
+        <element label="SBD Release" max_length="32" name="x_675641_sbd_relea_sbd_release" reference="rm_release" reference_qual="x_675641_sbd_relea_sbd_release=true^EQ" reference_qual_condition="x_675641_sbd_relea_sbd_release=true^EQ" type="reference"/>
+    </element>
+</database>

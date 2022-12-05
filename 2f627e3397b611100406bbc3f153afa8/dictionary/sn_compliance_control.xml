@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="e14fa7f997f211100406bbc3f153affc" extends="sn_grc_item" label="Control" max_length="40" name="sn_compliance_control" type="collection">
+        <element label="Cloud Security Control" max_length="40" name="x_675641_sbd_relea_cloud_security_control" type="boolean"/>
+        <element label="Evidence" max_length="40" name="x_675641_sbd_relea_evidence" type="file_attachment"/>
+        <element label="Release Phase" max_length="32" name="x_675641_sbd_relea_release" reference="rm_release_phase" type="reference"/>
+        <index name="index">
+            <element name="x_675641_sbd_relea_release"/>
+        </index>
+    </element>
+</database>

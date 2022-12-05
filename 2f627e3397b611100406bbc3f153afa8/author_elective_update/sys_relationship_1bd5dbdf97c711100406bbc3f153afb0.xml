@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="DELETE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>rm_release_phase</basic_apply_to>
+        <basic_query_from>sn_compliance_control</basic_query_from>
+        <insert_callback/>
+        <name>Cloud Security Controls</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery('x_675641_sbd_relea_cloud_security_control' , true);
+	current.addQuery('x_675641_sbd_relea_release' , parent.number);
+	current.query();
+
+})(current, parent);]]></query_with>
+        <reference_field/>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-14 13:01:49</sys_created_on>
+        <sys_id>1bd5dbdf97c711100406bbc3f153afb0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Cloud Security Controls</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_relationship_1bd5dbdf97c711100406bbc3f153afb0</sys_update_name>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-15 10:53:26</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="DELETE" query="documentkey=1bd5dbdf97c711100406bbc3f153afb0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</application>
+        <file_path/>
+        <instance_id>c6d0c8d9db8393c0cbf6d5b0cf9619fe</instance_id>
+        <instance_name>dev63087</instance_name>
+        <name>sys_relationship_1bd5dbdf97c711100406bbc3f153afb0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_relationship"&gt;&lt;sys_relationship action="INSERT_OR_UPDATE"&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;apply_to/&gt;&lt;basic_apply_to&gt;rm_release_phase&lt;/basic_apply_to&gt;&lt;basic_query_from&gt;sn_compliance_control&lt;/basic_query_from&gt;&lt;insert_callback/&gt;&lt;name&gt;Cloud Security Controls&lt;/name&gt;&lt;query_from/&gt;&lt;query_with&gt;&lt;![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery('x_675641_sbd_relea_cloud_security_control' , true);
+	current.addQuery('x_675641_sbd_relea_release' , parent.number);
+	current.query();
+
+})(current, parent);]]&gt;&lt;/query_with&gt;&lt;reference_field/&gt;&lt;related_list/&gt;&lt;simple_reference&gt;false&lt;/simple_reference&gt;&lt;sys_class_name&gt;sys_relationship&lt;/sys_class_name&gt;&lt;sys_created_by&gt;bishnu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-14 13:01:49&lt;/sys_created_on&gt;&lt;sys_id&gt;1bd5dbdf97c711100406bbc3f153afb0&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Cloud Security Controls&lt;/sys_name&gt;&lt;sys_package display_value="SBD Release process" source="x_675641_sbd_relea"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SBD Release process"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_relationship_1bd5dbdf97c711100406bbc3f153afb0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;bishnu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-15 10:53:26&lt;/sys_updated_on&gt;&lt;/sys_relationship&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=1bd5dbdf97c711100406bbc3f153afb0"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>48476914</payload_hash>
+        <record_name>Cloud Security Controls</record_name>
+        <reverted_from/>
+        <source>fe9cf117974311100406bbc3f153af7d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-15 10:53:26</sys_created_on>
+        <sys_id>f7138873970f51100406bbc3f153afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1847aec244f0000001</sys_recorded_at>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-15 10:53:26</sys_updated_on>
+        <type>Relationship</type>
+        <update_guid>33138873f10f51101c9ccdf54c09ebca</update_guid>
+        <update_guid_history>33138873f10f51101c9ccdf54c09ebca:48476914,b3624c339f0f5110f53f49c2d27601fa:-946810017,77f27b2f278b511023e2dbcd229e1aa7:-321617985,40a65f6bee0b5110e8c2019c24f85a51:-1246535876,eee69b53c90b111089aef786224b16c8:-1233864893</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-15 10:57:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_relationship">sys_relationship</sys_db_object>
+        <sys_id>9f99b041b0e948db8e431625556ac571</sys_id>
+        <sys_metadata>1bd5dbdf97c711100406bbc3f153afb0</sys_metadata>
+        <sys_name>Cloud Security Controls</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_parent display_value="Rm Release Phase">cfea5577973211100406bbc3f153af56</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_scope_delete display_value="">b9e24fea3e314497908a004f75c28231</sys_scope_delete>
+        <sys_update_name>sys_relationship_1bd5dbdf97c711100406bbc3f153afb0</sys_update_name>
+        <sys_update_version display_value="sys_relationship_1bd5dbdf97c711100406bbc3f153afb0">f7138873970f51100406bbc3f153afca</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

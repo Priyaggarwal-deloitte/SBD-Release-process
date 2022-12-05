@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="17ea5577973211100406bbc3f153af89" extends="planned_task" label="Product" max_length="40" name="rm_product" type="collection">
+        <element label="Product Reference" max_length="32" name="x_675641_sbd_relea_product_reference" reference="cmdb_ci" type="reference"/>
+        <element choice="1" label="Process" max_length="40" name="x_675641_sbd_relea_product_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="SBD Process" sequence="10" value="sbd_process"/>
+            </choice>
+        </element>
+    </element>
+</database>

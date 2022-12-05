@@ -107,15 +107,12 @@ function checkWizard(uri, path) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ac13cc26978bd9100406bbc3f153af58</sys_id>
-        <sys_mod_count>33</sys_mod_count>
         <sys_name>New Security Project</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_ui_action_ac13cc26978bd9100406bbc3f153af58</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-11-23 08:07:00</sys_updated_on>
         <table>rm_release</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

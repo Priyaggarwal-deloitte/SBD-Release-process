@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="83ea5577973211100406bbc3f153af2c" extends="planned_task" label="Release" max_length="40" name="rm_release" type="collection">
+        <element label="Active Directory Pattern" max_length="40" name="x_675641_sbd_relea_active_directory_pattern" type="boolean"/>
+        <element hint="Please provide the name of alternate POC" label="Alternate Build Contact" max_length="32" name="x_675641_sbd_relea_alternate_build_contact" reference="sys_user" type="reference"/>
+        <element choice="1" default="yes" hint="Does this system expose/consume any APIs?" label="API" max_length="40" name="x_675641_sbd_relea_api" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" label="Application Compliance" max_length="40" name="x_675641_sbd_relea_application_compliance" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Compliant" sequence="10" value="Compliant"/>
+                <element inactive_on_update="false" label="Non-Compliant" sequence="20" value="Non-Compliant"/>
+                <element inactive_on_update="false" label="Risk Exception" sequence="30" value="Risk Exception"/>
+            </choice>
+        </element>
+        <element label="Approver" max_length="32" name="x_675641_sbd_relea_approver" reference="sys_user" type="reference"/>
+        <element label="Assigned to" max_length="32" name="x_675641_sbd_relea_assigned_to" reference="sys_user" type="reference"/>
+        <element label="Backend Service" max_length="40" name="x_675641_sbd_relea_backend_service" type="boolean"/>
+        <element choice="1" hint="What is the scope of this project?" label="Build Scope" max_length="40" name="x_675641_sbd_relea_build_scope" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New Build" sequence="0" value="new build"/>
+                <element inactive_on_update="false" label="Modification/Modernization" sequence="10" value="modification to existing system"/>
+                <element inactive_on_update="false" label="Migration" sequence="15" value="migration"/>
+                <element inactive_on_update="false" label="Application Compliance" sequence="20" value="production controls assessment"/>
+            </choice>
+        </element>
+        <element label="Business Category" max_length="80" name="x_675641_sbd_relea_business_category" type="string"/>
+        <element choice="3" label="Business Impact" max_length="40" name="x_675641_sbd_relea_business_impact" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="low"/>
+            </choice>
+        </element>
+        <element choice="1" label="Central Application Logging" max_length="40" name="x_675641_sbd_relea_central_application_logging" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element choice="3" label="Cloud Controls Implementation Status" max_length="40" name="x_675641_sbd_relea_cloud_controls_implementation_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Implemented" sequence="0" value="implemented"/>
+                <element inactive_on_update="false" label="Risk Excepted" sequence="20" value="risk_excepted"/>
+                <element inactive_on_update="false" label="Not yet implemented" sequence="30" value="not_yet_implemented"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="40" value="not_applicable"/>
+            </choice>
+        </element>
+        <element choice="1" hint="Does this project involve hosting components on Cloud Service Provider (CSP) such as AWS, Azure or GCP?" label="Cloud Service Provider" max_length="40" name="x_675641_sbd_relea_cloud_service_provider" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" default="yes" hint="Business Data includes any trade secrets or confidential data to the business" label="Is Business Confidential Data involved in this project?" max_length="40" name="x_675641_sbd_relea_confidential" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Controls Implemented" max_length="40" name="x_675641_sbd_relea_controls_implemented" type="integer"/>
+        <element label="Controls Required" max_length="40" name="x_675641_sbd_relea_controls_required" type="integer"/>
+        <element label="Created by" max_length="32" name="x_675641_sbd_relea_created_by" reference="sys_user" type="reference"/>
+        <element choice="3" label="Criticality" max_length="40" name="x_675641_sbd_relea_criticality" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="10" value="high"/>
+                <element inactive_on_update="false" label="Medium" sequence="20" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="30" value="low"/>
+            </choice>
+        </element>
+        <element choice="1" label="What is the volume of data records associated with this project?" max_length="40" name="x_675641_sbd_relea_data_volume" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Above 5 million" sequence="0" value="above1"/>
+                <element inactive_on_update="false" label="1 to 5 Million" sequence="1" value="1to5M"/>
+                <element inactive_on_update="false" label="0.5 to 1 Million" sequence="2" value="1t0.5"/>
+                <element inactive_on_update="false" label="Below 0.5 Million" sequence="3" value="below0_5"/>
+            </choice>
+        </element>
+        <element hint="Please enter the description of the project" label="Description" mandatory="true" max_length="100" name="x_675641_sbd_relea_description" type="string"/>
+        <element choice="1" label="Encryption at Rest" max_length="40" name="x_675641_sbd_relea_encryption_at_rest" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Encryption in Transit" max_length="40" name="x_675641_sbd_relea_encryption_in_transit" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element choice="3" label="Framework Controls Implementation Status" max_length="40" name="x_675641_sbd_relea_framework_controls_implementation_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not Yet Implemented" sequence="10" value="Not Yet Implemented"/>
+                <element inactive_on_update="false" label="Implemented" sequence="20" value="Implemented"/>
+                <element inactive_on_update="false" label="Risk Exception" sequence="30" value="Risk Exception"/>
+            </choice>
+        </element>
+        <element choice="1" label="What is the hosting location of this system?" max_length="40" name="x_675641_sbd_relea_hosting_location" type="string">
+            <choice>
+                <element inactive_on_update="false" label="On Premise" sequence="1" value="on premise"/>
+                <element inactive_on_update="false" label="Public Cloud" sequence="2" value="public_cloud"/>
+                <element inactive_on_update="false" label="Private Cloud" sequence="3" value="private cloud"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="4" value="not_applicable"/>
+            </choice>
+        </element>
+        <element label="Infrastructure" max_length="40" name="x_675641_sbd_relea_infrastructure" type="boolean"/>
+        <element choice="1" label="Infrastructure Compliance" max_length="40" name="x_675641_sbd_relea_infrastructure_compliance" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Compliant" sequence="0" value="Compliant"/>
+                <element inactive_on_update="false" label="Non-Compliant" sequence="20" value="Non-Compliant"/>
+            </choice>
+        </element>
+        <element choice="1" hint="What is the importance of the availability of this system to the business?" label="What is the importance of the availability of this system to the business?" mandatory="true" max_length="40" name="x_675641_sbd_relea_intake_ques3" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
+        <element choice="1" default="yes" hint="Does this project involve hosting components on Cloud Service Provider (CSP) such as AWS, Azure or GCP?" label="Involves cloud components such as AWS, Azure etc.?" max_length="40" name="x_675641_sbd_relea_intake_ques4" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" hint="Who is the intended audience for this system?" label="Who is the intended audience for this system?" mandatory="true" max_length="40" name="x_675641_sbd_relea_intake_ques5" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Customers/Public" sequence="0" value="customer"/>
+                <element inactive_on_update="false" label="Business Partners" sequence="1" value="bp"/>
+                <element inactive_on_update="false" label="Internal Restricted Users" sequence="2" value="iru"/>
+                <element inactive_on_update="false" label="Employees/ Contractors/ Service-Providers" sequence="3" value="ecsp"/>
+            </choice>
+        </element>
+        <element choice="1" hint="How is the system being developed?" label="How is the system being developed?" mandatory="true" max_length="40" name="x_675641_sbd_relea_intake_ques6" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Commercial off-the-shelf solution" value="3"/>
+                <element inactive_on_update="false" label="Commercial product being modified" value="4"/>
+                <element inactive_on_update="false" label="Internal Custom development" value="1"/>
+                <element inactive_on_update="false" label="Modifications to Custom Developed System" value="2"/>
+            </choice>
+        </element>
+        <element choice="1" hint="What is the importance of maintaining accuracy and access control for this data?" label="What is the importance of maintaining accuracy and access control for this data?" mandatory="true" max_length="40" name="x_675641_sbd_relea_intake_ques_2" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
+        <element choice="1" label="Intended Audience" max_length="40" name="x_675641_sbd_relea_intended_audience" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" default="yes" label="Does this project involve Containerization?" max_length="40" name="x_675641_sbd_relea_invoice_containerization" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element choice="1" label="Live Security Posture" max_length="40" name="x_675641_sbd_relea_live_security_posture" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not Applicable" sequence="0" value="not_applicable"/>
+                <element inactive_on_update="false" label="Low Risk" sequence="20" value="low_risk"/>
+                <element inactive_on_update="false" label="Medium Risk" sequence="30" value="medium_risk"/>
+                <element inactive_on_update="false" label="High Risk" sequence="40" value="High_risk"/>
+            </choice>
+        </element>
+        <element label="Logging Pattern" max_length="40" name="x_675641_sbd_relea_logging_pattern" type="boolean"/>
+        <element label="Mobile Application" max_length="40" name="x_675641_sbd_relea_mobile_application" type="boolean"/>
+        <element choice="1" label="Mobile Device Management (MDM)" max_length="40" name="x_675641_sbd_relea_mobile_device_management_mdm" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Monitoring &amp; Alerting" max_length="40" name="x_675641_sbd_relea_monitoring_alerting" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Multi-Factor-Authentication (MFA)" max_length="40" name="x_675641_sbd_relea_multi_factor_authentication_mfa" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element hint="Please enter name of the project" label="Project Name" max_length="40" name="x_675641_sbd_relea_name" type="string"/>
+        <element label="Overall Risk Score" max_length="40" name="x_675641_sbd_relea_overall_risk_score" type="string"/>
+        <element choice="1" hint="PCI Data includes credit card &amp; account information, payment records, etc." label="Is Payment Card Industry (PCI) Data involved in this project?" max_length="40" name="x_675641_sbd_relea_pci" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" hint="PII includes government identification data, first name, last name, etc." label="Is Personally Identifiable Information (PII) involved in this project?" max_length="40" name="x_675641_sbd_relea_pii" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element hint="Please provide the name of Primary POC" label="Primary Build Contact" max_length="32" name="x_675641_sbd_relea_primary_build_contact" reference="sys_user" type="reference"/>
+        <element choice="1" label="Privileged Access Management (PAM)" max_length="40" name="x_675641_sbd_relea_privileged_access_management_pam" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element hint="Please select the product this release belongs to" label="Product" max_length="32" name="x_675641_sbd_relea_product" reference="rm_product" type="reference"/>
+        <element choice="3" label="Production Approval" max_length="40" name="x_675641_sbd_relea_production_approval" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Not Applicable" sequence="0" value="na"/>
+                <element inactive_on_update="false" label="Not Yet Implemented" sequence="1" value="nyi"/>
+            </choice>
+        </element>
+        <element hint="Provide the name of Requestor/Project Manager" label="Project Manager / Requester" max_length="32" name="x_675641_sbd_relea_project_manager_requester" reference="sys_user" type="reference"/>
+        <element label="Public" max_length="40" name="x_675641_sbd_relea_public" type="boolean"/>
+        <element label="Public Cloud" max_length="40" name="x_675641_sbd_relea_public_cloud" type="boolean"/>
+        <element choice="1" label="Question 1" max_length="40" name="x_675641_sbd_relea_question_1" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 10" max_length="40" name="x_675641_sbd_relea_question_10" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 2" max_length="40" name="x_675641_sbd_relea_question_2" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 3" max_length="40" name="x_675641_sbd_relea_question_3" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 4" max_length="40" name="x_675641_sbd_relea_question_4" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 5" max_length="40" name="x_675641_sbd_relea_question_5" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 6" max_length="40" name="x_675641_sbd_relea_question_6" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 7" max_length="40" name="x_675641_sbd_relea_question_7" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not Applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 8" max_length="40" name="x_675641_sbd_relea_question_8" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element choice="1" label="Question 9" max_length="40" name="x_675641_sbd_relea_question_9" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="No" value="no"/>
+                <element inactive_on_update="false" label="Not applicable" value="na"/>
+                <element inactive_on_update="false" label="Yes" value="yes"/>
+            </choice>
+        </element>
+        <element label="Reference architecture" max_length="40" name="x_675641_sbd_relea_reference_architecture" type="file_attachment"/>
+        <element label="Remote Access Pattern" max_length="40" name="x_675641_sbd_relea_remote_access_pattern" type="boolean"/>
+        <element label="Rest Encryption Pattern" max_length="40" name="x_675641_sbd_relea_rest_encryption_pattern" type="boolean"/>
+        <element choice="1" label="Role Based access Control (RBAC)" max_length="40" name="x_675641_sbd_relea_role_based_access_control_rbac" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="SAST Scan" max_length="40" name="x_675641_sbd_relea_sast_scan" type="boolean"/>
+        <element label="SBD release" max_length="40" name="x_675641_sbd_relea_sbd_release" type="boolean"/>
+        <element choice="1" label="Scan Completion Status " max_length="50" name="x_675641_sbd_relea_scan_completion_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Complete" sequence="10"/>
+                <element inactive_on_update="false" label="Incomplete" sequence="20"/>
+            </choice>
+        </element>
+        <element choice="1" label="Vulnerability Policy" max_length="40" name="x_675641_sbd_relea_scan_policy" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Maximum" sequence="0" value="Maximum"/>
+                <element inactive_on_update="false" label="Minimum" sequence="20" value="Minimum"/>
+                <element inactive_on_update="false" label="Moderate" sequence="30" value="Moderate"/>
+            </choice>
+        </element>
+        <element label="SCA Scan" max_length="40" name="x_675641_sbd_relea_sca_scan" type="boolean"/>
+        <element label="Security Pattern" max_length="40" name="x_675641_sbd_relea_security_pattern" type="boolean"/>
+        <element choice="1" label="Single-Sign-On (SSO)" max_length="40" name="x_675641_sbd_relea_single_sign_on_sso" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="SSO Pattern" max_length="40" name="x_675641_sbd_relea_sso_pattern" type="boolean"/>
+        <element choice="1" dependent="x_675641_sbd_relea_status" dependent_on_field="x_675641_sbd_relea_status" label="Stage" max_length="40" name="x_675641_sbd_relea_stage" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="inDevelopment" inactive_on_update="false" label="Analysis" sequence="10" value="analysis"/>
+                <element dependent_value="inDevelopment" inactive_on_update="false" label="Design" sequence="20" value="design"/>
+                <element dependent_value="inDevelopment" inactive_on_update="false" label="Development" sequence="30" value="development"/>
+                <element dependent_value="inDevelopment" inactive_on_update="false" label="Testing" sequence="40" value="testing"/>
+                <element dependent_value="inDevelopment" inactive_on_update="false" label="Deployment" sequence="50" value="deployment"/>
+                <element dependent_value="operational" inactive_on_update="false" label="Maintainance" sequence="60" value="maintainance"/>
+                <element dependent_value="operational" inactive_on_update="false" label="Operational" sequence="70" value="operational"/>
+                <element dependent_value="operational" inactive_on_update="false" label="End of Life" sequence="80" value="end_of_life"/>
+                <element dependent_value="operational" inactive_on_update="false" label="Decommisioned" sequence="90" value="decommisioned"/>
+            </choice>
+        </element>
+        <element choice="1" label="Status" max_length="40" name="x_675641_sbd_relea_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="In Development" sequence="0" value="inDevelopment"/>
+                <element inactive_on_update="false" label="Operational" sequence="20" value="operational"/>
+                <element inactive_on_update="false" label="Decommissioned" sequence="30" value="decommissioned"/>
+            </choice>
+        </element>
+        <element choice="1" hint="What type of system is being developed?" label="What type of system is being developed?" max_length="40" name="x_675641_sbd_relea_system_type" type="glide_list">
+            <choice>
+                <element inactive_on_update="false" label="Backend Service" sequence="1" value="backend_service"/>
+                <element inactive_on_update="false" label="Infrastructure" sequence="2" value="infrastructure"/>
+                <element inactive_on_update="false" label="Mobile Application" sequence="3" value="mobile_application"/>
+                <element inactive_on_update="false" label="Thick Client Application" sequence="4" value="tcapp"/>
+                <element inactive_on_update="false" label="Web Application" sequence="5" value="webapp"/>
+            </choice>
+        </element>
+        <element label="Target architecture" max_length="40" name="x_675641_sbd_relea_target_architecture" type="file_attachment"/>
+        <element label="Thick Client" max_length="40" name="x_675641_sbd_relea_thick_client" type="boolean"/>
+        <element label="Threat Model Reference ID" max_length="40" name="x_675641_sbd_relea_threat_model_reference_id" type="string"/>
+        <element choice="1" label="Threat Model Remediation Status" max_length="40" name="x_675641_sbd_relea_threat_model_remediation_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Remediated" sequence="0" value="Remediated"/>
+                <element inactive_on_update="false" label="Risk Exception" sequence="200" value="Risk Exception"/>
+                <element inactive_on_update="false" label="Non Remediated" sequence="300" value="Non Remediated"/>
+            </choice>
+        </element>
+        <element choice="1" label="Vulnerability Testing" max_length="40" name="x_675641_sbd_relea_vulnerability_testing" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Not Applicable" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="Web Application" max_length="40" name="x_675641_sbd_relea_web_application" type="boolean"/>
+        <element choice="1" hint="What would be the impact of a data breach with this system?" label="What would be the impact of a data breach with this system?" mandatory="true" max_length="40" name="x_675641_sbd_relea_what_would_be_the_impact_of_a_data_breach_with_this_system" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+            </choice>
+        </element>
+    </element>
+</database>

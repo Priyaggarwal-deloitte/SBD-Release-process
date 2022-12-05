@@ -52,14 +52,11 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-11-04 08:22:53</sys_created_on>
-        <sys_id>6bf63a4497c751100406bbc3f153afb1</sys_id>
         <sys_name>What is the volume of data records associated with this project?</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_dictionary_rm_release_x_675641_sbd_relea_data_volume</sys_update_name>
-        <sys_updated_by>Kriti</sys_updated_by>
-        <sys_updated_on>2022-11-08 13:49:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

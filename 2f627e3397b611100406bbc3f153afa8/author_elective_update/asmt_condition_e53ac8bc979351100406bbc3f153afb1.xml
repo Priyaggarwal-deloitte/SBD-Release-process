@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_condition">
+    <asmt_condition action="DELETE">
+        <active>true</active>
+        <assessment display_value="Production Baseline Assessment">c6b9295c97d315100406bbc3f153af37</assessment>
+        <assessment_record/>
+        <assessment_record_field>end_date_derived_from</assessment_record_field>
+        <business_rule display_value="Auto assessment business rule">270d0c7097d351100406bbc3f153af5f</business_rule>
+        <condition table="rm_task">x_675641_sbd_relea_type=security_review^x_675641_sbd_relea_sub_type=complete baseline assessment^EQ<item display_value="Security Review" endquery="false" field="x_675641_sbd_relea_type" goto="false" newquery="false" operator="=" or="false" value="security_review"/>
+            <item display_value="Complete Baseline Controls Assessment" endquery="false" field="x_675641_sbd_relea_sub_type" goto="false" newquery="false" operator="=" or="false" value="complete baseline assessment"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <duration/>
+        <percent_random>100</percent_random>
+        <related_field_1/>
+        <related_field_2/>
+        <related_field_3/>
+        <related_field_4/>
+        <sys_class_name>asmt_condition</sys_class_name>
+        <sys_created_by>vaishakh</sys_created_by>
+        <sys_created_on>2022-11-18 14:10:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e53ac8bc979351100406bbc3f153afb1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>asmt_condition_e53ac8bc979351100406bbc3f153afb1</sys_update_name>
+        <sys_updated_by>vaishakh</sys_updated_by>
+        <sys_updated_on>2022-11-18 16:09:49</sys_updated_on>
+        <table>rm_task</table>
+        <trigger_random>false</trigger_random>
+        <user_field>assigned_to</user_field>
+    </asmt_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</application>
+        <file_path/>
+        <instance_id>c6d0c8d9db8393c0cbf6d5b0cf9619fe</instance_id>
+        <instance_name>dev63087</instance_name>
+        <name>asmt_condition_e53ac8bc979351100406bbc3f153afb1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_condition"><asmt_condition action="INSERT_OR_UPDATE"><active>true</active><assessment display_value="Production Baseline Assessment">c6b9295c97d315100406bbc3f153af37</assessment><assessment_record/><assessment_record_field>end_date_derived_from</assessment_record_field><business_rule display_value="Auto assessment business rule">270d0c7097d351100406bbc3f153af5f</business_rule><condition table="rm_task">x_675641_sbd_relea_type=security_review^x_675641_sbd_relea_sub_type=complete baseline assessment^EQ<item display_value="Security Review" endquery="false" field="x_675641_sbd_relea_type" goto="false" newquery="false" operator="=" or="false" value="security_review"/><item display_value="Complete Baseline Controls Assessment" endquery="false" field="x_675641_sbd_relea_sub_type" goto="false" newquery="false" operator="=" or="false" value="complete baseline assessment"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><duration/><percent_random>100</percent_random><related_field_1/><related_field_2/><related_field_3/><related_field_4/><sys_class_name>asmt_condition</sys_class_name><sys_created_by>vaishakh</sys_created_by><sys_created_on>2022-11-18 14:10:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e53ac8bc979351100406bbc3f153afb1</sys_id><sys_mod_count>5</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package><sys_policy/><sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope><sys_update_name>asmt_condition_e53ac8bc979351100406bbc3f153afb1</sys_update_name><sys_updated_by>vaishakh</sys_updated_by><sys_updated_on>2022-11-18 16:09:49</sys_updated_on><table>rm_task</table><trigger_random>false</trigger_random><user_field>assigned_to</user_field></asmt_condition></record_update>]]></payload>
+        <payload_hash>-1495203098</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>eb627e3397b611100406bbc3f153afaa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>vaishakh</sys_created_by>
+        <sys_created_on>2022-11-18 16:09:49</sys_created_on>
+        <sys_id>ef4820bc971751100406bbc3f153af2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1848b80e0a30000001</sys_recorded_at>
+        <sys_updated_by>vaishakh</sys_updated_by>
+        <sys_updated_on>2022-11-18 16:09:49</sys_updated_on>
+        <type>Trigger Condition</type>
+        <update_guid>274820bcc41751109e3fdaf40534a72f</update_guid>
+        <update_guid_history>274820bcc41751109e3fdaf40534a72f:-1495203098,7543983889d3511031610779746fc278:1858044088,ae6298f418d351102a70bb129cf9c0eb:-1664427549,2ec01c74f8d351106ed8d1c8cc2c989b:111616370,bf0d0c70efd35110bd948b16a9462663:723609071</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">658ef5a5975311100406bbc3f153af8f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>vaishakh</sys_created_by>
+        <sys_created_on>2022-11-21 06:21:57</sys_created_on>
+        <sys_db_object display_value="" name="asmt_condition">asmt_condition</sys_db_object>
+        <sys_id>00271929bd5345bc8001170f2d47d079</sys_id>
+        <sys_metadata>e53ac8bc979351100406bbc3f153afb1</sys_metadata>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_parent display_value="Rm Task">13ea5577973211100406bbc3f153afb9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_scope_delete display_value="">b9e24fea3e314497908a004f75c28231</sys_scope_delete>
+        <sys_update_name>asmt_condition_e53ac8bc979351100406bbc3f153afb1</sys_update_name>
+        <sys_update_version display_value="asmt_condition_e53ac8bc979351100406bbc3f153afb1">ef4820bc971751100406bbc3f153af2f</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

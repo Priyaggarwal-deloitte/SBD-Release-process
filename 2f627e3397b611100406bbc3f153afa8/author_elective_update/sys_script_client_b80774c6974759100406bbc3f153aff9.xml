@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Displaying Threat model related fields</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if(g_form.getValue('x_675641_sbd_relea_sub_type')=='create_threat_model')
+	   {
+		   g_form.setMandatory('x_675641_sbd_relea_threat_modeler_project_version',true);
+		   g_form.setMandatory('x_675641_sbd_relea_threat_modeler_project_name',true);
+		   g_form.setDisplay('x_675641_sbd_relea_if_they_want_to_import_csp_environment',true);
+	   }
+	else
+		{
+			g_form.setDisplay('x_675641_sbd_relea_threat_modeler_project_version',false);
+			g_form.setDisplay('x_675641_sbd_relea_threat_modeler_project_name',false);
+			g_form.setDisplay('x_675641_sbd_relea_if_they_want_to_import_csp_environment',false);
+		}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-10 04:24:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b80774c6974759100406bbc3f153aff9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Displaying Threat model related fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_client_b80774c6974759100406bbc3f153aff9</sys_update_name>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-10 04:26:27</sys_updated_on>
+        <table>rm_task</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</application>
+        <file_path/>
+        <instance_id>c6d0c8d9db8393c0cbf6d5b0cf9619fe</instance_id>
+        <instance_name>dev63087</instance_name>
+        <name>sys_script_client_b80774c6974759100406bbc3f153aff9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Displaying Threat model related fields&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+   if(g_form.getValue('x_675641_sbd_relea_sub_type')=='create_threat_model')
+	   {
+		   g_form.setMandatory('x_675641_sbd_relea_threat_modeler_project_version',true);
+		   g_form.setMandatory('x_675641_sbd_relea_threat_modeler_project_name',true);
+		   g_form.setDisplay('x_675641_sbd_relea_if_they_want_to_import_csp_environment',true);
+	   }
+	else
+		{
+			g_form.setDisplay('x_675641_sbd_relea_threat_modeler_project_version',false);
+			g_form.setDisplay('x_675641_sbd_relea_threat_modeler_project_name',false);
+			g_form.setDisplay('x_675641_sbd_relea_if_they_want_to_import_csp_environment',false);
+		}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Aman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-10 04:24:06&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b80774c6974759100406bbc3f153aff9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Displaying Threat model related fields&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SBD Release process" source="x_675641_sbd_relea"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SBD Release process"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b80774c6974759100406bbc3f153aff9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Aman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-10 04:26:27&lt;/sys_updated_on&gt;&lt;table&gt;rm_task&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1765963724</payload_hash>
+        <record_name>Displaying Threat model related fields</record_name>
+        <reverted_from/>
+        <source>eb52aac4974751100406bbc3f153af7f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-10 04:26:27</sys_created_on>
+        <sys_id>529a3c0a970b59100406bbc3f153afd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1845fca0be70000001</sys_recorded_at>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-10 04:26:27</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>1a9a3c0a740b5910951be34a8961d0d6</update_guid>
+        <update_guid_history>1a9a3c0a740b5910951be34a8961d0d6:-1765963724,730af00a320b5910f1ac4b7defc8b268:-1448828063</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-10 04:46:31</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>4e2f89d02af340a59b257a4cb9e6a559</sys_id>
+        <sys_metadata>b80774c6974759100406bbc3f153aff9</sys_metadata>
+        <sys_name>Displaying Threat model related fields</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_parent display_value="Rm Task">13ea5577973211100406bbc3f153afb9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_scope_delete display_value="">b9e24fea3e314497908a004f75c28231</sys_scope_delete>
+        <sys_update_name>sys_script_client_b80774c6974759100406bbc3f153aff9</sys_update_name>
+        <sys_update_version display_value="sys_script_client_b80774c6974759100406bbc3f153aff9">529a3c0a970b59100406bbc3f153afd7</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

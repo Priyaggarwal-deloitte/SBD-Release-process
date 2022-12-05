@@ -52,14 +52,11 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>Aman</sys_created_by>
         <sys_created_on>2022-11-07 09:00:49</sys_created_on>
-        <sys_id>a18cd241970b55100406bbc3f153afe1</sys_id>
         <sys_name>Is Payment Card Industry (PCI) Data involved in this project?</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_dictionary_rm_release_x_675641_sbd_relea_pci</sys_update_name>
-        <sys_updated_by>Kriti</sys_updated_by>
-        <sys_updated_on>2022-11-08 13:34:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

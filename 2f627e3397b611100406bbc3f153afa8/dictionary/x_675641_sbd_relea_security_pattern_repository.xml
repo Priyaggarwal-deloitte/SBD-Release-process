@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7d79ba77975711100406bbc3f153af69" label="Security Pattern Repository" max_length="40" name="x_675641_sbd_relea_security_pattern_repository" type="collection">
+        <element label="Architecture Diagram Template" max_length="1024" name="architecture_diagram_template" type="url"/>
+        <element label="IAC Script template" max_length="1024" name="iac_script_template" type="url"/>
+        <element label="Pattern Attached" max_length="40" name="pattern_attached" type="file_attachment"/>
+        <element display="true" label="Security Pattern" max_length="40" name="security_pattern" type="string"/>
+        <element choice="3" label="Type" max_length="40" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Security Pattren" sequence="10" value="sec_pattern"/>
+                <element inactive_on_update="false" label="Cloud Security Pattern" sequence="20" value="cloud_sec_pattern"/>
+            </choice>
+        </element>
+    </element>
+</database>

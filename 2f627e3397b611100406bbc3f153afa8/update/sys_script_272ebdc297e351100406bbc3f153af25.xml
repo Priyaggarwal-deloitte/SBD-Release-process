@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>rm_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="rm_task">x_675641_sbd_relea_sub_type=generate cloud security controls^EQ<item display_value="Identify Cloud Components" endquery="false" field="x_675641_sbd_relea_sub_type" goto="false" newquery="false" operator="=" or="false" value="generate cloud security controls"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>SBD Populate Cloud Security Patterns</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	
+	var SBD_Cloud_comp = current.getDisplayValue('x_675641_sbd_relea_components');
+	
+	
+	var grSecPatternRepo = new GlideRecord("x_675641_sbd_relea_security_pattern_repository");
+//type=sec_pattern^security_patternINLogging,SSO Pattern,Active Directory
+grSecPatternRepo.addEncodedQuery('type=cloud_sec_pattern^security_patternIN'+SBD_Cloud_comp.toString());
+grSecPatternRepo.query();
+while (grSecPatternRepo.next()) {
+
+//gs.info(grSecPatternRepo.security_pattern);
+		var lv_u_pattern_link1='<p><a title="'+grSecPatternRepo.security_pattern+'" href="/x_675641_sbd_relea_security_pattern_repository.do?sys_id='+grSecPatternRepo.sys_id+'&amp;sysparm_view=&amp;sysparm_record_target=x_675641_sbd_relea_security_pattern_repository&amp;sysparm_record_row=1&amp;sysparm_record_list=ORDERBYnumber&amp;sysparm_record_rows=3" target="_blank" rel="noopener noreferrer nofollow">'+grSecPatternRepo.security_pattern+'</a><br /></p>';
+		
+		var lv_u_pattern_link=lv_u_pattern_link+lv_u_pattern_link1;
+
+}
+
+	var grRElPhase = new GlideRecord("rm_release_phase");
+grRElPhase.addQuery("sys_id", current.parent.sys_id);
+grRElPhase.addQuery('x_675641_sbd_relea_type','security review');
+grRElPhase.query();
+if (grRElPhase.next()) {
+grRElPhase.x_675641_sbd_relea_cloud_security_patterns = lv_u_pattern_link.replace('undefined','');
+grRElPhase.update();
+}
+
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-05 06:00:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>272ebdc297e351100406bbc3f153af25</sys_id>
+        <sys_name>SBD Populate Cloud Security Patterns</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_272ebdc297e351100406bbc3f153af25</sys_update_name>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=272ebdc297e351100406bbc3f153af25"/>
+</record_update>

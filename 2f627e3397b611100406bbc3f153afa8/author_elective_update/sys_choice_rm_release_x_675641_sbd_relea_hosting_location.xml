@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="x_675641_sbd_relea_hosting_location" table="rm_release" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>x_675641_sbd_relea_hosting_location</element>
+            <name>rm_release</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Kriti</sys_created_by>
+            <sys_created_on>2022-11-04 07:24:35</sys_created_on>
+            <sys_name>x_675641_sbd_relea_hosting_location</sys_name>
+            <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+            <sys_update_name>sys_choice_rm_release_x_675641_sbd_relea_hosting_location</sys_update_name>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_hosting_location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On Premise</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>Kriti</sys_created_by>
+            <sys_created_on>2022-11-04 07:26:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>on premise</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_hosting_location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Public Cloud</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-14 09:32:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>public_cloud</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_hosting_location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Private Cloud</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>Kriti</sys_created_by>
+            <sys_created_on>2022-11-04 07:27:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>private cloud</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>x_675641_sbd_relea_hosting_location</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Applicable</label>
+            <language>en</language>
+            <name>rm_release</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>Aman</sys_created_by>
+            <sys_created_on>2022-11-14 09:32:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <value>not_applicable</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

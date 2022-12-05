@@ -47,14 +47,11 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>bishnu</sys_created_by>
         <sys_created_on>2022-11-14 10:52:00</sys_created_on>
-        <sys_id>7039b6db974711100406bbc3f153afb4</sys_id>
         <sys_name>Type</sys_name>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_dictionary_x_675641_sbd_relea_sbd_upload_cloud_security_blueprints_u_type</sys_update_name>
-        <sys_updated_by>bishnu</sys_updated_by>
-        <sys_updated_on>2022-11-14 10:52:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

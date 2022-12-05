@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>x_675641_sbd_relea_type</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Display csc etc.</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	if(newValue =='security review')
+	   {
+		   g_form.setSectionDisplay('control_implementationview',true);
+		   g_form.setSectionDisplay('cloud_controlimplementationview',true);
+		   g_form.setSectionDisplay('security_controls',true);
+		   g_form.setSectionDisplay('cloud_securitycontrols',true);
+		   g_form.showRelatedList('asmt_assessment_instance');
+		   g_form.showRelatedList('sn_compliance_control');
+		    g_form.showRelatedList('sn_compliance_control');
+	   }
+	else
+		{
+			g_form.hideRelatedList('asmt_assessment_instance');
+			g_form.hideRelatedList('sn_compliance_control');
+			g_form.hideRelatedList('sn_compliance_control');
+			g_form.setSectionDisplay('control_implementationview',false);
+		   g_form.setSectionDisplay('cloud_controlimplementationview',false);
+		   g_form.setSectionDisplay('security_controls',false);
+		   g_form.setSectionDisplay('cloud_securitycontrols',false);
+			//g_form.setSectionDisplay('assessment_instances',false);
+		}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-17 10:14:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba2d8a5c979715100406bbc3f153af32</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Display csc etc.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_script_client_ba2d8a5c979715100406bbc3f153af32</sys_update_name>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-17 10:58:32</sys_updated_on>
+        <table>rm_release_phase</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</application>
+        <file_path/>
+        <instance_id>c6d0c8d9db8393c0cbf6d5b0cf9619fe</instance_id>
+        <instance_name>dev63087</instance_name>
+        <name>sys_script_client_ba2d8a5c979715100406bbc3f153af32</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;x_675641_sbd_relea_type&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Display csc etc.&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Type appropriate comment here, and begin script below
+	if(newValue =='security review')
+	   {
+		   g_form.setSectionDisplay('control_implementationview',true);
+		   g_form.setSectionDisplay('cloud_controlimplementationview',true);
+		   g_form.setSectionDisplay('security_controls',true);
+		   g_form.setSectionDisplay('cloud_securitycontrols',true);
+		   g_form.showRelatedList('asmt_assessment_instance');
+		   g_form.showRelatedList('sn_compliance_control');
+		    g_form.showRelatedList('sn_compliance_control');
+	   }
+	else
+		{
+			g_form.hideRelatedList('asmt_assessment_instance');
+			g_form.hideRelatedList('sn_compliance_control');
+			g_form.hideRelatedList('sn_compliance_control');
+			g_form.setSectionDisplay('control_implementationview',false);
+		   g_form.setSectionDisplay('cloud_controlimplementationview',false);
+		   g_form.setSectionDisplay('security_controls',false);
+		   g_form.setSectionDisplay('cloud_securitycontrols',false);
+			//g_form.setSectionDisplay('assessment_instances',false);
+		}
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Aman&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-11-17 10:14:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ba2d8a5c979715100406bbc3f153af32&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;Display csc etc.&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="SBD Release process" source="x_675641_sbd_relea"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="SBD Release process"&gt;2f627e3397b611100406bbc3f153afa8&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_ba2d8a5c979715100406bbc3f153af32&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Aman&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-11-17 10:58:32&lt;/sys_updated_on&gt;&lt;table&gt;rm_release_phase&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1606593909</payload_hash>
+        <record_name>Display csc etc.</record_name>
+        <reverted_from/>
+        <source>fe73a21b97c311100406bbc3f153aff1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-17 10:58:32</sys_created_on>
+        <sys_id>b577da9c97d715100406bbc3f153af82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184853d85c30000001</sys_recorded_at>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-17 10:58:32</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>fd77da9c7bd715104bce64f06d9ace81</update_guid>
+        <update_guid_history>fd77da9c7bd715104bce64f06d9ace81:-1606593909,1637d29c5dd71510a594f8b3ac481f03:-750559682,a646d61cfed7151009e7256d30ca35d1:-655992956,0d655e98a9d715103c041f1d0af3970d:630354664,e71592986ed71510a97cae5fb0c6a4ac:-347508210,f8b4d65847d71510f4813de7e50d7c0e:-2038565373,20f316d474d7151039cdf89befb75757:-444639886,82d2de5411d71510dd983844187a94aa:906019632,d87f425081d71510b703117cd8e7f521:-245535846,aeee0a1009d71510029fad7308770d77:-1281641926,835e8adc029715108e854db5ef0d1910:-1380233092,1fadca9cf89715104d4ff167d4abda83:-1281641926,324d0a9c8197151038fc7cfe05ceb103:1963124479</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Aman</sys_created_by>
+        <sys_created_on>2022-11-17 11:41:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>17a25a06cb9d4b348fd78f1edf5c19c1</sys_id>
+        <sys_metadata>ba2d8a5c979715100406bbc3f153af32</sys_metadata>
+        <sys_name>Display csc etc.</sys_name>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_parent display_value="Rm Release Phase">cfea5577973211100406bbc3f153af56</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_scope_delete display_value="">b9e24fea3e314497908a004f75c28231</sys_scope_delete>
+        <sys_update_name>sys_script_client_ba2d8a5c979715100406bbc3f153af32</sys_update_name>
+        <sys_update_version display_value="sys_script_client_ba2d8a5c979715100406bbc3f153af32">b577da9c97d715100406bbc3f153af82</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

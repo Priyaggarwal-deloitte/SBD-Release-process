@@ -15,7 +15,9 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition/>
+        <filter_condition table="rm_release">x_675641_sbd_relea_sbd_release=true^EQ<item endquery="false" field="x_675641_sbd_relea_sbd_release" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
         <is_rest>false</is_rest>
         <message/>
         <name>SBD populate Security patterns</name>
@@ -30,45 +32,114 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
     // Add your code here
-    var Boolean_field_map = [
-        ['Active Directory', 'x_675641_sbd_relea_active_directory_pattern'],
-        ['SSO Pattern', 'x_675641_sbd_relea_sso_pattern'],
-        ['Logging', 'x_675641_sbd_relea_logging_pattern'],
-        ['Rest Encryption', 'x_675641_sbd_relea_rest_encryption_pattern'],
-        ['Remote Access', 'x_675641_sbd_relea_remote_access_pattern']
-    ];
-    var sbd_pattern = [];
-    var sbd_pattern_name = '';
-    //	current.x_675641_sbd_relea_sso_pattern.changesTo(true);
-    for (var i = 0; i < Boolean_field_map.length; i++) {
-        if (current[Boolean_field_map[i][1]].changesTo(true) || current[Boolean_field_map[i][1]] == true) {
-            sbd_pattern_name = Boolean_field_map[i][0] + '';
-            sbd_pattern.push(sbd_pattern_name);
-            gs.addInfoMessage(Boolean_field_map[i][0]);
-        }
-    }
+//     var Boolean_field_map = [
+//         ['Active Directory', 'x_675641_sbd_relea_active_directory_pattern'],
+//         ['SSO Pattern', 'x_675641_sbd_relea_sso_pattern'],
+//         ['Logging', 'x_675641_sbd_relea_logging_pattern'],
+//         ['Rest Encryption', 'x_675641_sbd_relea_rest_encryption_pattern'],
+//         ['Remote Access', 'x_675641_sbd_relea_remote_access_pattern']
+//     ];
+    
+//     var sbd_pattern_name = '';
+//     //	current.x_675641_sbd_relea_sso_pattern.changesTo(true);
+//     for (var i = 0; i < Boolean_field_map.length; i++) {
+//         if (current[Boolean_field_map[i][1]].changesTo(true) || current[Boolean_field_map[i][1]] == true) {
+//             sbd_pattern_name = Boolean_field_map[i][0] + '';
+//             sbd_pattern.push(sbd_pattern_name);
+//         //    gs.addInfoMessage(Boolean_field_map[i][0]);
+//         }
+//     }
 
-    //     var yesNo_field_patern_map = [
-    //         ['API Security', 'x_675641_sbd_relea_api'],
-    //         ['Container Security', 'x_675641_sbd_relea_invoice_containerization']
-    //     ];
-    for (var j = 0; j < Boolean_field_map.length; i++) {
-        if (current[Boolean_field_map[j][1]].changesTo(true) || current[Boolean_field_map[j][1]] == true) {
-            sbd_pattern_name = Boolean_field_map[j][0] + '';
-            sbd_pattern.push(sbd_pattern_name);
-            gs.addInfoMessage('j----' + Boolean_field_map[j][0]);
-        }
-    }
-    gs.addInfoMessage(JSON.stringify(sbd_pattern));
+//         var yesNo_field_patern_map = [
+//             ['API Security', 'x_675641_sbd_relea_api'],
+//             ['Container Security', 'x_675641_sbd_relea_invoice_containerization']
+//         ];
+//     for (var j = 0; j < yesNo_field_patern_map.length; i++) {
+//         if (current[yesNo_field_patern_map[j][1]].changesTo('yes') || current[yesNo_field_patern_map[j][1]] == 'yes') {
+//             sbd_pattern_name = yesNo_field_patern_map[j][0] + '';
+//             sbd_pattern.push(sbd_pattern_name);
+//            // gs.addInfoMessage('j----' + yesNo_field_patern_map[j][0]);
+//         }
+//     }
+  //  gs.addInfoMessage(JSON.stringify(sbd_pattern));
     //     var system_type = [
     //         ['Network Firewall', 'u_infrastructure'],
     //         ['MDM Security', 'u_mobile_app'],
     //         ['Public Cloud Security', 'u_public_cloud']
     //     ];
     //     if (current['x_675641_sbd_relea_sso_pattern'].changesTo(true)) {
-    //         current.x_675641_sbd_relea_rest_encryption_pattern = true;
-    //         current.update();
+          
     //     }
+	var sbd_pattern = [];
+	var sbd_pattern_str ='';
+	if(current.x_675641_sbd_relea_active_directory_pattern == true){
+sbd_pattern.push('Active Directory');
+}
+if(current.x_675641_sbd_relea_sso_pattern == true){
+sbd_pattern.push('SSO Pattern');
+}
+
+if(current.x_675641_sbd_relea_logging_pattern == true){
+sbd_pattern.push('Logging');}
+
+	if(current.x_675641_sbd_relea_rest_encryption_pattern == true){
+sbd_pattern.push('Rest Encryption');}
+	
+	if(current.x_675641_sbd_relea_remote_access_pattern == true){
+sbd_pattern.push('Remote Access');}
+	
+	if(current.x_675641_sbd_relea_api == 'yes'){
+		sbd_pattern.push('API Security');
+	}
+	
+		if(current.x_675641_sbd_relea_invoice_containerization == 'yes'){
+		sbd_pattern.push('Container Security');
+	}
+	
+	if(current.x_675641_sbd_relea_hosting_location == 'public_cloud'){
+		sbd_pattern.push('Public Cloud Security');
+	}
+	
+	
+	var checkSystemTyep = current.x_675641_sbd_relea_system_type.toString();
+    var indexVal = checkSystemTyep.indexOf('mobile_application');
+	if(indexVal>-1){
+  //  ifOutput = "true".toString();
+  sbd_pattern.push('MDM Security');
+    }
+	
+	var checkInfra = checkSystemTyep.indexOf('infrastructure');
+	if(checkInfra>-1){
+  //  ifOutput = "true".toString();
+  sbd_pattern.push('Network Firewall');
+    }
+	
+sbd_pattern_str =  sbd_pattern.toString();
+gs.info(sbd_pattern_str);
+	
+	
+var grSecPatternRepo = new GlideRecord("x_675641_sbd_relea_security_pattern_repository");
+//type=sec_pattern^security_patternINLogging,SSO Pattern,Active Directory
+grSecPatternRepo.addEncodedQuery('type=sec_pattern^security_patternIN'+sbd_pattern_str);
+grSecPatternRepo.query();
+while (grSecPatternRepo.next()) {
+
+//gs.info(grSecPatternRepo.security_pattern);
+		var lv_u_pattern_link1='<p><a title="'+grSecPatternRepo.security_pattern+'" href="/x_675641_sbd_relea_security_pattern_repository.do?sys_id='+grSecPatternRepo.sys_id+'&amp;sysparm_view=&amp;sysparm_record_target=x_675641_sbd_relea_security_pattern_repository&amp;sysparm_record_row=1&amp;sysparm_record_list=ORDERBYnumber&amp;sysparm_record_rows=3" target="_blank" rel="noopener noreferrer nofollow">'+grSecPatternRepo.security_pattern+'</a><br /></p>';
+		
+		var lv_u_pattern_link=lv_u_pattern_link+lv_u_pattern_link1;
+
+}
+
+	var grRElPhase = new GlideRecord("rm_release_phase");
+grRElPhase.addQuery("parent", current.sys_id);
+	grRElPhase.addQuery('x_675641_sbd_relea_type','security review');
+grRElPhase.query();
+if (grRElPhase.next()) {
+grRElPhase.x_675641_sbd_relea_security_patterns = lv_u_pattern_link.replace('undefined','');
+grRElPhase.update();
+}
+
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -77,17 +148,14 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dcb4d73797d711100406bbc3f153afef</sys_id>
-        <sys_mod_count>27</sys_mod_count>
         <sys_name>SBD populate Security patterns</sys_name>
         <sys_overrides/>
         <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
         <sys_policy/>
         <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
         <sys_update_name>sys_script_dcb4d73797d711100406bbc3f153afef</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-12-02 09:13:45</sys_updated_on>
         <template/>
-        <when>after</when>
+        <when>async_always</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=dcb4d73797d711100406bbc3f153afef"/>
 </record_update>

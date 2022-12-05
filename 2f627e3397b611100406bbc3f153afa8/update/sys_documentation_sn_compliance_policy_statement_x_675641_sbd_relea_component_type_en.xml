@@ -11,15 +11,11 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>bishnu</sys_created_by>
             <sys_created_on>2022-11-14 10:36:48</sys_created_on>
-            <sys_id>12b53a97974711100406bbc3f153af1b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
             <sys_name>Component Type</sys_name>
             <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
             <sys_policy/>
             <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
             <sys_update_name>sys_documentation_sn_compliance_policy_statement_x_675641_sbd_relea_component_type_en</sys_update_name>
-            <sys_updated_by>bishnu</sys_updated_by>
-            <sys_updated_on>2022-11-14 10:36:48</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
