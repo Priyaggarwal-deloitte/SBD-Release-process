@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e24a3142974f59100406bbc3f153afea</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_675641_sbd_relea_assessment_to_ccf_mapping">
+    <x_675641_sbd_relea_assessment_to_ccf_mapping action="INSERT_OR_UPDATE">
+        <mapped_ccf_ids>IA-2,AC-2, AC-3, AC-4, AC-14, AC-17, AC-18, AU-1, AU-6, IA-4, IA-5, IA-8, MA-4, MA-5, PE-2, PL-4, SA-4, SA-8,</mapped_ccf_ids>
+        <question>Are all users of the system identified and authenticated?</question>
+        <question_number>Question-16</question_number>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-10 09:05:20</sys_created_on>
+        <sys_id>e24a3142974f59100406bbc3f153afea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-10 09:05:20</sys_updated_on>
+        <wheightage>10</wheightage>
+        <wheightage_assigned>No</wheightage_assigned>
+    </x_675641_sbd_relea_assessment_to_ccf_mapping>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-05 07:48:17</sys_created_on>
+        <sys_id>e2889686976791100406bbc3f153afc4</sys_id>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_metadata_link_e2889686976791100406bbc3f153afc4</sys_update_name>
+        <tablename>x_675641_sbd_relea_assessment_to_ccf_map</tablename>
+    </sys_metadata_link>
+</record_update>

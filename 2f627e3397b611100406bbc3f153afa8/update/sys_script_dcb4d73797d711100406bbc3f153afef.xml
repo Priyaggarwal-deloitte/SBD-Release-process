@@ -115,7 +115,7 @@ sbd_pattern.push('Remote Access');}
     }
 	
 sbd_pattern_str =  sbd_pattern.toString();
-gs.info(sbd_pattern_str);
+//gs.info(sbd_pattern_str);
 	
 	
 var grSecPatternRepo = new GlideRecord("x_675641_sbd_relea_security_pattern_repository");

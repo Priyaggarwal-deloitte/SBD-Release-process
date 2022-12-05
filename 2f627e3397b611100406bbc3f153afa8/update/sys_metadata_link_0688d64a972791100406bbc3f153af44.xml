@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>3497ce02978f59100406bbc3f153afe6</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_675641_sbd_relea_assessment_to_ccf_mapping">
+    <x_675641_sbd_relea_assessment_to_ccf_mapping action="INSERT_OR_UPDATE">
+        <mapped_ccf_ids>MP-2,AC-19, AU-9, CP-2, CP-9, CP-10, MA-5, MP-4, MP-6, PE-2, PE-3, SC-12, SC-13, SC-34, SI-12,</mapped_ccf_ids>
+        <question>Is the access to all forms of media monitored and restricted?</question>
+        <question_number>Question-26</question_number>
+        <sys_created_by>bishnu</sys_created_by>
+        <sys_created_on>2022-11-10 10:03:24</sys_created_on>
+        <sys_id>3497ce02978f59100406bbc3f153afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>bishnu</sys_updated_by>
+        <sys_updated_on>2022-11-10 10:03:24</sys_updated_on>
+        <wheightage>10</wheightage>
+        <wheightage_assigned>No</wheightage_assigned>
+    </x_675641_sbd_relea_assessment_to_ccf_mapping>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-05 07:48:15</sys_created_on>
+        <sys_id>0688d64a972791100406bbc3f153af44</sys_id>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_metadata_link_0688d64a972791100406bbc3f153af44</sys_update_name>
+        <tablename>x_675641_sbd_relea_assessment_to_ccf_map</tablename>
+    </sys_metadata_link>
+</record_update>

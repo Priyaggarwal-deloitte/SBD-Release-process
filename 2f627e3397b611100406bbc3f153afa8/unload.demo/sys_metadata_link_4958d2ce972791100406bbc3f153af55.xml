@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>unload.demo</directory>
+        <documentkey>fbdcb27b975711100406bbc3f153af57</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_675641_sbd_relea_security_pattern_repository">
+    <x_675641_sbd_relea_security_pattern_repository action="INSERT_OR_UPDATE">
+        <architecture_diagram_template>https://www.techtarget.com/searchsecurity/definition/remote-access</architecture_diagram_template>
+        <iac_script_template/>
+        <pattern_attached/>
+        <security_pattern>Remote Access</security_pattern>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-11-28 10:40:42</sys_created_on>
+        <sys_id>fbdcb27b975711100406bbc3f153af57</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Aman</sys_updated_by>
+        <sys_updated_on>2022-11-28 22:17:00</sys_updated_on>
+        <type>sec_pattern</type>
+    </x_675641_sbd_relea_security_pattern_repository>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-12-05 07:47:22</sys_created_on>
+        <sys_id>4958d2ce972791100406bbc3f153af55</sys_id>
+        <sys_name/>
+        <sys_package display_value="SBD Release process" source="x_675641_sbd_relea">2f627e3397b611100406bbc3f153afa8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SBD Release process">2f627e3397b611100406bbc3f153afa8</sys_scope>
+        <sys_update_name>sys_metadata_link_4958d2ce972791100406bbc3f153af55</sys_update_name>
+        <tablename>x_675641_sbd_relea_security_pattern_repo</tablename>
+    </sys_metadata_link>
+</record_update>
